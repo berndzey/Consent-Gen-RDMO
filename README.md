@@ -10,3 +10,5 @@ go to your RDMO folder and call
 ./manage.py import /path-to-consent-gen-xml-file/consent-gen.xml
 ./manage.py import /path-to-consent-gen-xml-file/consent-gen-view.xml
 ```
+
+Via RDMO-Management-Page: just import xml files
