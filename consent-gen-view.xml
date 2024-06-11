@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-06-11T12:14:43.497563+02:00" version="2.1.3">
+	<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<uri_path>consent-gen</uri_path>
+		<dc:comment/>
+		<order>0</order>
+		<title lang="en">View for consent generator.</title>
+		<help lang="en"/>
+		<title lang="de">Ansicht für den Generator der Einwilligungserklärungen</title>
+		<help lang="de"/>
+		<catalogs>
+			<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen"/>
+		</catalogs>
+		<template>{% load view_tags %}
+
+{% get_set 'project/purpose_change/purpose_change_id' as purpose_changes %}
+
+{% get_set 'project/obligation/obligation_purpose_legal_basis/obligation_purpose_legal_basis_id' as duties_purposes %}
+{% get_set 'project/obligation/obligation_data_categories/obligation_data_categories_id' as data_categories %}
+{% get_set 'project/obligation/receiver/receiver_id' as receivers %}
+
+{# Start #} 
+
+&lt;h1&gt;
+{% get_value 'project/information_project_name' as info_project_name %}
+{% if info_project_name.is_true %}
+  Einwilligungserklärung zum Projekt {{ info_project_name.value }}
+{% else %}
+  Einwilligungserklärung 
+{% endif %}
+&lt;/h1&gt;
+
+&lt;p&gt;
+{% render_value 'project/information_salutation' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;
+{% render_value 'project/information_approval' %}
+&lt;/p&gt;
+
+&lt;p&gt;
+Bitte lesen Sie die folgenden Erklärungen sorgfältig durch. 
+Bei Rückfragen oder Verständnisschwierigkeiten können Sie sich gerne bei 
+{% get_value 'project/information_questions_person' as info_resp_person %}
+{% if info_resp_person.is_true %}
+  {{ info_resp_person.value }}
+{% else %}
+  den verantwortlichen Personen dieses Projekts 
+{% endif %}
+melden. 
+&lt;/p&gt;
+
+&lt;p&gt;
+{% render_value 'project/consent_declaration_voluntary' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Wenn Sie mit unserem Vorhaben einverstanden sind, 
+unterschreiben Sie bitte die nachfolgenden Abschnitte der Einwilligungserklärung 
+und geben Sie diese
+
+{% get_value 'project/information_due_date' as info_due_date %}
+{% if info_due_date.is_true %}
+  bis zum 
+  {{ info_due_date.value }}
+{% endif %}
+{% get_value 'project/information_due_date_person' as info_due_person %}
+{% if info_due_person.is_true %}
+  bei
+  {{ info_due_person.value }}
+{% endif %}
+zurück. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+{% render_value 'project/information_thanks' %}
+&lt;/p&gt;
+
+
+&lt;p&gt;Mit freundlichen Grüßen &lt;/p&gt;
+
+
+{% get_value 'project/information_sender' as info_sender %}
+{% if info_sender.is_true %}
+  &lt;p&gt;
+    {{ info_sender.value }} 
+  &lt;/p&gt;
+{% else %}
+  &lt;p&gt;
+    Projektleitung
+  &lt;/p&gt;
+{% endif %}
+
+&lt;br&gt;
+
+{# ------------------INFORMATIONEN---------------------------- #} 
+
+{% get_value 'project/information_project_description' as info_project_description %}
+{% if info_project_description.is_true %}
+  &lt;b&gt;Projekt-Beschreibung:&lt;/b&gt;
+  &lt;p&gt;
+  {{ info_project_description.value }}
+  &lt;/p&gt;
+{% endif %}
+
+
+{% get_value 'project/information_participants' as info_project_participants %}
+{% if info_project_participants.is_true %}
+  &lt;b&gt;Projekt-Beteiligte:&lt;/b&gt;
+  &lt;p&gt;
+  {{ info_project_participants.value }}
+  &lt;/p&gt;
+{% endif %}
+
+
+{% get_value 'project/information_funding' as info_funding %}
+{% if info_funding.is_true %}
+  &lt;b&gt;Förderungeinrichtung:&lt;/b&gt;
+  &lt;p&gt;
+  Die Studie wird finanziell gefördert von 
+  {{ info_funding.value }}
+  &lt;/p&gt;
+{% endif %}
+
+
+&lt;br&gt;
+&lt;br&gt;
+
+{# ---------------------------------------------- #} 
+
+&lt;h2&gt;Datenschutzrechtlicher Informationsteil&lt;/h2&gt;
+
+&lt;b&gt;Name und Kontaktdaten der/des Verantwortlichen&lt;/b&gt;
+&lt;p&gt;
+  Im Folgenden nennen wir die für den Datenschutz in diesem Projekt verantwortliche Stelle:
+  &lt;table border=&quot;1&quot;&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;Name:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_name_institution' %}&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;Adresse:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_address' %}&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;Telefon:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_telephone' %}&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;eMail:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_email' %}&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt; 
+&lt;/p&gt;
+
+
+&lt;b&gt;Zwecke und Rechtsgrundlage der Verarbeitung&lt;/b&gt;
+&lt;p&gt;
+  Wir verarbeiten Ihre Daten für die nachfolgend genannten Zwecke 
+  auf Basis der genannten Rechtsgrundlage:
+
+&lt;table border=&quot;1&quot;&gt;
+ &lt;tr&gt;&lt;th&gt;Zweck der Datenverarbeitung&amp;nbsp; &lt;/th&gt; &lt;th&gt;Rechtsgrundlage&amp;nbsp;  &lt;/th&gt;&lt;/tr&gt; 
+ {% for obligation_purpose in duties_purposes %}
+   &lt;tr&gt;&lt;td&gt;{% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_purpose' %}&amp;nbsp; &lt;/td&gt; 
+       &lt;td&gt;{% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' %}&amp;nbsp; &lt;/td&gt;
+   &lt;/tr&gt;
+ {% endfor %} 
+&lt;/table&gt;
+&lt;/p&gt;
+
+
+&lt;b&gt;Datenkategorien&lt;/b&gt;
+&lt;p&gt;
+  Wir verarbeiten die nachfolgenden Datenkategorien von Ihnen: 
+&lt;table border=&quot;1&quot;&gt;
+ &lt;tr&gt;&lt;th&gt;Datenkategorie&amp;nbsp; &lt;/th&gt; &lt;th&gt;Daten&amp;nbsp;  &lt;/th&gt;&lt;/tr&gt; 
+ {% for data_category in data_categories %}
+   &lt;tr&gt;&lt;td&gt;{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_category' %}&amp;nbsp; &lt;/td&gt; 
+       &lt;td&gt;{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' %}&amp;nbsp; &lt;/td&gt;
+   &lt;/tr&gt;
+ {% endfor %} 
+&lt;/table&gt;
+&lt;/p&gt;
+
+
+
+&lt;b&gt;Empfänger bzw. Kategorie von Empfängern&lt;/b&gt;
+&lt;p&gt;
+{% if receivers %}
+  Ihre personenbezogenen Daten werden an folgende Empfänger
+  bzw. Kategorien von Empfängern weitergegeben:
+&lt;table border=&quot;1&quot;&gt;
+ &lt;tr&gt;&lt;th&gt;Empfänger&amp;nbsp; &lt;/th&gt; &lt;th&gt;Rechtsgrundlage der Datenübermittlung&amp;nbsp;  &lt;/th&gt;&lt;/tr&gt; 
+ {% for receiver in receivers %}
+   &lt;tr&gt;&lt;td&gt;{% render_set_value receiver 'project/obligation/receiver/receiver_name' %}&amp;nbsp; &lt;/td&gt; 
+       &lt;td&gt;{% render_set_value receiver 'project/obligation/receiver/receiver_legal_basis' %}&amp;nbsp; &lt;/td&gt;
+   &lt;/tr&gt;
+ {% endfor %} 
+&lt;/table&gt;
+{% else %}
+Eine Weitergabe der personenbezogenen Daten erfolgt nicht. 
+{% endif %}
+&lt;/p&gt;
+
+
+&lt;b&gt;Datenübermittlung an Drittland oder internationale Organisation&lt;/b&gt;
+&lt;p&gt;
+{% get_values 'project/obligation/third_country' set_index=0 as thirds %}
+{% if thirds %}
+  Ihre personenbezogenen Daten werden an folgende Drittländer 
+  bzw. internationale Organisationen weitergeleitet: 
+&lt;ul&gt;
+  {% for third in thirds %}
+        &lt;li&gt;{{ third.value }}&lt;/li&gt;
+    {% endfor %}
+&lt;/ul&gt;
+{% else %}
+Eine Übermittlung der personenbezogenen Daten an Drittländer 
+oder internationale Organisationen erfolgt nicht. 
+{% endif %}
+&lt;/p&gt;
+  
+  
+&lt;b&gt;Kontaktdaten der/des Datenschutzbeauftragten&lt;/b&gt;
+&lt;p&gt;
+  Wir haben eine/n Datenschutzbeauftragte/n bestellt. 
+  Diese/n können Sie unter den folgenden Kontaktdaten erreichen:
+  &lt;table border=&quot;1&quot;&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;Name:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_name_data_protection_officer' %}&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;Adresse:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_address_data_protection_officer' %}&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;Telefon:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_telephone_data_protection_officer' %}&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;&lt;b&gt;eMail:&amp;nbsp; &lt;/b&gt;&lt;/td&gt; &lt;td&gt;{% render_value 'project/obligation/obligation_email_data_protection_officer' %}&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt; 
+&lt;/p&gt;
+
+
+{% get_values 'project/obligation/obligation_rights' set_index=0 as text %}
+{% if text %}
+&lt;b&gt;Betroffenenrechte&lt;/b&gt;
+&lt;p&gt;
+Ihnen stehen folgende Betroffenenrechte zu:
+&lt;ul&gt;
+
+    {% for value in text %}
+        &lt;li&gt;{{ value.value }}&lt;/li&gt;
+    {% endfor %}
+&lt;/ul&gt;
+&lt;br&gt;
+Für die Geltendmachung Ihrer Rechte wenden Sie sich bitte an die verantwortliche Person. 
+&lt;/p&gt;
+{% endif %}
+
+&lt;br&gt; 
+  
+&lt;b&gt;Beschwerde bei Datenschutzaufsichtsbehörde&lt;/b&gt;
+&lt;p&gt;
+Weiterhin können Sie sich bei der zuständigen Datenschutzaufsichtsbehörde beschweren. 
+Diese können Sie unter folgenden Kontaktdaten erreichen:
+  &lt;p&gt;
+  {% render_value 'project/obligation/obligation_authority' %}
+  &lt;/p&gt;
+&lt;/p&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+
+
+{# --------------Einwilligungsteil-------------------------------- #} 
+
+&lt;h2&gt;Einwilligungsteil&lt;/h2&gt;
+
+&lt;b&gt;Einwilligung:&lt;/b&gt;
+&lt;br&gt;
+
+Hiermit willige ich ein, an dem Projekt 
+{% render_value 'project/information_project_name' %} 
+teilzunehmen und dass meine
+personebezogenen Daten
+  {% get_values 'project/primary_purpose_personal_data' set_index=0 as data %}
+  {% if data %}
+      &lt;ul&gt;
+      {% for d in data %}
+          &lt;li&gt;{{ d.value }}&lt;/li&gt;
+      {% endfor %}
+      &lt;/ul&gt;
+    &lt;br&gt;
+  {% endif %}
+    für die Studie 
+    {% render_value 'project/information_project_name' %}
+    für die genannten Zwecke 
+    verarbeitet werden dürfen.  
+  &lt;br&gt;
+&lt;/p&gt;   
+&lt;br&gt;
+
+  &lt;p&gt;&amp;#x2610; Ja &amp;#x2610; Nein&lt;/p&gt;
+
+&lt;br&gt;
+
+{% get_values 'project/primary_purpose_personal_data_special_category' set_index=0 as data %}
+{% if data %}
+Hiermit willige ich ein, an dem Projekt 
+{% render_value 'project/information_project_name' %} 
+teilzunehmen und dass meine
+personebezogenen Daten besonderer Kategorien 
+    &lt;ul&gt;
+    {% for d in data %}
+        &lt;li&gt;{{ d.value }}&lt;/li&gt;
+    {% endfor %}
+    &lt;/ul&gt;
+    &lt;br&gt;
+    für die Studie 
+    {% render_value 'project/information_project_name' %}
+    für die genannten Zwecke 
+    verarbeitet werden dürfen.  
+  &lt;br&gt;
+&lt;/p&gt;   
+&lt;br&gt;
+{% endif %}
+
+&lt;br&gt;
+
+  Mir ist bewusst, dass ich meine erteilte Einwilligung 
+  für die Verarbeitung meiner personenbzeogenen   
+  Daten jederzeit, ohne die Angabe von Gründen,
+  widerrufen kann. 
+  Die Rechtmäßigkeit der Datenverarbeitung bis zum Zeitpunkt des Widerrufs
+  wird durch den Widerruf selbst nicht berührt. 
+  Den Widerruf kann ich gegenüber 
+  den verantwortlichen Personen 
+  geltend machen. 
+
+  &lt;br&gt;&lt;br&gt;&lt;br&gt;
+  
+  &lt;p&gt;Vor- und Nachname in Druckschrift&lt;/p&gt; 
+  
+  &lt;p&gt;
+  &lt;br&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;Ort, Datum, Unterschrift&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+
+{# --------------Zweckänderung-------------------------------- #} 
+
+{% for purpose_change in purpose_changes %}
+&lt;br&gt;
+&lt;b&gt;Zweckänderung: {% render_set_value purpose_change 'project/purpose_change/purpose_change_id' %}&lt;/b&gt;
+
+&lt;p&gt;
+  Die folgende Einwilligung betrifft die folgende Zweckänderung: 
+  {% get_set_value purpose_change 'project/purpose_change/purpose_change_usage' as purpc_usage %}
+  {{purpc_usage.value}}.
+&lt;/p&gt;
+
+&lt;p&gt;
+    Hiermit willige ich ein, dass
+    meine
+    personebezogenen 
+    Daten
+  {% get_set_values purpose_change 'project/purpose_change/purpose_change_personal_data' as data %}
+  {% if data %}
+      &lt;ul&gt;
+      {% for d in data %}
+          &lt;li&gt;{{ d.value }}&lt;/li&gt;
+      {% endfor %}
+      &lt;/ul&gt;
+    &lt;br&gt;
+  {% endif %}
+    für die Studie 
+    {% render_value 'project/information_project_name' %}
+    zu der genannten Zweckänderung 
+    verarbeitet werden dürfen.  
+  &lt;br&gt;
+&lt;/p&gt;   
+&lt;br&gt;
+
+  &lt;p&gt;&amp;#x2610; Ja &amp;#x2610; Nein&lt;/p&gt;
+
+&lt;br&gt;
+
+
+{% get_set_values purpose_change 'project/purpose_change/purpose_change_personal_data_special_category' as purpc_personal_data_special %}
+{% if purpc_personal_data_special %}
+    Hiermit willige ich ein, dass
+    meine
+    personebezogenen 
+    Daten besonderer Kategorien 
+      &lt;ul&gt;
+      {% for d in purpc_personal_data_special %}
+          &lt;li&gt;{{ d.value }}&lt;/li&gt;
+      {% endfor %}
+      &lt;/ul&gt;
+    &lt;br&gt;
+    für die Studie 
+    {% render_value 'project/information_project_name' %}
+    zu der genannten Zweckänderung 
+    verarbeitet werden dürfen.  
+  &lt;br&gt;
+&lt;/p&gt;   
+&lt;br&gt;
+
+  &lt;p&gt;&amp;#x2610; Ja &amp;#x2610; Nein&lt;/p&gt;
+
+{% endif %}
+
+
+
+&lt;br&gt;
+
+  Mir ist bewusst, dass ich meine erteilte Einwilligung 
+  für die Verarbeitung meiner personenbzeogenen   
+  Daten jederzeit, ohne die Angabe von Gründen,
+  widerrufen kann. 
+  Die Rechtmäßigkeit der Datenverarbeitung bis zum Zeitpunkt des Widerrufs
+  wird durch den Widerruf selbst nicht berührt. 
+  Den Widerruf kann ich gegenüber 
+  {% get_set_value purpose_change 'project/purpose_change/purpose_change_responsible' as purpc_responsible %}
+  {% if purpc_responsible.is_true %}
+    {{ purpc_responsible.value }}
+  {% else %}  
+    den verantwortlichen Personen 
+  {% endif %}
+  geltend machen. 
+  
+  &lt;br&gt;&lt;br&gt;&lt;br&gt;
+  
+  &lt;p&gt;Vor- und Nachname in Druckschrift&lt;/p&gt; 
+  
+  &lt;p&gt;
+  &lt;br&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;Ort, Datum, Unterschrift&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+{% endfor %}</template>
+	</view>
+</rdmo>
