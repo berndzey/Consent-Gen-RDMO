@@ -1,4 +1,4 @@
-# About
+## About
 This project is a result of the thesis for the "Zertifikatskurs FDM 2023/2024" by Bernd Zey (TU Dortmund). 
 
 ## Consent-Gen-RDMO
