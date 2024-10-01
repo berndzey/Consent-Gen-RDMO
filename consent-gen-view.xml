@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2024-10-01T09:39:43.194714+02:00" version="2.2.1">
-	<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<uri_path>consent-gen</uri_path>
-		<dc:comment/>
-		<order>0</order>
-		<title lang="en">View for consent generator.</title>
-		<help lang="en"/>
-		<title lang="de">Ansicht für den Generator der Einwilligungserklärungen</title>
-		<help lang="de"/>
-		<catalogs>
-			<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen"/>
-		</catalogs>
-		<template>
+<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen">
+<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+<uri_path>consent-gen</uri_path>
+<dc:comment/>
+<order>0</order>
+<title lang="en">View for consent generator.</title>
+<help lang="en"/>
+<title lang="de">Ansicht für den Generator der Einwilligungserklärungen</title>
+<help lang="de"/>
+<catalogs>
+	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen"/>
+</catalogs>
+<template>
 
 {% load view_tags %}
 
