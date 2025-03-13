@@ -1,6 +1,6 @@
 ## News 
-**2025-03-13**: The development has been delayed. We are working on a new version. 
-**2024-10-10**: We are currently working on this questionnaire. Our plan is to have a productive and sharable version by the end of 2024.
+- **2025-03-13**: The development has been delayed. We are working on a new version. 
+- **2024-10-10**: We are currently working on this questionnaire. Our plan is to have a productive and sharable version by the end of 2024.
 
 ## About
 This project started with the thesis for the "Zertifikatskurs FDM 2023/2024" by Bernd Zey (TU Dortmund). 
