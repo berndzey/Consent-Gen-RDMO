@@ -27,9 +27,10 @@
 <h1>
 {% get_value 'project/information_project_name' as info_project_name %}
 {% if info_project_name.is_true %}
-  Einwilligungserklärung zum Projekt {{ info_project_name.value }}
+  Einwilligungserklärung zur Erhebung und Verarbeitung personenbezogener Daten 
+ im Projekt {{ info_project_name.value }}
 {% else %}
-  Einwilligungserklärung 
+  Einwilligungserklärung zur Erhebung und Verarbeitung personenbezogener Daten 
 {% endif %}
 </h1>
 
@@ -109,6 +110,13 @@ zurück.
   </p>
 {% endif %}
 
+{% get_value 'project/information_project_lead' as info_project_lead %}
+{% if info_project_lead.is_true %}
+  <b>Projekt-Leitung:</b>
+  <p>
+  {{ info_project_lead.value }}
+  </p>
+{% endif %}
 
 {% get_value 'project/information_participants' as info_project_participants %}
 {% if info_project_participants.is_true %}
@@ -148,16 +156,23 @@ zurück.
 </p>
 
 
-<b>Zwecke und Rechtsgrundlage der Verarbeitung</b>
+<b>Zwecke und Rechtsgrundlagen der Verarbeitung</b>
 <p>
   Wir verarbeiten Ihre Daten für die nachfolgend genannten Zwecke 
-  auf Basis der genannten Rechtsgrundlage:
+  auf Basis der genannten Rechtsgrundlagen:
 
 <table border="1">
  <tr><th>Zweck der Datenverarbeitung&nbsp; </th> <th>Rechtsgrundlage&nbsp;  </th></tr> 
  {% for obligation_purpose in duties_purposes %}
    <tr><td>{% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_purpose' %}&nbsp; </td> 
-       <td>{% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' %}&nbsp; </td>
+       <td>
+         {% get_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' as txtxtxt %}
+         {% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' %}
+         {% if 'Einwilligung' in txtxtxt.value %}
+               (Rechtsgrundlage ist Art. 6, Abs. 1, Buchst. a, DSGVO)
+         {% endif %}
+         &nbsp; 
+       </td>
    </tr>
  {% endfor %} 
 </table>
@@ -166,7 +181,7 @@ zurück.
 
 <b>Datenkategorien</b>
 <p>
-  Wir verarbeiten die nachfolgenden Datenkategorien von Ihnen: 
+  Wir verarbeiten die nachfolgenden Daten der genannten Datenkategorien von Ihnen: 
 <table border="1">
  <tr><th>Datenkategorie&nbsp; </th> <th>Daten&nbsp;  </th></tr> 
  {% for data_category in data_categories %}
@@ -175,6 +190,30 @@ zurück.
    </tr>
  {% endfor %} 
 </table>
+
+<br>
+
+{% get_values 'project/primary_purpose_personal_data_special_category' set_index=0 as data %}
+{% if data %}
+Außerden verarbeiten wir die nachfolgenden Daten besonderer Kategorien: 
+    <ul>
+    {% for d in data %}
+        <li>{{ d.value }}</li>
+    {% endfor %}
+    </ul>
+    <br>
+<br>
+{% endif %}
+
+
+
+<b>Aufbewahrungsdauer</b>
+<p>
+  Wir speichern Ihre personenbezogenen Daten 
+{% render_value 'project/obligation_duration' %}
+<br>
+  Anschließend werden Ihre personenbezogenen Daten gelöscht bzw. 
+es werden nur noch anonymisierte Daten vorgehalten. 
 </p>
 
 
@@ -235,10 +274,25 @@ oder internationale Organisationen erfolgt nicht.
 <p>
 Ihnen stehen folgende Betroffenenrechte zu:
 <ul>
-
-    {% for value in text %}
-        <li>{{ value.value }}</li>
-    {% endfor %}
+<li> Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, https://dsgvo-gesetz.de/art-15-dsgvo/
+</li>
+<li> Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen.
+Artikel 7, DSGVO, https://dsgvo-gesetz.de/art-7-dsgvo/
+</li>
+<li> Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. 
+Artikel 16, DSGVO, https://dsgvo-gesetz.de/art-16-dsgvo/
+</li>
+<li> Sie können jederzeit die Löschung Ihrer Daten verlangen.
+Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
+</li>
+<li> Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+</li>
+<li> Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, DSGVO, https://dsgvo-gesetz.de/art-20-dsgvo/
+</li>
+<li> Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch mit Wirkung für die Zukunft einlegen. Artikel 21, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+</li>
+<li> Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, https://dsgvo-gesetz.de/art-77-dsgvo/
+</li>
 </ul>
 <br>
 Für die Geltendmachung Ihrer Rechte wenden Sie sich bitte an die verantwortliche Person. 
@@ -262,25 +316,41 @@ Diese können Sie unter folgenden Kontaktdaten erreichen:
 
 {# --------------Einwilligungsteil-------------------------------- #} 
 
-<h2>Einwilligungsteil</h2>
+<h2>Einwilligungserklärung</h2>
 
-<b>Einwilligung:</b>
-<br>
-
+<p>
 Hiermit willige ich ein, an dem Projekt 
 {% render_value 'project/information_project_name' %} 
-teilzunehmen und dass meine
-personebezogenen Daten
-  {% get_values 'project/primary_purpose_personal_data' set_index=0 as data %}
-  {% if data %}
-      <ul>
-      {% for d in data %}
-          <li>{{ d.value }}</li>
-      {% endfor %}
-      </ul>
-    <br>
-  {% endif %}
-    für die Studie 
+teilzunehmen.  
+</p>
+
+<p>
+{% render_value 'project/declaration_consent_perusal' %}
+</p>
+
+<p>
+{% render_value 'project/declaration_consent_questions' %}
+</p>
+
+<p>
+{% render_value 'project/declaration_consent_confirmation_rights' %}
+</p>
+
+<p>
+{% render_value 'project/declaration_consent_receipt' %}
+</p>
+
+<p>
+Ich willige ein, dass meine
+personenbezogenen Daten
+  <ul>
+{% for data_category in data_categories %}
+       <li>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' %}</li>
+ {% endfor %} 
+  </ul>
+
+
+für die Studie 
     {% render_value 'project/information_project_name' %}
     für die genannten Zwecke 
     verarbeitet werden dürfen.  
@@ -292,11 +362,10 @@ personebezogenen Daten
 
 <br>
 
+<p>
 {% get_values 'project/primary_purpose_personal_data_special_category' set_index=0 as data %}
 {% if data %}
-Hiermit willige ich ein, an dem Projekt 
-{% render_value 'project/information_project_name' %} 
-teilzunehmen und dass meine
+Hiermit willige ich ein, dass meine
 personebezogenen Daten besonderer Kategorien 
     <ul>
     {% for d in data %}
@@ -318,124 +387,50 @@ personebezogenen Daten besonderer Kategorien
 
 <br>
 
-  Mir ist bewusst, dass ich meine erteilte Einwilligung 
-  für die Verarbeitung meiner personenbzeogenen   
-  Daten jederzeit, ohne die Angabe von Gründen,
-  widerrufen kann. 
-  Die Rechtmäßigkeit der Datenverarbeitung bis zum Zeitpunkt des Widerrufs
-  wird durch den Widerruf selbst nicht berührt. 
-  Den Widerruf kann ich gegenüber 
-  den verantwortlichen Personen 
-  geltend machen. 
 
-  <br><br><br>
-  
-  <p>Vor- und Nachname in Druckschrift</p> 
-  
-  <p>
-  <br>
+{% if receivers %}
+<p>
+  Ich willige ein, dass meine 
+personebezogenen Daten an 
+  {% for receiver in receivers %}
+  {% render_set_value receiver 'project/obligation/receiver/receiver_name' %}
+  {% endfor %} 
+  übertragen werden dürfen. 
   </p>
-  
-  <p>Ort, Datum, Unterschrift</p>
-<br>
+  <br>
 <br>
 
-
-
-{# --------------Zweckänderung-------------------------------- #} 
-
-{% for purpose_change in purpose_changes %}
+<p>&#x2610; Ja &#x2610; Nein</p>
 <br>
-<b>Zweckänderung: {% render_set_value purpose_change 'project/purpose_change/purpose_change_id' %}</b>
+{% endif %} 
 
+
+
+{% get_values 'project/obligation/third_country' set_index=0 as thirds %}
 <p>
-  Die folgende Einwilligung betrifft die folgende Zweckänderung: 
-  {% get_set_value purpose_change 'project/purpose_change/purpose_change_usage' as purpc_usage %}
-  {{purpc_usage.value}}.
+{% if thirds %}
+    Hiermit willige ich ein, dass meine 
+personebezogenen Daten an 
+  {% for third in thirds %}
+        {{ third.value }}
+    {% endfor %}
+übertragen werden dürfen. 
 </p>
-
-<p>
-    Hiermit willige ich ein, dass
-    meine
-    personebezogenen 
-    Daten
-  {% get_set_values purpose_change 'project/purpose_change/purpose_change_personal_data' as data %}
-  {% if data %}
-      <ul>
-      {% for d in data %}
-          <li>{{ d.value }}</li>
-      {% endfor %}
-      </ul>
-    <br>
-  {% endif %}
-    für die Studie 
-    {% render_value 'project/information_project_name' %}
-    zu der genannten Zweckänderung 
-    verarbeitet werden dürfen.  
   <br>
-</p>   
 <br>
 
-  <p>&#x2610; Ja &#x2610; Nein</p>
-
+<p>&#x2610; Ja &#x2610; Nein</p>
 <br>
-
-
-{% get_set_values purpose_change 'project/purpose_change/purpose_change_personal_data_special_category' as purpc_personal_data_special %}
-{% if purpc_personal_data_special %}
-    Hiermit willige ich ein, dass
-    meine
-    personebezogenen 
-    Daten besonderer Kategorien 
-      <ul>
-      {% for d in purpc_personal_data_special %}
-          <li>{{ d.value }}</li>
-      {% endfor %}
-      </ul>
-    <br>
-    für die Studie 
-    {% render_value 'project/information_project_name' %}
-    zu der genannten Zweckänderung 
-    verarbeitet werden dürfen.  
-  <br>
-</p>   
-<br>
-
-  <p>&#x2610; Ja &#x2610; Nein</p>
-
 {% endif %}
 
 
-
-<br>
-
-  Mir ist bewusst, dass ich meine erteilte Einwilligung 
-  für die Verarbeitung meiner personenbzeogenen   
-  Daten jederzeit, ohne die Angabe von Gründen,
-  widerrufen kann. 
-  Die Rechtmäßigkeit der Datenverarbeitung bis zum Zeitpunkt des Widerrufs
-  wird durch den Widerruf selbst nicht berührt. 
-  Den Widerruf kann ich gegenüber 
-  {% get_set_value purpose_change 'project/purpose_change/purpose_change_responsible' as purpc_responsible %}
-  {% if purpc_responsible.is_true %}
-    {{ purpc_responsible.value }}
-  {% else %}  
-    den verantwortlichen Personen 
-  {% endif %}
-  geltend machen. 
-  
-  <br><br><br>
-  
-  <p>Vor- und Nachname in Druckschrift</p> 
-  
   <p>
   <br>
   </p>
   
-  <p>Ort, Datum, Unterschrift</p>
+  <p>Ort, Datum, Vor- und Nachname in Druckschrift, Unterschrift</p>
 <br>
 <br>
-{% endfor %}
 
 </template>
 </view>
