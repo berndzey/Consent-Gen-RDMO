@@ -268,36 +268,31 @@ oder internationale Organisationen erfolgt nicht.
 </p>
 
 
-{% get_values 'project/obligation/obligation_rights' set_index=0 as text %}
-{% if text %}
 <b>Betroffenenrechte</b>
 <p>
 Ihnen stehen folgende Betroffenenrechte zu:
 <ul>
-<li> Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, https://dsgvo-gesetz.de/art-15-dsgvo/
+<li> Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. <a href="https://dsgvo-gesetz.de/art-15-dsgvo/">Artikel 15, DSGVO </a>
 </li>
-<li> Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen.
-Artikel 7, DSGVO, https://dsgvo-gesetz.de/art-7-dsgvo/
+<li> Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen.<a href="https://dsgvo-gesetz.de/art-7-dsgvo/">Artikel 7, DSGVO</a>
 </li>
-<li> Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. 
-Artikel 16, DSGVO, https://dsgvo-gesetz.de/art-16-dsgvo/
+<li> Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. <a href="https://dsgvo-gesetz.de/art-16-dsgvo/">Artikel 16, DSGVO</a>
 </li>
-<li> Sie können jederzeit die Löschung Ihrer Daten verlangen.
-Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
+<li> Sie können jederzeit die Löschung Ihrer Daten verlangen. 
+<a href="https://dsgvo-gesetz.de/art-17-dsgvo/"> Artikel 17, DSGVO </a>
 </li>
-<li> Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+<li> Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. <a href="https://dsgvo-gesetz.de/art-18-dsgvo/"> Artikel 18, DSGVO </a>
 </li>
-<li> Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, DSGVO, https://dsgvo-gesetz.de/art-20-dsgvo/
+<li> Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. <a href="https://dsgvo-gesetz.de/art-20-dsgvo/">Artikel 20, DSGVO</a>
 </li>
-<li> Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch mit Wirkung für die Zukunft einlegen. Artikel 21, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+<li> Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch mit Wirkung für die Zukunft einlegen. <a href="https://dsgvo-gesetz.de/art-21-dsgvo/">Artikel 21, DSGVO</a>
 </li>
-<li> Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, https://dsgvo-gesetz.de/art-77-dsgvo/
+<li> Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. <a href="https://dsgvo-gesetz.de/art-77-dsgvo/">Artikel 77, DSGVO</a>
 </li>
 </ul>
 <br>
 Für die Geltendmachung Ihrer Rechte wenden Sie sich bitte an die verantwortliche Person. 
 </p>
-{% endif %}
 
 <br> 
   
