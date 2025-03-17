@@ -4,6 +4,8 @@
 
 ## About
 This project started with the thesis for the "Zertifikatskurs FDM 2023/2024" by Bernd Zey (TU Dortmund). 
+Right now, Wibke Kleina and Bernd Zey are working on this project. 
+
 
 ## Consent-Gen-RDMO
 An informed consent generator for [RDMO](https://github.com/rdmorganiser/rdmo). 
