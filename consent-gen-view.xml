@@ -25,7 +25,7 @@
 {# Start #} 
 
 <h1>
-{% get_value 'project/information_project_name' as info_project_name %}
+{% get_value 'project/information/information_project_name' as info_project_name %}
 {% if info_project_name.is_true %}
   Einwilligungserklärung zur Erhebung und Verarbeitung personenbezogener Daten 
  im Projekt {{ info_project_name.value }}
@@ -35,18 +35,18 @@
 </h1>
 
 <p>
-{% render_value 'project/information_salutation' %}
+{% render_value 'project/information/information_salutation' %}
 </p>
 
 
 <p>
-{% render_value 'project/information_approval' %}
+{% render_value 'project/information/information_approval' %}
 </p>
 
 <p>
 Bitte lesen Sie die folgenden Erklärungen sorgfältig durch. 
 Bei Rückfragen oder Verständnisschwierigkeiten können Sie sich gerne bei 
-{% get_value 'project/information_questions_person' as info_resp_person %}
+{% get_value 'project/information/information_questions_person' as info_resp_person %}
 {% if info_resp_person.is_true %}
   {{ info_resp_person.value }}
 {% else %}
@@ -56,7 +56,7 @@ melden.
 </p>
 
 <p>
-{% render_value 'project/consent_declaration_voluntary' %}
+{% render_value 'project/declaration_consent/declaration_consent_voluntary' %}
 </p>
 
 
@@ -65,12 +65,12 @@ Wenn Sie mit unserem Vorhaben einverstanden sind,
 unterschreiben Sie bitte die nachfolgenden Abschnitte der Einwilligungserklärung 
 und geben Sie diese
 
-{% get_value 'project/information_due_date' as info_due_date %}
+{% get_value 'project/information/information_due_date' as info_due_date %}
 {% if info_due_date.is_true %}
   bis zum 
   {{ info_due_date.value }}
 {% endif %}
-{% get_value 'project/information_due_date_person' as info_due_person %}
+{% get_value 'project/information/information_due_date_person' as info_due_person %}
 {% if info_due_person.is_true %}
   bei
   {{ info_due_person.value }}
@@ -80,14 +80,14 @@ zurück.
 
 
 <p>
-{% render_value 'project/information_thanks' %}
+{% render_value 'project/information/information_thanks' %}
 </p>
 
 
 <p>Mit freundlichen Grüßen </p>
 
 
-{% get_value 'project/information_sender' as info_sender %}
+{% get_value 'project/information/information_sender' as info_sender %}
 {% if info_sender.is_true %}
   <p>
     {{ info_sender.value }} 
@@ -102,7 +102,7 @@ zurück.
 
 {# ------------------INFORMATIONEN---------------------------- #} 
 
-{% get_value 'project/information_project_description' as info_project_description %}
+{% get_value 'project/information/information_project_description' as info_project_description %}
 {% if info_project_description.is_true %}
   <b>Projekt-Beschreibung:</b>
   <p>
@@ -110,7 +110,7 @@ zurück.
   </p>
 {% endif %}
 
-{% get_value 'project/information_project_lead' as info_project_lead %}
+{% get_value 'project/information/information_project_lead' as info_project_lead %}
 {% if info_project_lead.is_true %}
   <b>Projekt-Leitung:</b>
   <p>
@@ -118,7 +118,7 @@ zurück.
   </p>
 {% endif %}
 
-{% get_value 'project/information_participants' as info_project_participants %}
+{% get_value 'project/information/information_participants' as info_project_participants %}
 {% if info_project_participants.is_true %}
   <b>Projekt-Beteiligte:</b>
   <p>
@@ -127,9 +127,9 @@ zurück.
 {% endif %}
 
 
-{% get_value 'project/information_funding' as info_funding %}
+{% get_value 'project/information/information_funding' as info_funding %}
 {% if info_funding.is_true %}
-  <b>Förderungeinrichtung:</b>
+  <b>Fördereinrichtung:</b>
   <p>
   Die Studie wird finanziell gefördert von 
   {{ info_funding.value }}
@@ -193,9 +193,9 @@ zurück.
 
 <br>
 
-{% get_values 'project/primary_purpose_personal_data_special_category' set_index=0 as data %}
+{% get_values 'project/obligation/primary_purpose_personal_data_special_category' set_index=0 as data %}
 {% if data %}
-Außerden verarbeiten wir die nachfolgenden Daten besonderer Kategorien: 
+Außerdem verarbeiten wir die nachfolgenden Daten besonderer Kategorien: 
     <ul>
     {% for d in data %}
         <li>{{ d.value }}</li>
@@ -210,7 +210,7 @@ Außerden verarbeiten wir die nachfolgenden Daten besonderer Kategorien:
 <b>Aufbewahrungsdauer</b>
 <p>
   Wir speichern Ihre personenbezogenen Daten 
-{% render_value 'project/obligation_duration' %}
+{% render_value 'project/obligation/obligation_duration' %}
 <br>
   Anschließend werden Ihre personenbezogenen Daten gelöscht bzw. 
 es werden nur noch anonymisierte Daten vorgehalten. 
@@ -289,10 +289,18 @@ Ihnen stehen folgende Betroffenenrechte zu:
 </li>
 <li> Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. <a href="https://dsgvo-gesetz.de/art-77-dsgvo/">Artikel 77, DSGVO</a>
 </li>
+{% get_value 'project/obligation/obligation_rights' as add_rights %}
+{% if add_rights.is_true %}
+  <li> 
+     {{ add_rights.value }}
+  </li>
+{% endif %}
 </ul>
 <br>
 Für die Geltendmachung Ihrer Rechte wenden Sie sich bitte an die verantwortliche Person. 
 </p>
+
+
 
 <br> 
   
@@ -301,9 +309,16 @@ Für die Geltendmachung Ihrer Rechte wenden Sie sich bitte an die verantwortlich
 Weiterhin können Sie sich bei der zuständigen Datenschutzaufsichtsbehörde beschweren. 
 Diese können Sie unter folgenden Kontaktdaten erreichen:
   <p>
-  {% render_value 'project/obligation/obligation_authority' %}
+{% get_value 'project/obligation/obligation_authority' as authority %}
+{% if authority.is_true %}
+  {{ authority.value }}
+{% else %}
+  Bitte wenden Sie sich an die Projekt-Verantwortlichen für die Kontaktdaten. 
+{% endif %}
   </p>
 </p>
+
+
 
 <br>
 <br>
@@ -315,24 +330,24 @@ Diese können Sie unter folgenden Kontaktdaten erreichen:
 
 <p>
 Hiermit willige ich ein, an dem Projekt 
-{% render_value 'project/information_project_name' %} 
+{% render_value 'project/information/information_project_name' %} 
 teilzunehmen.  
 </p>
 
 <p>
-{% render_value 'project/declaration_consent_perusal' %}
+{% render_value 'project/declaration_consent/declaration_consent_perusal' %}
 </p>
 
 <p>
-{% render_value 'project/declaration_consent_questions' %}
+{% render_value 'project/declaration_consent/declaration_consent_questions' %}
 </p>
 
 <p>
-{% render_value 'project/declaration_consent_confirmation_rights' %}
+{% render_value 'project/declaration_consent/declaration_consent_confirmation_rights' %}
 </p>
 
 <p>
-{% render_value 'project/declaration_consent_receipt' %}
+{% render_value 'project/declaration_consent/declaration_consent_receipt' %}
 </p>
 
 <p>
@@ -346,7 +361,7 @@ personenbezogenen Daten
 
 
 für die Studie 
-    {% render_value 'project/information_project_name' %}
+    {% render_value 'project/information/information_project_name' %}
     für die genannten Zwecke 
     verarbeitet werden dürfen.  
   <br>
@@ -358,10 +373,10 @@ für die Studie
 <br>
 
 <p>
-{% get_values 'project/primary_purpose_personal_data_special_category' set_index=0 as data %}
+{% get_values 'project/obligation/primary_purpose_personal_data_special_category' set_index=0 as data %}
 {% if data %}
 Hiermit willige ich ein, dass meine
-personebezogenen Daten besonderer Kategorien 
+personenbezogenen Daten besonderer Kategorien 
     <ul>
     {% for d in data %}
         <li>{{ d.value }}</li>
@@ -369,7 +384,7 @@ personebezogenen Daten besonderer Kategorien
     </ul>
     <br>
     für die Studie 
-    {% render_value 'project/information_project_name' %}
+    {% render_value 'project/information/information_project_name' %}
     für die genannten Zwecke 
     verarbeitet werden dürfen.  
   <br>
@@ -386,7 +401,7 @@ personebezogenen Daten besonderer Kategorien
 {% if receivers %}
 <p>
   Ich willige ein, dass meine 
-personebezogenen Daten an 
+personenbezogenen Daten an 
   {% for receiver in receivers %}
   {% render_set_value receiver 'project/obligation/receiver/receiver_name' %}
   {% endfor %} 
@@ -405,13 +420,28 @@ personebezogenen Daten an
 <p>
 {% if thirds %}
     Hiermit willige ich ein, dass meine 
-personebezogenen Daten an 
+personenbezogenen Daten an 
   {% for third in thirds %}
         {{ third.value }}
     {% endfor %}
 übertragen werden dürfen. 
 </p>
   <br>
+<br>
+
+<p>&#x2610; Ja &#x2610; Nein</p>
+<br>
+{% endif %}
+
+
+
+{% get_value 'project/obligation/contact_data_yes_no' as contact_data_y_n %}
+{% if contact_data_y_n.is_true %}
+<p>
+Hiermit willige ich ein, dass meine Kontaktdaten für eine mögliche Kontaktaufnahme im 
+  Zusammenhang mit diesem Projekt gespeichert werden. Ihre Kontaktdaten werden von den 
+  restlichen Daten getrennt und für Dritte unzugänglich gespeichert. 
+</p>
 <br>
 
 <p>&#x2610; Ja &#x2610; Nein</p>
