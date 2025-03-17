@@ -1,5 +1,5 @@
 ## News 
-- **2025-03-13**: The development has been delayed. We are working on a new version. 
+- **2025-03-17**: New versions are commited. We are currently working on a new version and a first major release of the consent generator. 
 - **2024-10-10**: We are currently working on this questionnaire. Our plan is to have a productive and sharable version by the end of 2024.
 
 ## About
