@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-17T14:39:06.858940+01:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-18T15:47:21.188056+01:00" version="2.1.3">
 	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen</uri_path>
@@ -38,8 +38,8 @@
 		<verbose_name lang="en">Notes</verbose_name>
 		<title lang="de">Hinweise</title>
 		<help lang="de">**Was ist der Fragenkatalog zur Generierung einer Einwilligungserklärung?**  
-Der Einwilligungserklärung-Generator soll Sie bei der Erstellung einer Einwilligungserklärung für Ihr Forschungsprojekt unterstützen. 
-Der Fragenkatalog führt sie dabei durch die wichtigsten Aspekte einer informierten Einwilligungserklärung. Durch die Beantwortung der Fragen werden in der Ansicht automatisiert Textbausteine generiert, welche als Grundlage für eine Einwilligungserklärung genutzt werden können. 
+Der Einwilligungserklärungs-Generator soll Sie bei der Erstellung einer Einwilligungserklärung für Ihr Forschungsprojekt unterstützen. 
+Der Fragenkatalog führt sie dabei durch die wichtigsten Aspekte einer informierten Einwilligung. Durch die Beantwortung der Fragen werden in der Ansicht automatisiert Textbausteine generiert, welche als Grundlage für eine Einwilligungserklärung genutzt werden können. 
 
 **Wichtige Hinweise**  
 &lt;ul&gt;
@@ -57,7 +57,7 @@ Zudem können Sie Datenschutz-Expertinnen und -Experten zu Ihrem RDMO-Projekt hi
 &lt;/li&gt;
 &lt;li&gt; Bitte kopieren Sie nicht einfach existierende Einwilligungserklärungen -- hierdurch werden möglicherweise Formulierungen kopiert, welche für das aktuelle Projekt ungültig sind. 
 &lt;/li&gt;
-&lt;li&gt; Bitte beachten Sie, dass Einwilligungserklärungen als Rechtsgrundlage der Forschung nur bei der Verarbeitung von personenbezogenen Daten notwendig sind. Werden z.B. Daten direkt anonymisiert gespeichert und weiter verarbeitet besteht keine rechtliche Pflicht für das Einholen einer Einwilligungserklärung. Sind die Daten jedoch nur pseudonymisiert oder werden erst zu einem späteren Zeitpunkt anonymisiert erhoben, dann ist eine Einwilligungserklärung notwendig. Solange eine Re-Identifikation möglich ist, unterliegen pseudonymisierte Daten den datenschutzrechtlichen Vorgaben der DSGVO. 
+&lt;li&gt; Bitte beachten Sie, dass Einwilligungserklärungen als Rechtsgrundlage der Forschung nur bei der Verarbeitung von personenbezogenen Daten notwendig sind. Werden z.B. Daten direkt anonymisiert gespeichert und weiter verarbeitet besteht keine rechtliche Pflicht für das Einholen einer Einwilligungserklärung. Sind die Daten pseudonymisiert oder werden erst zu einem späteren Zeitpunkt anonymisiert erhoben, dann ist eine Einwilligungserklärung notwendig. Pseudonymisierte Daten unterliegen den datenschutzrechtlichen Vorgaben der DSGVO. 
 &lt;/li&gt;
 &lt;li&gt;
 Der/Die Einwilligende muss mindestens 16 Jahre alt sein. Für die Verarbeitung von personenbezogenen Daten von Kindern/Jugendlichen müssen die Eltern/Sorgeberechtigten bis zum vollendeten 16. Lebensjahr einwilligen (Art. 8 DSGVO)
@@ -76,6 +76,10 @@ Verbund Forschungsdaten Bildung: Checkliste zur Erstellung rechtskonformer Einwi
 &lt;li&gt;
 Schaar, K. (2017). Die informierte Einwilligung als Voraussetzung für die (Nach-)nutzung von Forschungsdaten. Beitrag zur Standardisierung von Einwilligungserklärungen im Forschungsbereich unter Einbeziehung der Vorgaben der DS-GVO und Ethikvorgaben. RatSWD Working Paper 264/2017. Rat für Sozial- und Wirtschaftsdaten (RatSWD). 
 &lt;a href=&quot;https://doi.org/10.17620/02671.12&quot;&gt;DOI: https://doi.org/10.17620/02671.12&lt;/a&gt;.
+&lt;/li&gt;
+&lt;li&gt;
+Formulierungsbeispiele wurden ebenso vom Consent Wizard von DARIAH-EU übernommen: 
+&lt;a href=&quot;https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard&quot;&gt;https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard &lt;/a&gt; 
 &lt;/li&gt;
 &lt;li&gt; Beachten Sie die entsprechenden Artikel der Datenschutzgrundverordnung: &lt;a href=&quot;https://dsgvo-gesetz.de/&quot;&gt;Link zur DSGVO&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;</help>
@@ -97,10 +101,13 @@ Schaar, K. (2017). Die informierte Einwilligung als Voraussetzung für die (Nach
 		<help lang="de">**Wie ist der Fragenkatalog aufgebaut?**  
 Der Fragenkatalog besteht aus drei Abschnitten: 
 &lt;ul&gt;
-  &lt;li&gt;Forschungsbezogener Informationsteil: die eingegebenen Informationen werden genutzt, um die Textbausteine des Anschreibens mit den konkreten Inhalten und dem Anliegen des Forschungsvorhabens zu füllen &lt;/li&gt;
+  &lt;li&gt;Forschungsbezogener Informationsteil: die eingegebenen Informationen werden genutzt, um die Textbausteine des Anschreibens mit den konkreten Inhalten der Studie und dem Anliegen des Forschungsvorhabens zu füllen. 
+&lt;/li&gt;
   &lt;li&gt;Datenschutzrechtlicher Informationsteil: hier werden Informationen hinsichtlich der Verarbeitung personenbezogener Daten abgefragt, die sich u.a. aus &lt;a href=&quot;https://dsgvo-gesetz.de/art-13-dsgvo/&quot;&gt;Artikel 13&lt;/a&gt; und &lt;a href=&quot;https://dsgvo-gesetz.de/art-14-dsgvo/&quot;&gt;Artikel 14&lt;/a&gt; der DSGVO ergeben. Dieser Teil beinhaltet
-die geplante Datenverarbeitung. &lt;/li&gt;
-  &lt;li&gt;Einwilligungsbezogener Informationsteil (Einwilligungsteil): hier wird die inhaltliche Gestaltung der Einwilligungsvorlage angelegt. &lt;/li&gt;
+die geplante Datenverarbeitung. 
+&lt;/li&gt;
+  &lt;li&gt;Einwilligungsbezogener Informationsteil (Einwilligungsteil): hier wird die inhaltliche Gestaltung der Einwilligungsvorlage angelegt. 
+&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -160,7 +167,7 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<text lang="en">State the project the personal data is processed.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Geben Sie eine Projektbezeichnung oder einen Projekttitel an.</help>
 		<text lang="de">Benennen Sie das Projekt, auf das sich diese Einwilligung bezieht und in dem die Daten erhoben und verarbeitet werden.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -194,7 +201,7 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<text lang="en">Describe the research project.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beschreiben Sie den Inhalt und die Ziele des Forschungsprojekts und gehen Sie kurz auf den konkreten Ablauf ein (z.B. &quot;Durchführung einer Interviewstudie&quot;, &quot;Video-Studie&quot;, &quot;Labormessung&quot;, etc.). Verwenden Sie eine Beschreibung, die für die Teilnehmenden/Probanden verständlich ist. Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Information im datenschutzrechtlichen Informationsteil behandelt wird.</help>
+		<help lang="de">Beschreiben Sie den Inhalt und die Ziele des Forschungsprojekts und gehen Sie kurz auf den konkreten Ablauf ein (z.B. &quot;Durchführung einer Interviewstudie&quot;, &quot;Video-Studie&quot;, &quot;Labormessung &quot; etc.). Verwenden Sie eine möglichst konkrete und zielgruppengerechte Beschreibung, die für die Teilnehmenden als Laien verständlich ist, vermeiden Sie wissenschaftliche Fachbegriffe sowie Fremdwörter Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Information im datenschutzrechtlichen Informationsteil behandelt wird.</help>
 		<text lang="de">Beschreiben Sie Ihr Forschungsprojekt.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -522,8 +529,8 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet:
-&quot;im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verwendung und Verarbeitung Ihrer Daten für die angegebenen Zwecke.&quot;</help>
-		<text lang="de">Geben Sie den Text für die Bitte zur Zustimmung ein.</text>
+&quot;im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verwendung und Verarbeitung Ihrer Daten für die unten  angegebenen Zwecke.&quot;</help>
+		<text lang="de">Geben Sie den Text für die Bitte zur Teilnahme an der Studie und zur Zustimmung  der Verarbeitung Ihrer personenbezogener Daten ein.</text>
 		<default_text lang="de">im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verwendung und Verarbeitung Ihrer Daten für die angegebenen Zwecke.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -558,7 +565,7 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet: 
 &quot;Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Die Einwilligung kann jederzeit ohne besonderen Grund widerrufen werden.Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile.&quot;</help>
-		<text lang="de">Text für die Freiwilligkeit der Teilnahme und Einwilligung.</text>
+		<text lang="de">Geben Sie den Text für die Freiwilligkeit der Teilnahme und Einwilligung ein.</text>
 		<default_text lang="de">Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Die Einwilligung kann jederzeit ohne besonderen Grund widerrufen werden.Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -592,7 +599,7 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Wir danken Ihnen für Ihre Mitwirkung und Ihr Vertrauen in unsere Arbeit.&quot;</help>
-		<text lang="de">Text für eine Danksagung</text>
+		<text lang="de">Geben Sie den Text für eine Danksagung ein.</text>
 		<default_text lang="de">Wir danken Ihnen für Ihre Mitwirkung und Ihr Vertrauen in unsere Arbeit.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -800,11 +807,13 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<help lang="en">Add an Item for each purpose with its legal basis.</help>
 		<verbose_name lang="en">Item</verbose_name>
 		<title lang="de">Zwecke und Rechtsgrundlagen</title>
-		<help lang="de">Geben Sie den Zweck, den Sie mit der Datenverarbeitung verfolgen, und die zugehörige Rechtsgrundlage an. Der Zweck muss dabei eindeutig und konkret sein. 
+		<help lang="de">Jedwede Verarbeitung von personenbezogenen Daten unterliegt einem Verbot  mit Erlaubnisvorbehalt, außer die Verarbeitung basiert auf einer gültigen Rechtsgrundlage. Die Verarbeitung von personenbezogenen Daten ist nur rechtmäßig, wenn die betroffene Person ihre Einwilligung zu der Verarbeitung der sie betreffenden personenbezogenen Daten für einen oder mehrere bestimmte Zwecke gegeben hat (EWG_DSGVO Artikel 6 Absatz 1 lit. a DS-GVO).
 
-Legen Sie für jeden Zweck mit der zugehörigen Rechtsgrundlage einen eigenen Zweck an. Es muss mindestens eine Rechtsgrundlage angegeben werden!
+Geben Sie daher den Zweck/die Zwecke, den Sie mit der Datenverarbeitung verfolgen, und die zugehörige Rechtsgrundlage an. 
 
-Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Forschung&quot;, &quot;Forschungsprojekt&quot; oder &quot;Durchführung der Studie&quot; und die Rechtsgrundlage der Erhebung und Verarbeitung der personenbezogenen Daten ist durch die freiwillige Einwilligung gegeben. Es gibt durch die DSGVO 6 mögliche Rechtsgrundlagen, die hier ausgewählt werden können.</help>
+Legen Sie für jeden Zweck mit der zugehörigen Rechtsgrundlage einen eigenen Zweck an. Der Zweck muss dabei eindeutig und konkret sein. Es muss mindestens eine Rechtsgrundlage angegeben werden!
+
+Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Forschung&quot;, &quot;Forschungsprojekt&quot; oder &quot;Durchführung der Studie&quot; und die Auswahl einer gültigen Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten kann durch die freiwillige Einwilligung  erfolgen. Jedwede Verarbeitung von personenbezogenen Daten unterliegt einem Verbot  mit Erlaubnisvorbehalt. Neben der Einwilligung führt Art. 6 DSGVO weitere Rechtmäßigkeitsgründe auf, die für die Forschung relevant sein können.</help>
 		<verbose_name lang="de">Zweck</verbose_name>
 		<questionsets/>
 		<questions>
@@ -912,7 +921,7 @@ Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Fors
 		<text lang="en">Consent</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Vorliegen einer Einwilligung</text>
+		<text lang="de">Vorliegen einer Einwilligung (Art. 6 Abs. 1 UAbs. 1 lit. a DSGVO)</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -960,7 +969,7 @@ Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Fors
 		<text lang="en">Perception of a task</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder Ausübung öffentlicher Gewalt</text>
+		<text lang="de">Wahrnehmung einer Aufgabe, die im öffentlichen Interesse liegt oder Ausübung öffentlicher Gewalt (Art. 6 Abs. 1 lit. e DSGVO)</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -972,7 +981,7 @@ Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Fors
 		<text lang="en">Interests</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Wahrung überwiegender Interessen des Verantwortlichen oder eines Dritten</text>
+		<text lang="de">Wahrung überwiegender Interessen des Verantwortlichen oder eines Dritten (Art. 6 Abs. 1 lit. f DSGVO)</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -1185,7 +1194,7 @@ Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden S
 		<text lang="en">Ethnic origin</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Rassische und ethnische Herkunft</text>
+		<text lang="de">Ethnische Herkunft</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -1315,7 +1324,7 @@ Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden S
 		<text lang="en">Duration?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en">Duration</verbose_name>
-		<help lang="de">Personenbezogene, also nicht-anonymisierte, Daten dürfen nicht länger gespeichert werden, als dies für die Zwecke erforderlich ist.</help>
+		<help lang="de">Die erhobenen personenbezogenen Daten sind zu löschen, sobald sie für die Erreichung der bei der Erhebung definierten Zwecke nicht mehr benötigt werden (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 lit. e DSGVO, Grundsatz der Speicherbegrenzung&lt;/a&gt;).</help>
 		<text lang="de">Wie lange werden die Daten in nicht-anonymisierter Form gespeichert?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de">Aufbewahrungsdauer</verbose_name>
@@ -1427,7 +1436,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<text lang="en">Name the receiver or the receiver category of the data, respectively</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Beispiele für Empfänger sind andere Forschende, Tranksriptionsdienste, externe Labore, Repositorien oder Datenzentren.</help>
 		<text lang="de">Nennen Sie den Empfänger bzw. die Kategorie von Empfängern für die Daten</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1461,7 +1470,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<text lang="en">Name the legal basis for the data transfer</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Ein Beispiel für die Rechtsgrundlage ist die Auftragsverarbeitung durch technische Dienstleister (Art. 28 DSGVO).</help>
 		<text lang="de">Nennen Sie die Rechtsgrundlage für die Datenübertragung</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1732,45 +1741,10 @@ Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/rights" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/authority" order="1"/>
 		</questions>
 		<conditions/>
 	</page>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/rights">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/rights</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_rights"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">You make additions to the mentioned rights:</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Sie können Ergänzungen zu den oben genannten Rechten machen:</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_rights">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_rights</key>
-		<path>project/obligation/obligation_rights</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
-	</attribute>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/authority">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/authority</uri_path>
