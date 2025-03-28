@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-20T11:52:34.375612+01:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-28T13:06:35.664250+01:00" version="2.1.3">
 	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen</uri_path>
@@ -16,7 +16,7 @@
 			<section dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent-gen" order="3"/>
 		</sections>
 	</catalog>
-<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>project</key>
 		<path>project</path>
@@ -114,6 +114,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
 	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_homepage">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_project_homepage</key>
+		<path>project/information/information_project_homepage</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_lead">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>information_project_lead</key>
@@ -132,6 +139,13 @@
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>information_questions_person</key>
 		<path>project/information/information_questions_person</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_responsible">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_responsible</key>
+		<path>project/information/information_responsible</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
 	</attribute>
@@ -219,13 +233,6 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_categories"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_duration">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_duration</key>
-		<path>project/obligation/obligation_duration</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
-	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_email">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>obligation_email</key>
@@ -286,6 +293,27 @@
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>obligation_rights</key>
 		<path>project/obligation/obligation_rights</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_storage_access">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_storage_access</key>
+		<path>project/obligation/obligation_storage_access</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_storage_description">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_storage_description</key>
+		<path>project/obligation/obligation_storage_description</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_storage_duration">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_storage_duration</key>
+		<path>project/obligation/obligation_storage_duration</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
@@ -455,13 +483,14 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<title lang="en">Informations</title>
 		<title lang="de">Informationen</title>
 		<pages>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/general-informations" order="0"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-informations" order="0"/>
 			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/introduction/formulations" order="1"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/cover-letter" order="2"/>
 		</pages>
 	</section>
-	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/general-informations">
+	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-informations">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/general-informations</uri_path>
+		<uri_path>consent-gen/information/project-informations</uri_path>
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
@@ -475,13 +504,11 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-name" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-description" order="1"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-lead" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/participants" order="3"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/funding" order="4"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/questions-person" order="5"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date" order="6"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date-person" order="7"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information_sender" order="8"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-homepage" order="2"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/responsible" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-lead" order="4"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/participants" order="5"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/funding" order="6"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -539,6 +566,60 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<optionsets/>
 		<conditions/>
 	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-homepage">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/project-homepage</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_homepage"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name the project homepage.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Geben Sie die Projekt-Homepage oder die Webseite Ihrer Forschungseinrichtung an.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/responsible">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/responsible</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_responsible"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name the responsible person</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">In der Regel geben Sie hier die Universität an, da diese nach außen als verantwortliche Stelle auftritt. Bitte beachten Sie, dass dies bei Kooperationsprojekten anders sein kann. Hier muss ggf. eine gemeinschaftliche Verantwortung je nach Kooperationsvereinbarung angegeben werden und mehrere Verantwortliche bei der Datenverarbeitung (als getrennte oder gemeinsame Verantwortliche) benannt werden.</help>
+		<text lang="de">Nennen Sie die verantwortliche Stelle des Forschungsprojekts</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-lead">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/information/project-lead</uri_path>
@@ -577,8 +658,8 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<text lang="en">Name the participants of the project.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie hier die Hochschule und/oder, das Institut, die Abteilung oder Ähnliches an.</help>
-		<text lang="de">Nennen Sie die verantwortliche Stelle des Forschungsprojekts</text>
+		<help lang="de">Nennen Sie die direkt an dem Forschungsprojekt beteiligten Forschenden. Geben Sie hier die Hochschule(n) und/oder Institut(e), Abteilung(en), Arbeitsgrupp(en) oder Ähnliches an.</help>
+		<text lang="de">Nennen Sie die Beteiligten in dem Forschungsprojekt</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -604,8 +685,8 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<text lang="en">Name the funding institution of the project.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Falls es für die Einwilligungserklärung relevant ist, nennen Sie die Fördereinrichtung Ihres Projekts. Beachten Sie bitte den Fördervertrag, da dieser u.a. für die Verantwortlichkeiten relevant sein könnte.</help>
-		<text lang="de">Nennen Sie, falls vorhanden, die Fördereinrichtung des Forschungsprojekts.</text>
+		<help lang="de">Falls es für die Einwilligungserklärung relevant ist, nennen Sie den Auftrag- oder Fördergeberdie Fördereinrichtung Ihres Projekts. Beachten Sie bitte den Fördervertrag, da dieser u.a. für die Verantwortlichkeiten relevant sein könnte.</help>
+		<text lang="de">Nennen Sie, falls vorhanden, den Auftrag- oder  Fördergeber des Forschungsprojekts.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -620,6 +701,158 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<optionsets/>
 		<conditions/>
 	</question>
+	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/introduction/formulations">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/introduction/formulations</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Formulations for the Cover Letter</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Formulierungen für das Anschreiben</title>
+		<help lang="de">Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nicht modifizieren, werden die Default-Texte automatisch übernommen.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/salutation" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/request-approval" order="1"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent-gen/introduction/informations/voluntary" order="2"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/thanks" order="3"/>
+		</questions>
+		<conditions/>
+	</page>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/salutation">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/salutation</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_salutation"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Phrase the initial salutation.</text>
+		<default_text lang="en">Dear Sir or madam</default_text>
+		<verbose_name lang="en"/>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Sehr geehrte Damen und Herren&quot;.</help>
+		<text lang="de">Wählen Sie die initiale Anrede für das Anschreiben.</text>
+		<default_text lang="de">Sehr geehrte Damen und Herren</default_text>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/request-approval">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/request-approval</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_approval"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Statement for approval request.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Der vorgegebene Default-Text lautet:
+&quot;im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung Ihrer Daten für die angegebenen Zwecke.&quot;</help>
+		<text lang="de">Geben Sie den Text für die Bitte zur Teilnahme an der Studie und zur Zustimmung  der Verarbeitung Ihrer personenbezogener Daten ein.</text>
+		<default_text lang="de">im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung Ihrer Daten für die angegebenen Zwecke.</default_text>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent-gen/introduction/informations/voluntary">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/consent-gen/introduction/informations/voluntary</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent/declaration_consent_voluntary"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Statement for voluntary participation and declaration of consent.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Der vorgegebene Default-Text lautet: 
+&quot;Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Die Einwilligung kann jederzeit ohne besonderen Grund widerrufen werden. Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile.&quot;</help>
+		<text lang="de">Geben Sie den Text für die Freiwilligkeit der Teilnahme und Einwilligung ein.</text>
+		<default_text lang="de">Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Die Einwilligung kann jederzeit ohne besonderen Grund widerrufen werden. Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile.</default_text>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/thanks">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/thanks</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_thanks"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Who is the sender of the cover letter?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Wir danken Ihnen für Ihre Mitwirkung und Ihr Vertrauen in unsere Arbeit.&quot;</help>
+		<text lang="de">Geben Sie den Text für eine Danksagung ein.</text>
+		<default_text lang="de">Wir danken Ihnen für Ihre Mitwirkung und Ihr Vertrauen in unsere Arbeit.</default_text>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/cover-letter">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/cover-letter</uri_path>
+		<dc:comment/>
+		<attribute/>
+		<is_collection>False</is_collection>
+		<title lang="en">Informations for the Cover Letter</title>
+		<help lang="en"/>
+		<verbose_name lang="en"/>
+		<title lang="de">Informationen für das Anschreiben</title>
+		<help lang="de">Die eingegebenen Informationen auf dieser Seite werden in der Ansicht in das Anschreiben eingefügt.</help>
+		<verbose_name lang="de"/>
+		<questionsets/>
+		<questions>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/questions-person" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date" order="1"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date-person" order="2"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information_sender" order="3"/>
+		</questions>
+		<conditions/>
+	</page>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/questions-person">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/information/questions-person</uri_path>
@@ -728,137 +961,6 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<optionsets/>
 		<conditions/>
 	</question>
-	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/introduction/formulations">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/introduction/formulations</uri_path>
-		<dc:comment/>
-		<attribute/>
-		<is_collection>False</is_collection>
-		<title lang="en">Formulations</title>
-		<help lang="en"/>
-		<verbose_name lang="en"/>
-		<title lang="de">Formulierungen</title>
-		<help lang="de"/>
-		<verbose_name lang="de"/>
-		<questionsets/>
-		<questions>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/salutation" order="0"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/request-approval" order="1"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent-gen/introduction/informations/voluntary" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/thanks" order="3"/>
-		</questions>
-		<conditions/>
-	</page>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/salutation">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/salutation</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_salutation"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Phrase the initial salutation.</text>
-		<default_text lang="en">Dear Sir or madam</default_text>
-		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Sehr geehrte Damen und Herren&quot;.</help>
-		<text lang="de">Wählen Sie die initiale Anrede für das Anschreiben.</text>
-		<default_text lang="de">Sehr geehrte Damen und Herren</default_text>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/request-approval">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/request-approval</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_approval"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Statement for approval request.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet:
-&quot;im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verwendung und Verarbeitung Ihrer Daten für die unten  angegebenen Zwecke.&quot;</help>
-		<text lang="de">Geben Sie den Text für die Bitte zur Teilnahme an der Studie und zur Zustimmung  der Verarbeitung Ihrer personenbezogener Daten ein.</text>
-		<default_text lang="de">im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verwendung und Verarbeitung Ihrer Daten für die angegebenen Zwecke.</default_text>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent-gen/introduction/informations/voluntary">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/consent-gen/introduction/informations/voluntary</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent/declaration_consent_voluntary"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Statement for voluntary participation and declaration of consent.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: 
-&quot;Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Die Einwilligung kann jederzeit ohne besonderen Grund widerrufen werden.Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile.&quot;</help>
-		<text lang="de">Geben Sie den Text für die Freiwilligkeit der Teilnahme und Einwilligung ein.</text>
-		<default_text lang="de">Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Die Einwilligung kann jederzeit ohne besonderen Grund widerrufen werden.Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile.</default_text>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/thanks">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/thanks</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_thanks"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Who is the sender of the cover letter?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Wir danken Ihnen für Ihre Mitwirkung und Ihr Vertrauen in unsere Arbeit.&quot;</help>
-		<text lang="de">Geben Sie den Text für eine Danksagung ein.</text>
-		<default_text lang="de">Wir danken Ihnen für Ihre Mitwirkung und Ihr Vertrauen in unsere Arbeit.</default_text>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
 	<section dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information_obligation">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/information_obligation</uri_path>
@@ -870,12 +972,12 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/purpose_legal_basis" order="1"/>
 			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/data_categories" order="2"/>
 			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/data_categories_special" order="3"/>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/duration" order="4"/>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/receiver" order="5"/>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/third_country" order="6"/>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/contact_data_protection_officer" order="7"/>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/rights" order="8"/>
-			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/contact_data" order="9"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/duration" order="5"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/receiver" order="6"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/third_country" order="7"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/contact_data_protection_officer" order="8"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/rights" order="9"/>
+			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/contact_data" order="10"/>
 		</pages>
 	</section>
 	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/name_contact_responsible">
@@ -1236,30 +1338,61 @@ Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden S
 		<dc:comment/>
 		<attribute/>
 		<is_collection>False</is_collection>
-		<title lang="en">Duration</title>
+		<title lang="en">Storage</title>
 		<help lang="en"/>
-		<verbose_name lang="en">Duration</verbose_name>
-		<title lang="de">Aufbewahrungsdauer</title>
-		<help lang="de">Geben Sie die Dauer an, für die Sie die nicht-anonymisierten, personenbezogenen Daten speichern.</help>
-		<verbose_name lang="de">Aufbewahrungsdauer</verbose_name>
+		<verbose_name lang="en">Storage</verbose_name>
+		<title lang="de">Aufbewahrung, Speicherung</title>
+		<help lang="de"/>
+		<verbose_name lang="de">Aufbewahrung, Speicherung</verbose_name>
 		<questionsets/>
 		<questions>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/duration" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage-description" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage-duration" order="1"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage-access" order="2"/>
 		</questions>
 		<conditions/>
 	</page>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/duration">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage-description">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/duration</uri_path>
+		<uri_path>consent-gen/obligation/storage-description</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_duration"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_storage_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Hwo are the data stored?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Erläutern Sie, was mit den  personenbezogenen Daten in dem Projekt passiert: wie werden die Daten gespeichert, wie werden sie  weiter verarbeitet, wann und wie werden sie pseudonymisiert und anonymisiert. Hier sollten alle Maßnahmen genannt werden, die die Vertraulichkeit, Anonymität und den Schutz der Daten betreffen.</help>
+		<text lang="de">Wie werden die Daten gespeichert bzw. aufbewahrt?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage-duration">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/storage-duration</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_storage_duration"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
 		<text lang="en">Duration?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en">Duration</verbose_name>
-		<help lang="de">Die erhobenen personenbezogenen Daten sind zu löschen, sobald sie für die Erreichung der bei der Erhebung definierten Zwecke nicht mehr benötigt werden (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 lit. e DSGVO, Grundsatz der Speicherbegrenzung&lt;/a&gt;).</help>
+		<help lang="de">Die erhobenen personenbezogenen Daten sind zu löschen oder in Papierform vorliegende Daten zu vernichten, sobald sie für die Erreichung der bei der Erhebung definierten Zwecke nicht mehr benötigt werden. Ausnahmen für eine längere Aufbewahrung von Daten bestehen für die Forschung, wenn entsprechende Schutzgarantien existieren, z.B. frühstmögliche Pseudonymisierung, Verschlüsselung und sichere Aufbewahrung der Daten (vgl. &lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1, DSGVO, Grundsatz der Speicherbegrenzung&lt;/a&gt;). 
+
+Bitte beachten Sie, dass personenbezogene Daten jedoch im Sinne der DSGVO generell frühstmöglich zu löschen sind und nur solange gespeichert werden sollten, solange es für die Forschung unerlässlich ist. Wenn Sie beispielsweise mit Interviewdaten arbeiten, sind die Audiodateien zu löschen, sobald die Transkripte angefertigt sind (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 lit. e DSGVO, Grundsatz der Speicherbegrenzung&lt;/a&gt;).</help>
 		<text lang="de">Wie lange werden die Daten in nicht-anonymisierter Form gespeichert?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de">Aufbewahrungsdauer</verbose_name>
@@ -1275,6 +1408,33 @@ Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden S
 		<optionsets>
 			<optionset dc:uri="https://fdm.tu-dortmund.de/options/obligation_duration"/>
 		</optionsets>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage-access">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/storage-access</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_storage_access"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Wha has access to the data?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Benennen oder beschreiben Sie, wer auf die Daten zugreifen kann.</help>
+		<text lang="de">Wer kann auf die Daten zugreifen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
 		<conditions/>
 	</question>
 	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/receiver">
@@ -1309,7 +1469,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<text lang="en">Name the receiver or the receiver category of the data, respectively</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beispiele für Empfänger sind andere Forschende, Tranksriptionsdienste, externe Labore, Repositorien oder Datenzentren.</help>
+		<help lang="de">Beispiele für Empfänger sind andere Forschende, die nicht direkt an diesem Projekt beteiligt sind, sowie andere Auftragsverarbeiter wie Tranksriptionsdienste, externe Labore, Repositorien oder Datenzentren.</help>
 		<text lang="de">Nennen Sie den Empfänger bzw. die Kategorie von Empfängern für die Daten</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1336,7 +1496,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<text lang="en">Name the legal basis for the data transfer</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Ein Beispiel für die Rechtsgrundlage ist die Auftragsverarbeitung durch technische Dienstleister (Art. 28 DSGVO).</help>
+		<help lang="de">Ein Beispiel für die Rechtsgrundlage ist die Auftragsverarbeitung durch technische Dienstleister (&lt;a href=&quot;https://dsgvo-gesetz.de/art-28-dsgvo/&quot;&gt;Art. 28 DSGVO&lt;/a&gt;), z.B. ein  Transkriptionsdienst.</help>
 		<text lang="de">Nennen Sie die Rechtsgrundlage für die Datenübertragung</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1362,9 +1522,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Drittland und internationale Organisation</title>
-		<help lang="de">Sie müssen angeben, wenn die personenbezogenen Daten an ein Drittland oder eine internationale Organisation übermittelt werden. 
-
-Werden keine Daten übertragen, dann können Sie diese Frage überspringen.</help>
+		<help lang="de"/>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
@@ -1383,7 +1541,9 @@ Werden keine Daten übertragen, dann können Sie diese Frage überspringen.</hel
 		<text lang="en">Name the third country or international organization the personal data is transmitted to</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Sie müssen angeben, wenn die personenbezogenen Daten an ein Drittland oder eine internationale Organisation übermittelt werden. Werden keine Daten übertragen, dann können Sie diese Frage überspringen.
+
+Ein Drittland im Sinne der Datenschutz-Grundverordnung (DSGVO) ist ein  Land außerhalb der Europäischen Union (EU) und des Europäischen  Wirtschaftsraums (EWR), das nicht den gleichen Datenschutzstandards wie  die EU entspricht. Die DSGVO legt fest, dass personenbezogene Daten nur  dann in ein Drittland übermittelt werden dürfen, wenn dort ein  angemessenes Schutzniveau für die Daten gewährleistet ist (&lt;a href=&quot;https://dsgvo-gesetz.de/art-45-dsgvo/&quot;&gt;Art. 45 DSGVO&lt;/a&gt;) oder geeignete  Garantien bestehen, um den Schutz der Daten zu sichern. Für einige Länder existiert daher ein Angemessenheitsbeschluss, die Liste der Länder für die angemessene Datenschutzgarantien gelten ist hier einsehbar: (&lt;a href=&quot;https://www.ldi.nrw.de/datenschutz/internationaler-datenverkehr/angemessenheitsbeschluss&quot;&gt;https://www.ldi.nrw.de/datenschutz/internationaler-datenverkehr/angemessenheitsbeschluss&lt;/a&gt;)  oder eine internationale Organisation übermittelt werden. Werden keine Daten übertragen, dann können Sie diese Frage überspringen.</help>
 		<text lang="de">Nennen Sie das Drittland oder die internationale Organisation, an welche personenbezogene Daten übertragen werden</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1665,9 +1825,9 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Probandinnen un
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Einwilligung</title>
-		<help lang="de">In der eigentlichen, von den ProbandInnen zu unterschreibenden, Einwilligungserklärung werden i.d.R. einige Informationen zusammengefasst und wiederholt. Hier haben Sie die Möglichkeit, hierfür Formulierungen zu übernehmen oder anzupassen.
+		<help lang="de">In der eigentlichen, von den ProbandInnen zu unterschreibenden, Einwilligungserklärung werden i.d.R. einige Informationen zusammengefasst und wiederholt. Hier haben Sie die Möglichkeit, hierfür Formulierungen zu übernehmen oder anzupassen. 
 
-Wenn Sie die vorgegebenen Textfelder löschen wird auch kein Text in der Ansicht generiert.</help>
+Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nicht modifizieren, werden die Default-Texte automatisch übernommen. Wenn Sie die vorgegebenen Textfelder löschen wird auch kein Text in der Ansicht generiert.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
@@ -1718,7 +1878,7 @@ Wenn Sie die vorgegebenen Textfelder löschen wird auch kein Text in der Ansicht
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich hatte vor der Datenerhebung Gelegenheit, Fragen zu stellen. Eventuelle Fragen wurden vollständig beantwortet&quot;.</help>
 		<text lang="de">Geben Sie den Hinweis zur Möglichkeit, Fragen zu stellen und zur Beantwortung der Fragen an.</text>
-		<default_text lang="de">Ich hatte vor der Datenerhebung Gelegenheit, Fragen zu stellen. Eventuelle Fragen wurden vollständig beantwortet</default_text>
+		<default_text lang="de">Ich hatte vor der Datenerhebung Gelegenheit, Fragen zu stellen. Eventuelle Fragen wurden vollständig beantwortet.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -1743,11 +1903,9 @@ Wenn Sie die vorgegebenen Textfelder löschen wird auch kein Text in der Ansicht
 		<text lang="en">Confirm rights</text>
 		<default_text lang="en">to do</default_text>
 		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und daraus entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar gelöscht. 
-Für den Widerruf kann ich mich jederzeit an die verantwortliche Person wenden.&quot;</help>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Mir ist bewusst, dass meine  Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung  meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann  ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen  Widerruf der Einwilligung bedarf es keiner Begründung und daraus  entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine  personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund  der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.  Für den Widerruf kann ich mich jederzeit an die verantwortliche Person  wenden.&quot;</help>
 		<text lang="de">Geben Sie den Hinweis für die Bestätigung der Rechte an.</text>
-		<default_text lang="de">Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und daraus entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar gelöscht. 
-Für den Widerruf kann ich mich jederzeit an die verantwortliche Person wenden.</default_text>
+		<default_text lang="de">Mir ist bewusst, dass meine  Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung  meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann  ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen  Widerruf der Einwilligung bedarf es keiner Begründung und daraus  entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine  personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund  der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.  Für den Widerruf kann ich mich jederzeit an die verantwortliche Person  wenden.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -1894,7 +2052,7 @@ Für den Widerruf kann ich mich jederzeit an die verantwortliche Person wenden.<
 		<text lang="en">end of project</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">bis zum Ende der Projektlaufzeit</text>
+		<text lang="de">bis zum Ende der anvisierten Projektlaufzeit (ggf. Verlängerung von bis zu sechs Monaten berücksichtigen)</text>
 		<help lang="de">(Bitte geben Sie das Ende der Projektlaufzeit an)</help>
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
@@ -1973,7 +2131,6 @@ Für den Widerruf kann ich mich jederzeit an die verantwortliche Person wenden.<
 			<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/trade_union" order="6"/>
 			<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/sex_life" order="7"/>
 			<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/sexual_orientation" order="8"/>
-			<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/other_special" order="9"/>
 		</options>
 		<conditions/>
 	</optionset>
@@ -2084,17 +2241,5 @@ Für den Widerruf kann ich mich jederzeit an die verantwortliche Person wenden.<
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
-	</option>
-	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/other_special">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>primary_purpose/other_special</uri_path>
-		<dc:comment/>
-		<text lang="en">Other</text>
-		<help lang="en"/>
-		<view_text lang="en"/>
-		<text lang="de">Sonstige</text>
-		<help lang="de"/>
-		<view_text lang="de"/>
-		<additional_input>textarea</additional_input>
 	</option>
 </rdmo>
