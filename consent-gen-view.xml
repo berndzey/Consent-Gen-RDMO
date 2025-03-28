@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-20T15:49:35.178956+01:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-28T13:07:10.888777+01:00" version="2.1.3">
 	<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen-view">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<uri_path>consent-gen-view</uri_path>
@@ -108,6 +108,22 @@ zurück.
   </p>
 {% endif %}
 
+{% get_value 'project/information/information_project_homepage' as info_project_homepage %}
+{% if info_project_homepage.is_true %}
+  <b>Projekt-Homepage:</b>
+  <p>
+  {{ info_project_homepage.value }}
+  </p>
+{% endif %}
+
+{% get_value 'project/information/information_responsible' as info_responsible %}
+{% if info_responsible.is_true %}
+  <b>Verantwortliche Stelle:</b>
+  <p>
+  {{ info_responsible.value }}
+  </p>
+{% endif %}
+
 {% get_value 'project/information/information_project_lead' as info_project_lead %}
 {% if info_project_lead.is_true %}
   <b>Projekt-Leitung:</b>
@@ -129,7 +145,7 @@ zurück.
 {% if info_funding.is_true %}
   <b>Fördereinrichtung:</b>
   <p>
-  Die Studie wird finanziell gefördert von 
+  Die Studie wird gefördert von 
   {{ info_funding.value }}
   </p>
 {% endif %}
@@ -204,16 +220,33 @@ Außerdem verarbeiten wir die nachfolgenden Daten besonderer Kategorien:
 {% endif %}
 
 
+<b>Speicherung und Verarbeitung Ihrer Daten</b>
+{% get_value 'project/obligation/obligation_storage_description' as storage_description %}
+{% if storage_description.is_true %}
+<p>
+{{ storage_description.value }}
+</p>
+{% endif %}
+{% get_value 'project/obligation/obligation_storage_access' as storage_access %}
+{% if storage_access.is_true %}
+<br>
+  <p>
+ Hierbei können die folgenden Personen auf die Daten zugreifen: 
+    
+  {{ storage_access.value }}
+ </p>
+{% endif %}
 
-<b>Aufbewahrungsdauer</b>
 <p>
   Wir speichern Ihre personenbezogenen Daten 
-{% render_value 'project/obligation/obligation_duration' %}
+{% render_value 'project/obligation/obligation_storage_duration' %}
 <br>
   Anschließend werden Ihre personenbezogenen Daten gelöscht bzw. 
 es werden nur noch anonymisierte Daten vorgehalten. 
-</p>
+<br>
 
+<br>
+</p>
 
 
 <b>Empfänger bzw. Kategorie von Empfängern</b>
@@ -431,8 +464,7 @@ personenbezogenen Daten an
 {% if contact_data_y_n.is_true %}
 <p>
 Hiermit willige ich ein, dass meine Kontaktdaten für eine mögliche Kontaktaufnahme im 
-  Zusammenhang mit diesem Projekt gespeichert werden. Ihre Kontaktdaten werden von den 
-  restlichen Daten getrennt und für Dritte unzugänglich gespeichert. 
+  Zusammenhang mit diesem Projekt gespeichert werden.
 </p>
 <br>
 
@@ -448,8 +480,6 @@ Hiermit willige ich ein, dass meine Kontaktdaten für eine mögliche Kontaktaufn
   <p>Ort, Datum, Vor- und Nachname in Druckschrift, Unterschrift</p>
 <br>
 <br>
-
-
 
 </template>
 	</view>
