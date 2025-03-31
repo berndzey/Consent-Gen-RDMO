@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-28T13:06:35.664250+01:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-31T15:28:53.820396+02:00" version="2.1.3">
 	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen</uri_path>
@@ -181,6 +181,13 @@
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>contact_data_yes_no</key>
 		<path>project/obligation/contact_data_yes_no</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/contact_future_yes_no">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>contact_future_yes_no</key>
+		<path>project/obligation/contact_future_yes_no</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
@@ -550,7 +557,9 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<text lang="en">Describe the research project.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beschreiben Sie den Inhalt und die Ziele des Forschungsprojekts und gehen Sie kurz auf den konkreten Ablauf ein (z.B. &quot;Durchführung einer Interviewstudie&quot;, &quot;Video-Studie&quot;, &quot;Labormessung &quot; etc.). Verwenden Sie eine möglichst konkrete und zielgruppengerechte Beschreibung, die für die Teilnehmenden als Laien verständlich ist, vermeiden Sie wissenschaftliche Fachbegriffe sowie Fremdwörter Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Information im datenschutzrechtlichen Informationsteil behandelt wird.</help>
+		<help lang="de">Beschreiben Sie den Inhalt und die Ziele des Forschungsprojekts sowie weitere wichtige Aspekte (z.B. Relevanz, Methodik, Laufzeit)  und gehen Sie kurz auf den konkreten Ablauf bzw. die Erhebungsform ein (z.B. &quot;Durchführung einer Interviewstudie&quot;, &quot;Video-Studie&quot;, &quot;Labormessung &quot; etc.). Darüber hinaus können Sie ggf. den Teilnehmenden den geplanten Nutzen bzw. angestrebten Erkenntnisgewinn der Studie mitteilen.  Hier können ebenso Information über potenzielle Risiken und Kosten etc. genannt werden. Verwenden Sie eine möglichst konkrete und zielgruppengerechte Beschreibung, die für die Teilnehmenden als Laien verständlich ist; vermeiden Sie wissenschaftliche Fachbegriffe sowie Fremdwörter. 
+
+Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Information im datenschutzrechtlichen Informationsteil behandelt wird.</help>
 		<text lang="de">Beschreiben Sie Ihr Forschungsprojekt.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -761,9 +770,9 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet:
-&quot;im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung Ihrer Daten für die angegebenen Zwecke.&quot;</help>
+&quot;im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.&quot;</help>
 		<text lang="de">Geben Sie den Text für die Bitte zur Teilnahme an der Studie und zur Zustimmung  der Verarbeitung Ihrer personenbezogener Daten ein.</text>
-		<default_text lang="de">im Folgenden informieren wir Sie über die Erhebung  und Verarbeitung Ihrerpersonenbezogenen Daten und bitten um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung Ihrer Daten für die angegebenen Zwecke.</default_text>
+		<default_text lang="de">im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -891,7 +900,9 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<text lang="en">When do the participants need to sign and turn in the declaration of consent?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie ein Datum an, bis zu dem die Teilnehmenden das Dokument unterschreiben und zurückgeben sollen.</help>
+		<help lang="de">Geben Sie ein Datum an, bis zu dem die Teilnehmenden das Dokument unterschreiben und zurückgeben sollen.
+
+Der Termin der Rückgabe muss vor der Teilnahme an der Studie und der Datenerfassung liegen!</help>
 		<text lang="de">Bis wann müssen die Teilnehmenden die Einwilligungserklärung unterschreiben?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -915,11 +926,11 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">Who should the participants send/give back the (signed) declaration of consent?</text>
+		<text lang="en">Who should the participants send/give back the signed declaration of consent?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Wem sollen die Teilnehmenden die (unterschriebene) Einwilligungserklärung zurück senden/geben?</text>
+		<text lang="de">Wem sollen die Teilnehmenden die unterschriebene Einwilligungserklärung zurück senden/geben?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -990,7 +1001,7 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Datenschutzrechtlich verantwortliche Person</title>
-		<help lang="de">Sie müssen der betroffenen Person den Namen und die Kontaktdaten von sich bzw. von der für den Datenschutz verantwortlichen Person des Projekts, sowie ggf. der Vertretung, nennen. In der Regel wird hier der Datenschutzbeauftragte der Hochschule als Kontaktperson mit den Adressdaten (s.u.) benannt</help>
+		<help lang="de">Sie müssen der betroffenen Person den Namen und die Kontaktdaten von der für den Datenschutz verantwortlichen Person des Projekts, sowie ggf. der Vertretung, nennen. In der Regel wird hier der Datenschutzbeauftragte der Hochschule als Kontaktperson mit den Adressdaten (s.u.) benannt</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
@@ -1119,13 +1130,13 @@ Das komplette Dokument besteht aus drei Bereichen, welches sich in dem Aufbau de
 		<help lang="en">Add an Item for each purpose with its legal basis.</help>
 		<verbose_name lang="en">Item</verbose_name>
 		<title lang="de">Zwecke und Rechtsgrundlagen</title>
-		<help lang="de">Jedwede Verarbeitung von personenbezogenen Daten unterliegt einem Verbot  mit Erlaubnisvorbehalt, außer die Verarbeitung basiert auf einer gültigen Rechtsgrundlage. Die Verarbeitung von personenbezogenen Daten ist nur rechtmäßig, wenn die betroffene Person ihre Einwilligung zu der Verarbeitung der sie betreffenden personenbezogenen Daten für einen oder mehrere bestimmte Zwecke gegeben hat (EWG_DSGVO Artikel 6 Absatz 1 lit. a DS-GVO).
+		<help lang="de">Jedwede Verarbeitung von personenbezogenen Daten unterliegt einem Verbot  mit Erlaubnisvorbehalt, außer die Verarbeitung basiert auf einer gültigen Rechtsgrundlage. Die Verarbeitung von personenbezogenen Daten ist nur rechtmäßig, wenn die betroffene Person ihre Einwilligung zu der Verarbeitung der sie betreffenden personenbezogenen Daten für einen oder mehrere bestimmte Zwecke gegeben hat oder eine andere Rechtmäßigkeit der Verarbeitung gegeben ist (&lt;a href=&quot;https://dsgvo-gesetz.de/art-6-dsgvo/&quot;&gt;Art. 6 DSGVO&lt;/a&gt;).
 
 Geben Sie daher den Zweck/die Zwecke, den Sie mit der Datenverarbeitung verfolgen, und die zugehörige Rechtsgrundlage an. 
 
 Legen Sie für jeden Zweck mit der zugehörigen Rechtsgrundlage einen eigenen Zweck an. Der Zweck muss dabei eindeutig und konkret sein. Es muss mindestens eine Rechtsgrundlage angegeben werden!
 
-Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Forschung&quot;, &quot;Forschungsprojekt&quot; oder &quot;Durchführung der Studie&quot; und die Auswahl einer gültigen Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten kann durch die freiwillige Einwilligung  erfolgen. Jedwede Verarbeitung von personenbezogenen Daten unterliegt einem Verbot  mit Erlaubnisvorbehalt. Neben der Einwilligung führt Art. 6 DSGVO weitere Rechtmäßigkeitsgründe auf, die für die Forschung relevant sein können.</help>
+Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Forschung&quot;, &quot;Forschungsprojekt&quot; oder &quot;Durchführung der Studie&quot; und die Auswahl einer gültigen Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten kann durch die freiwillige Einwilligung  erfolgen.</help>
 		<verbose_name lang="de">Zweck</verbose_name>
 		<questionsets/>
 		<questions>
@@ -1222,7 +1233,7 @@ Legen Sie für jede Datenkategorie einen eigenen Eintrag an. Beispiele für mög
 &lt;/ul&gt;
 
 
-Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden Seite abgefragt.</help>
+Hinweis: Besondere Kategorien personenbezogener Daten  (sogenannte „sensible Daten“) werden auf der folgenden Seite abgefragt.</help>
 		<verbose_name lang="de">Kategorie</verbose_name>
 		<questionsets/>
 		<questions>
@@ -1295,7 +1306,7 @@ Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden S
 		<help lang="en"/>
 		<verbose_name lang="en">Special category</verbose_name>
 		<title lang="de">Daten besonderer Kategorien</title>
-		<help lang="de">Möchten Sie für Ihr Forschungsprojekt besondere Kategorien personenbezogener Daten ( sog. „sensible Daten“) verarbeiten, sind strenge Anonymisierungs- und Separierungsgebote bzw. Sorgfaltspflichten zu befolgen, da diese Daten ein hohes Schutzniveau haben. Daher empfehlen wir in diesem Fall immer die Kontaktaufnahme mit den jeweiligen Datenschutzbeauftragten, die Anfertigung einer Datenschutz-Folgeabschätzung, sowie die Konsultierung einer Ethikkommission.</help>
+		<help lang="de">Möchten Sie für Ihr Forschungsprojekt besondere Kategorien personenbezogener Daten ( sog. „sensible Daten“) verarbeiten, sind strenge Anonymisierungs- und Separierungsgebote bzw. Sorgfaltspflichten zu befolgen, da diese Daten ein hohes Schutzniveau haben. Daher ist in diesem Fall  immer die Kontaktaufnahme mit den jeweiligen Datenschutzbeauftragten, die Anfertigung einer Datenschutz-Folgeabschätzung, sowie die Konsultierung einer Ethikkommission zu empfehlen.</help>
 		<verbose_name lang="de">Besondere Kategorien</verbose_name>
 		<questionsets/>
 		<questions>
@@ -1363,7 +1374,7 @@ Hinweis: Besondere Kategorien personenbezogener Daten werden auf der folgenden S
 		<text lang="en">Hwo are the data stored?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Erläutern Sie, was mit den  personenbezogenen Daten in dem Projekt passiert: wie werden die Daten gespeichert, wie werden sie  weiter verarbeitet, wann und wie werden sie pseudonymisiert und anonymisiert. Hier sollten alle Maßnahmen genannt werden, die die Vertraulichkeit, Anonymität und den Schutz der Daten betreffen.</help>
+		<help lang="de">Erläutern Sie, was mit den  personenbezogenen Daten in dem Projekt passiert: wie werden die Daten gespeichert, wie werden sie  weiter verarbeitet, wann und wie werden sie pseudonymisiert und anonymisiert. Hier sollten alle Maßnahmen genannt werden, die die Vertraulichkeit, Anonymität und den Schutz der Daten betreffen, wie beispielsweise die Sicherung oder Verschlüsselung der Daten.</help>
 		<text lang="de">Wie werden die Daten gespeichert bzw. aufbewahrt?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1421,7 +1432,7 @@ Bitte beachten Sie, dass personenbezogene Daten jedoch im Sinne der DSGVO genere
 		<text lang="en">Wha has access to the data?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Benennen oder beschreiben Sie, wer auf die Daten zugreifen kann.</help>
+		<help lang="de">Benennen oder beschreiben Sie, wer auf die personenbezogenen Daten zugreifen kann. Bei pseudonymisierten Daten könnte erwähnt werden, wer Zugriff auf eine Kodierliste hat.</help>
 		<text lang="de">Wer kann auf die Daten zugreifen?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1469,7 +1480,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<text lang="en">Name the receiver or the receiver category of the data, respectively</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beispiele für Empfänger sind andere Forschende, die nicht direkt an diesem Projekt beteiligt sind, sowie andere Auftragsverarbeiter wie Tranksriptionsdienste, externe Labore, Repositorien oder Datenzentren.</help>
+		<help lang="de">Beispiele für Empfänger sind andere Forschende, die nicht direkt an diesem Projekt beteiligt sind, sowie andere Auftragsverarbeiter wie Tranksriptionsdienste und externe Dienstleister wie externe Labore, Repositorien oder Datenzentren.</help>
 		<text lang="de">Nennen Sie den Empfänger bzw. die Kategorie von Empfängern für die Daten</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1717,7 +1728,7 @@ Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
 &lt;/li&gt;
 &lt;li&gt; Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, DSGVO, https://dsgvo-gesetz.de/art-20-dsgvo/
 &lt;/li&gt;
-&lt;li&gt; Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch mit Wirkung für die Zukunft einlegen. Artikel 21, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+&lt;li&gt; Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerruf mit Wirkung für die Zukunft einlegen. Artikel 21, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
 &lt;/li&gt;
 &lt;li&gt; Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, https://dsgvo-gesetz.de/art-77-dsgvo/
 &lt;/li&gt;
@@ -1736,12 +1747,14 @@ Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
 		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_authority"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
-		<help lang="en">See &lt;a href=&quot;https://www.datenschutzkonferenz-online.de/datenschutzaufsichtsbehoerden.html&quot;&gt;https://www.datenschutzkonferenz-online.de/datenschutzaufsichtsbehoerden.html&lt;/a&gt;</help>
+		<help lang="en">See &lt;a href=&quot; https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html&quot;&gt; https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html &lt;/a&gt;</help>
 		<text lang="en">Attendees have the right to lodge a complaint with a supervisory authority. Give the contact informations of the supervisory authority.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Siehe &lt;a href=&quot;https://www.datenschutzkonferenz-online.de/datenschutzaufsichtsbehoerden.html&quot;&gt;https://www.datenschutzkonferenz-online.de/datenschutzaufsichtsbehoerden.html&lt;/a&gt;</help>
-		<text lang="de">Geben Sie die Kontaktdaten für die Datenschutzaufsichtsbehörde an</text>
+		<help lang="de">Die Teilnehmenden haben das Recht, sich bei der zuständigen Landesaufsichtsbehörde für Datenschutz zu beschweren.
+
+Siehe &lt;a href=&quot;https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html&quot;&gt;https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html&lt;/a&gt;</help>
+		<text lang="de">Geben Sie die Kontaktdaten für die Datenschutzaufsichtsbehörde an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -1765,14 +1778,15 @@ Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
 		<title lang="en">Contact Data</title>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Kontaktdaten der Probandinnen und Probanden</title>
-		<help lang="de">Die Kontaktdaten der Probandinnen und Probanden werden oft getrennt von den personenbezogenen Daten gespeichert und sind daher separat zu betrachten und die Einwilligung ist getrennt einzuholen. 
+		<title lang="de">Kontaktdaten der Teilnehmenden</title>
+		<help lang="de">Die Kontaktdaten derTeilnehmende werden oft getrennt von den personenbezogenen Daten gespeichert und sind daher separat zu betrachten und die Einwilligung ist getrennt einzuholen. 
 
-Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Probandinnen und Probanden im Verlauf des Projekts, oder nach Abschluss des Projekts, Kontakt aufzunehmen.</help>
+Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden im Verlauf des Projekts, oder nach Abschluss des Projekts, Kontakt aufzunehmen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact_data" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact_future" order="1"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -1788,12 +1802,12 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Probandinnen un
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Wollen Sie die Kontaktdaten der Probandinnen und Probanden speichern?</text>
+		<text lang="de">Wollen Sie die Kontaktdaten der Teilnehmenden für das hier dargelegte Forschungsprojekt speichern?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>yesno</widget_type>
+		<widget_type>radio</widget_type>
 		<value_type>boolean</value_type>
 		<maximum/>
 		<minimum/>
@@ -1804,6 +1818,37 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Probandinnen un
 			<optionset dc:uri="https://fdm.tu-dortmund.de/options/options_contact_data_yes_no"/>
 		</optionsets>
 		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact_future">
+		<uri_prefix>https://fdm.tu-dortmund.de/</uri_prefix>
+		<uri_path>consent-gen/obligation/contact_future</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/contact_future_yes_no"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Do you want to ask for the possibility to contact the participants in the future for related projects?</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Möchten Sie die Teilnehmenden um die Erlaubnis bitten, diese für zukünftige themenverwandte Forschungsprojekte kontaktieren zu dürfen?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>boolean</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://fdm.tu-dortmund.de/options/options_contact_future_yes_no"/>
+		</optionsets>
+		<conditions>
+			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_contact_future"/>
+		</conditions>
 	</question>
 	<section dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -1903,9 +1948,9 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="en">Confirm rights</text>
 		<default_text lang="en">to do</default_text>
 		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Mir ist bewusst, dass meine  Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung  meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann  ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen  Widerruf der Einwilligung bedarf es keiner Begründung und daraus  entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine  personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund  der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.  Für den Widerruf kann ich mich jederzeit an die verantwortliche Person  wenden.&quot;</help>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und daraus entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar anonymisiert oder gelöscht. Für die Ausübung meines den Widerrufs kann ich mich jederzeit an die verantwortliche Person wenden.&quot;</help>
 		<text lang="de">Geben Sie den Hinweis für die Bestätigung der Rechte an.</text>
-		<default_text lang="de">Mir ist bewusst, dass meine  Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung  meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann  ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen  Widerruf der Einwilligung bedarf es keiner Begründung und daraus  entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine  personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund  der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.  Für den Widerruf kann ich mich jederzeit an die verantwortliche Person  wenden.</default_text>
+		<default_text lang="de">Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und daraus entstehen keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar anonymisiert oder gelöscht. Für die Ausübung meines den Widerrufs kann ich mich jederzeit an die verantwortliche Person wenden.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -1930,9 +1975,9 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="en">Receipt</text>
 		<default_text lang="en">to do</default_text>
 		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich habe eine Kopie des Informationsblatts und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.&quot;</help>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich habe eine Kopie des Informationsblatts, der Datenschutzhinweise und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.&quot;</help>
 		<text lang="de">Geben Sie den Hinweis für den Erhalt und die Aufbewahrung der Einwilligungserklärung an.</text>
-		<default_text lang="de">Ich habe eine Kopie des Informationsblatts und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.</default_text>
+		<default_text lang="de">Ich habe eine Kopie des Informationsblatts, der Datenschutzhinweise und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -1946,7 +1991,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<optionsets/>
 		<conditions/>
 	</question>
-<optionset dc:uri="https://fdm.tu-dortmund.de/options/legal_basis">
+	<optionset dc:uri="https://fdm.tu-dortmund.de/options/legal_basis">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>legal_basis</uri_path>
 		<dc:comment/>
@@ -2116,6 +2161,41 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
+	<optionset dc:uri="https://fdm.tu-dortmund.de/options/options_contact_future_yes_no">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>options_contact_future_yes_no</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://fdm.tu-dortmund.de/options/option_contact_future_yes" order="1"/>
+			<option dc:uri="https://fdm.tu-dortmund.de/options/option_contact_future_no" order="2"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://fdm.tu-dortmund.de/options/option_contact_future_yes">
+		<uri_prefix>https://fdm.tu-dortmund.de/</uri_prefix>
+		<uri_path>option_contact_future_yes</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://fdm.tu-dortmund.de/options/option_contact_future_no">
+		<uri_prefix>https://fdm.tu-dortmund.de/</uri_prefix>
+		<uri_path>option_contact_future_no</uri_path>
+		<dc:comment/>
+		<text lang="en">No</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
 	<optionset dc:uri="https://fdm.tu-dortmund.de/options/options/special_category">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>options/special_category</uri_path>
@@ -2242,4 +2322,13 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
+	<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_contact_future">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>condition_contact_future</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/contact_data_yes_no"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://fdm.tu-dortmund.de/options/option_contact_data_yes"/>
+	</condition>
 </rdmo>
