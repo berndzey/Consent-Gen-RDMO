@@ -162,10 +162,10 @@ zurück.
 <p>
   Im Folgenden nennen wir die für den Datenschutz in diesem Projekt verantwortliche Stelle:
   <table border="1">
-   <tr><td><b>Name:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_name_institution' %}</td></tr>
-   <tr><td><b>Adresse:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_address' %}</td></tr>
-   <tr><td><b>Telefon:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_telephone' %}</td></tr>
-   <tr><td><b>eMail:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_email' %}</td></tr>
+   <tr><td><b>Name: </b></td> <td>{% render_value 'project/obligation/obligation_name_institution' %}</td></tr>
+   <tr><td><b>Adresse: </b></td> <td>{% render_value 'project/obligation/obligation_address' %}</td></tr>
+   <tr><td><b>Telefon: </b></td> <td>{% render_value 'project/obligation/obligation_telephone' %}</td></tr>
+   <tr><td><b>eMail: </b></td> <td>{% render_value 'project/obligation/obligation_email' %}</td></tr>
   </table> 
 </p>
 
@@ -176,16 +176,16 @@ zurück.
   auf Basis der genannten Rechtsgrundlagen:
 
 <table border="1">
- <tr><th>Zweck der Datenverarbeitung&nbsp; </th> <th>Rechtsgrundlage&nbsp;  </th></tr> 
+ <tr><th>Zweck der Datenverarbeitung </th> <th>Rechtsgrundlage  </th></tr> 
  {% for obligation_purpose in duties_purposes %}
-   <tr><td>{% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_purpose' %}&nbsp; </td> 
+   <tr><td>{% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_purpose' %} </td> 
        <td>
          {% get_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' as txtxtxt %}
          {% render_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' %}
          {% if 'Einwilligung' in txtxtxt.value %}
                (Rechtsgrundlage ist Art. 6, Abs. 1, Buchst. a, DSGVO)
          {% endif %}
-         &nbsp; 
+          
        </td>
    </tr>
  {% endfor %} 
@@ -197,10 +197,10 @@ zurück.
 <p>
   Wir verarbeiten die nachfolgenden Daten der genannten Datenkategorien von Ihnen: 
 <table border="1">
- <tr><th>Datenkategorie&nbsp; </th> <th>Daten&nbsp;  </th></tr> 
+ <tr><th>Datenkategorie </th> <th>Daten  </th></tr> 
  {% for data_category in data_categories %}
-   <tr><td>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_category' %}&nbsp; </td> 
-       <td>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' %}&nbsp; </td>
+   <tr><td>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_category' %} </td> 
+       <td>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' %} </td>
    </tr>
  {% endfor %} 
 </table>
@@ -255,10 +255,10 @@ es werden nur noch anonymisierte Daten vorgehalten.
   Ihre personenbezogenen Daten werden an folgende Empfänger
   bzw. Kategorien von Empfängern weitergegeben:
 <table border="1">
- <tr><th>Empfänger&nbsp; </th> <th>Rechtsgrundlage der Datenübermittlung&nbsp;  </th></tr> 
+ <tr><th>Empfänger </th> <th>Rechtsgrundlage der Datenübermittlung  </th></tr> 
  {% for receiver in receivers %}
-   <tr><td>{% render_set_value receiver 'project/obligation/receiver/receiver_name' %}&nbsp; </td> 
-       <td>{% render_set_value receiver 'project/obligation/receiver/receiver_legal_basis' %}&nbsp; </td>
+   <tr><td>{% render_set_value receiver 'project/obligation/receiver/receiver_name' %} </td> 
+       <td>{% render_set_value receiver 'project/obligation/receiver/receiver_legal_basis' %} </td>
    </tr>
  {% endfor %} 
 </table>
@@ -291,10 +291,10 @@ oder internationale Organisationen erfolgt nicht.
   Wir haben eine/n Datenschutzbeauftragte/n bestellt. 
   Diese/n können Sie unter den folgenden Kontaktdaten erreichen:
   <table border="1">
-   <tr><td><b>Name:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_name_data_protection_officer' %}</td></tr>
-   <tr><td><b>Adresse:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_address_data_protection_officer' %}</td></tr>
-   <tr><td><b>Telefon:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_telephone_data_protection_officer' %}</td></tr>
-   <tr><td><b>eMail:&nbsp; </b></td> <td>{% render_value 'project/obligation/obligation_email_data_protection_officer' %}</td></tr>
+   <tr><td><b>Name: </b></td> <td>{% render_value 'project/obligation/obligation_name_data_protection_officer' %}</td></tr>
+   <tr><td><b>Adresse: </b></td> <td>{% render_value 'project/obligation/obligation_address_data_protection_officer' %}</td></tr>
+   <tr><td><b>Telefon: </b></td> <td>{% render_value 'project/obligation/obligation_telephone_data_protection_officer' %}</td></tr>
+   <tr><td><b>eMail: </b></td> <td>{% render_value 'project/obligation/obligation_email_data_protection_officer' %}</td></tr>
   </table> 
 </p>
 
@@ -503,7 +503,6 @@ Hierzu bleiben meine Kontaktdaten über das Ende des Forschungsprojektes hinaus 
   <p>Ort, Datum, Unterschrift</p>
 <br>
 <br>
-
 </template>
 	</view>
 </rdmo>
