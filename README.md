@@ -1,11 +1,9 @@
 ## News 
-- **2025-03-17**: New versions are commited. We are currently working on a new version and a first major release of the consent generator. 
-- **2024-10-10**: We are currently working on this questionnaire. Our plan is to have a productive and sharable version by the end of 2024.
+**2025-03-17**: New versions are commited. We are currently working on a new version and a first major release of the consent generator. 
 
 ## About
 This project started with the thesis for the "Zertifikatskurs FDM 2023/2024" by Bernd Zey (TU Dortmund). 
-Right now, Wibke Kleina and Bernd Zey are working on this project. 
-
+Since end of 2024, Wibke Kleina and Bernd Zey are working on this project. 
 
 ## Consent-Gen-RDMO
 An informed consent generator for [RDMO](https://github.com/rdmorganiser/rdmo). 
