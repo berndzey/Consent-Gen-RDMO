@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-03-31T15:28:53.820396+02:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-04-01T14:23:57.436481+02:00" version="2.1.3">
 	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen</uri_path>
@@ -79,20 +79,6 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_due_date">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>information_due_date</key>
-		<path>project/information/information_due_date</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
-	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_due_date_person">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>information_due_date_person</key>
-		<path>project/information/information_due_date_person</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
-	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_funding">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>information_funding</key>
@@ -149,6 +135,13 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
 	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_revocation_person">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_revocation_person</key>
+		<path>project/information/information_revocation_person</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_salutation">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>information_salutation</key>
@@ -191,24 +184,17 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_address">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_address</key>
-		<path>project/obligation/obligation_address</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
-	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_address_data_protection_officer">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_address_data_protection_officer</key>
-		<path>project/obligation/obligation_address_data_protection_officer</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
-	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_authority">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>obligation_authority</key>
 		<path>project/obligation/obligation_authority</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_contact">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_contact</key>
+		<path>project/obligation/obligation_contact</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
@@ -240,24 +226,17 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_categories"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_email">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_contact">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_email</key>
-		<path>project/obligation/obligation_email</path>
+		<key>obligation_data_protection_officer_contact</key>
+		<path>project/obligation/obligation_data_protection_officer_contact</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_email_data_protection_officer">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_name">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_email_data_protection_officer</key>
-		<path>project/obligation/obligation_email_data_protection_officer</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
-	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_name_data_protection_officer">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_name_data_protection_officer</key>
-		<path>project/obligation/obligation_name_data_protection_officer</path>
+		<key>obligation_data_protection_officer_name</key>
+		<path>project/obligation/obligation_data_protection_officer_name</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
@@ -324,19 +303,33 @@
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_telephone">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_telephone</key>
-		<path>project/obligation/obligation_telephone</path>
+		<key>obligation_third_country</key>
+		<path>project/obligation/obligation_third_country</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_telephone_data_protection_officer">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/obligation_third_country_id">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_telephone_data_protection_officer</key>
-		<path>project/obligation/obligation_telephone_data_protection_officer</path>
+		<key>obligation_third_country_id</key>
+		<path>project/obligation/obligation_third_country/obligation_third_country_id</path>
 		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>third_country</key>
+		<path>project/obligation/obligation_third_country/third_country</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country_description">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>third_country_description</key>
+		<path>project/obligation/obligation_third_country/third_country_description</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country"/>
 	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/primary_purpose_personal_data_special_category">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
@@ -351,6 +344,13 @@
 		<path>project/obligation/receiver</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/receiver/receiver_description">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>receiver_description</key>
+		<path>project/obligation/receiver/receiver_description</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/receiver"/>
 	</attribute>
 	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/receiver/receiver_id">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
@@ -372,13 +372,6 @@
 		<path>project/obligation/receiver/receiver_name</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/receiver"/>
-	</attribute>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/third_country">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>third_country</key>
-		<path>project/obligation/third_country</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
 	<section dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/introduction">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -409,7 +402,8 @@ Der Fragenkatalog führt sie dabei durch die wichtigsten Aspekte einer informier
 &lt;ul&gt;
 &lt;li&gt;Dieser Generator stellt eine Hilfestellung dar, um Sie bei der Erstellung einer Einwilligungserklärung zu unterstützen. 
 &lt;/li&gt;
-&lt;li&gt;Dieser Einwilligungserklärungsgenerator stellt keine formale Rechtsberatung dar! Die Nutzung erfolgt in eigener Verantwortung.  
+&lt;li&gt;Dieser Einwilligungserklärungsgenerator stellt keine formale Rechtsberatung dar! 
+Die inhaltliche und rechtliche Korrektheit der Einwilligung liegt weiterhin in Ihrer Verantwortung.
 &lt;/li&gt;
 &lt;li&gt;Es besteht kein Anspruch auf Vollständigkeit und Ihre individuellen Bedarfe können von diesem Fragenkatalog möglicherweise nicht abgedeckt sein. 
 &lt;/li&gt;
@@ -770,9 +764,9 @@ Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Infor
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet:
-&quot;im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.&quot;</help>
+&quot;im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. „Personenbezogene Daten“ sind alle zu Ihrer Person im Forschungsprojekt erhobenen Daten. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.&quot;</help>
 		<text lang="de">Geben Sie den Text für die Bitte zur Teilnahme an der Studie und zur Zustimmung  der Verarbeitung Ihrer personenbezogener Daten ein.</text>
-		<default_text lang="de">im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.</default_text>
+		<default_text lang="de">im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. „Personenbezogene Daten“ sind alle zu Ihrer Person im Forschungsprojekt erhobenen Daten. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -856,8 +850,7 @@ Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Infor
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/questions-person" order="0"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date" order="1"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date-person" order="2"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-revocation-person" order="2"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information_sender" order="3"/>
 		</questions>
 		<conditions/>
@@ -873,8 +866,8 @@ Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Infor
 		<text lang="en">Please name the contact person in case the participants have queries or questions of understanding.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie einen Namen, eine E-Mail-Adresse, eine Telefonnummer und/oder die Anschrift an.</help>
-		<text lang="de">Bitte benennen Sie die Ansprechperson, an die sich die Teilnehmenden wenden können, falls diese Rückfragen oder Verständnisfragen haben.</text>
+		<help lang="de">Geben Sie einen Namen und ggf. eine Kontaktmöglichkeit an.</help>
+		<text lang="de">Bitte benennen Sie die Ansprechperson , an die sich die Teilnehmenden wenden können, falls diese Rückfragen oder Verständnisfragen haben.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -889,48 +882,19 @@ Der Zweck der Datenerhebung sollte hier nicht beschrieben werden, da diese Infor
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-revocation-person">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/information-date</uri_path>
+		<uri_path>consent-gen/information/information-revocation-person</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_due_date"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_revocation_person"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">When do the participants need to sign and turn in the declaration of consent?</text>
+		<text lang="en">Who can the participants send/give a revocation?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie ein Datum an, bis zu dem die Teilnehmenden das Dokument unterschreiben und zurückgeben sollen.
-
-Der Termin der Rückgabe muss vor der Teilnahme an der Studie und der Datenerfassung liegen!</help>
-		<text lang="de">Bis wann müssen die Teilnehmenden die Einwilligungserklärung unterschreiben?</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/information-date-person">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/information-date-person</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_due_date_person"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Who should the participants send/give back the signed declaration of consent?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Wem sollen die Teilnehmenden die unterschriebene Einwilligungserklärung zurück senden/geben?</text>
+		<help lang="de">Da der Widerruf einfach ermöglicht werden soll, geben Sie bitte den Namen und eine Kontaktmöglichkeit, wie eine E-Mail-Adresse, an.</help>
+		<text lang="de">An wen sollen sich die Teilnehmenden für einen Widerruf wenden?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -1006,9 +970,7 @@ Der Termin der Rückgabe muss vor der Teilnahme an der Studie und der Datenerfas
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/name_institution" order="0"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/address" order="1"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/telephone" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/email" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact" order="1"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -1024,7 +986,7 @@ Der Termin der Rückgabe muss vor der Teilnahme an der Studie und der Datenerfas
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Geben Sie den Namen der für den Datenschutz in diesem Projekt verantwortlichen Person an.</text>
+		<text lang="de">Geben Sie den Namen der für den Datenschutz in diesem Projekt verantwortlichen Person oder Stelle an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -1039,78 +1001,24 @@ Der Termin der Rückgabe muss vor der Teilnahme an der Studie und der Datenerfas
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/address">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/address</uri_path>
+		<uri_path>consent-gen/obligation/contact</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_address"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_contact"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">Name the address of the person who is responsible for data protection.</text>
+		<text lang="en">Name the contact of the person who is responsible for data protection.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die Adresse der für den Datenschutz in diesem Projekt verantwortlichen Person an.</text>
+		<help lang="de">Geben Sie z.B. eine E-Mail-Adresse, die Anschrift und/oder die Telefonnummer an.</help>
+		<text lang="de">Geben Sie die Kontaktmöglichkeiten der für den Datenschutz in diesem Projekt verantwortlichen Person an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
 		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/telephone">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/telephone</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_telephone"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Name the telephone number of the person who is responsible for data protection.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die Telefonnummer der für den Datenschutz in diesem Projekt verantwortlichen Person an.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/email">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/email</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_email"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Name the email address of the person who is responsible for data protection.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die E-Mail-Adresse der für den Datenschutz in diesem Projekt verantwortlichen Person an.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -1222,7 +1130,6 @@ Legen Sie für jede Datenkategorie einen eigenen Eintrag an. Beispiele für mög
 &lt;li&gt;Persönliche Leistungsdaten&lt;/li&gt;
 &lt;li&gt;Nutzungsdaten&lt;/li&gt;
 &lt;li&gt;Kommunikationsdaten&lt;/li&gt;
-&lt;li&gt;Kontaktdaten&lt;/li&gt;
 &lt;li&gt;Patientendaten&lt;/li&gt;
 &lt;li&gt;Behandlungsdaten&lt;/li&gt;
 &lt;li&gt;Stammdaten&lt;/li&gt;
@@ -1325,7 +1232,9 @@ Hinweis: Besondere Kategorien personenbezogener Daten  (sogenannte „sensible D
 		<text lang="en">Special Category</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Wählen Sie die personenbezogenen Daten aus, die verarbeitet werden. Verarbeiten Sie keine personenbezogenen Daten besonderer Kategorien, dann kreuzen Sie keine Antwort an.</help>
+		<help lang="de">Wählen Sie die personenbezogenen Daten aus, die verarbeitet werden. Verarbeiten Sie keine personenbezogenen Daten besonderer Kategorien, dann kreuzen Sie keine Antwort an.
+
+Für jeden ausgewählten Typ an Daten haben Sie in dem Textfeld die Möglichkeit, die Daten näher zu beschreiben, z.B. dass es sich bei den Gesundheitsdaten um die Blutwerte handelt.</help>
 		<text lang="de">Geben Sie an, welche personenbezogenen Daten der besonderen Kategorien verarbeitet werden.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1466,6 +1375,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/receiver" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/receiver_legal_basis" order="1"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/receiver_description" order="2"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -1507,7 +1417,7 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<text lang="en">Name the legal basis for the data transfer</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Ein Beispiel für die Rechtsgrundlage ist die Auftragsverarbeitung durch technische Dienstleister (&lt;a href=&quot;https://dsgvo-gesetz.de/art-28-dsgvo/&quot;&gt;Art. 28 DSGVO&lt;/a&gt;), z.B. ein  Transkriptionsdienst.</help>
+		<help lang="de">Ein Beispiel für die Rechtsgrundlage ist die &quot;Auftragsverarbeitung durch technische Dienstleister&quot; (&lt;a href=&quot;https://dsgvo-gesetz.de/art-28-dsgvo/&quot;&gt;Art. 28 DSGVO&lt;/a&gt;), z.B. bei einem Transkriptionsdienst.</help>
 		<text lang="de">Nennen Sie die Rechtsgrundlage für die Datenübertragung</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1523,21 +1433,51 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<optionsets/>
 		<conditions/>
 	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/receiver_description">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/receiver_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/receiver/receiver_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Below, you have the opportunity to explain the necessity for the transfer and, if applicable, the process in more detail for the participants</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Im Folgenden haben Sie die Möglichkeit, für die Teilnehmenden die Notwendigkeit oder den Grund für die Übertragung und ggf. den Ablauf näher zu erläutern</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
 	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information-obligation/third_country">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/information-obligation/third_country</uri_path>
 		<dc:comment/>
-		<attribute/>
-		<is_collection>False</is_collection>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/obligation_third_country_id"/>
+		<is_collection>True</is_collection>
 		<title lang="en">Third country and international organization</title>
 		<help lang="en"/>
-		<verbose_name lang="en"/>
+		<verbose_name lang="en">Country or organization</verbose_name>
 		<title lang="de">Drittland und internationale Organisation</title>
-		<help lang="de"/>
-		<verbose_name lang="de"/>
+		<help lang="de">Sie müssen angeben, wenn die personenbezogenen Daten an ein Drittland oder eine internationale Organisation übermittelt werden. Werden keine Daten übertragen, dann können Sie diese Frage überspringen.
+
+Ein Drittland im Sinne der Datenschutz-Grundverordnung (DSGVO) ist ein Land außerhalb der Europäischen Union (EU) und des Europäischen Wirtschaftsraums (EWR), das nicht den gleichen Datenschutzstandards wie die EU entspricht. Die DSGVO legt fest, dass personenbezogene Daten nur dann in ein Drittland übermittelt werden dürfen, wenn dort ein angemessenes Schutzniveau für die Daten gewährleistet ist (Art. 45 DSGVO) oder geeignete Garantien bestehen, um den Schutz der Daten zu sichern. Für einige Länder existiert daher ein Angemessenheitsbeschluss (die Liste der Länder für die angemessene Datenschutzgarantien gelten ist hier einsehbar: &lt;a href=&quot;https://www.ldi.nrw.de/datenschutz/internationaler-datenverkehr/angemessenheitsbeschluss&quot;&gt;https://www.ldi.nrw.de/datenschutz/internationaler-datenverkehr/angemessenheitsbeschluss&lt;/a&gt;) oder eine internationale Organisation übermittelt werden. Werden keine Daten übertragen, dann können Sie diese Frage überspringen.</help>
+		<verbose_name lang="de">Land oder Organisation</verbose_name>
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_description" order="1"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -1545,22 +1485,47 @@ Legen Sie für jeden Empfänger/jede Kategorie einen Empfänger an. Werden keine
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/third_country</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/third_country"/>
-		<is_collection>True</is_collection>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country"/>
+		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
 		<text lang="en">Name the third country or international organization the personal data is transmitted to</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Sie müssen angeben, wenn die personenbezogenen Daten an ein Drittland oder eine internationale Organisation übermittelt werden. Werden keine Daten übertragen, dann können Sie diese Frage überspringen.
-
-Ein Drittland im Sinne der Datenschutz-Grundverordnung (DSGVO) ist ein  Land außerhalb der Europäischen Union (EU) und des Europäischen  Wirtschaftsraums (EWR), das nicht den gleichen Datenschutzstandards wie  die EU entspricht. Die DSGVO legt fest, dass personenbezogene Daten nur  dann in ein Drittland übermittelt werden dürfen, wenn dort ein  angemessenes Schutzniveau für die Daten gewährleistet ist (&lt;a href=&quot;https://dsgvo-gesetz.de/art-45-dsgvo/&quot;&gt;Art. 45 DSGVO&lt;/a&gt;) oder geeignete  Garantien bestehen, um den Schutz der Daten zu sichern. Für einige Länder existiert daher ein Angemessenheitsbeschluss, die Liste der Länder für die angemessene Datenschutzgarantien gelten ist hier einsehbar: (&lt;a href=&quot;https://www.ldi.nrw.de/datenschutz/internationaler-datenverkehr/angemessenheitsbeschluss&quot;&gt;https://www.ldi.nrw.de/datenschutz/internationaler-datenverkehr/angemessenheitsbeschluss&lt;/a&gt;)  oder eine internationale Organisation übermittelt werden. Werden keine Daten übertragen, dann können Sie diese Frage überspringen.</help>
+		<help lang="de"/>
 		<text lang="de">Nennen Sie das Drittland oder die internationale Organisation, an welche personenbezogene Daten übertragen werden</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
 		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_description">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/third_country_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Below, you have the opportunity to explain the necessity for the transfer and, if applicable, the process in more detail for the participants</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Im Folgenden haben Sie die Möglichkeit, für die Teilnehmenden die Notwendigkeit oder den Grund für die Übertragung und ggf. den Ablauf näher zu erläutern</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -1584,18 +1549,16 @@ Ein Drittland im Sinne der Datenschutz-Grundverordnung (DSGVO) ist ein  Land au�
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/name_data_protection_officer" order="0"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/address_data_protection_officer" order="1"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/telephone_data_protection_officer" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/email_data_protection_officer" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer_name" order="0"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer_contact" order="1"/>
 		</questions>
 		<conditions/>
 	</page>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/name_data_protection_officer">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer_name">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/name_data_protection_officer</uri_path>
+		<uri_path>consent-gen/obligation/data_protection_officer_name</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_name_data_protection_officer"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_name"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
@@ -1618,78 +1581,24 @@ Ein Drittland im Sinne der Datenschutz-Grundverordnung (DSGVO) ist ein  Land au�
 		<optionsets/>
 		<conditions/>
 	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/address_data_protection_officer">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer_contact">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/address_data_protection_officer</uri_path>
+		<uri_path>consent-gen/obligation/data_protection_officer_contact</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_address_data_protection_officer"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_contact"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
 		<text lang="en">Give the address of the data protection officer.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die Adresse der/des Datenschutzbeauftragten an.</text>
+		<help lang="de">Geben Sie z.B. eine E-Mail-Adresse, die Anschrift und/oder die Telefonnummer an.</help>
+		<text lang="de">Geben Sie die Kontaktmöglichkeiten der/des Datenschutzbeauftragten an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
 		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/telephone_data_protection_officer">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/telephone_data_protection_officer</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_telephone_data_protection_officer"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Give the telephone numer of the data protection officer.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die Telefonnummer der/des Datenschutzbeauftragten an.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/email_data_protection_officer">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/email_data_protection_officer</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_email_data_protection_officer"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Give the email address numer of the data protection officer.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die eMail-Adresse der/des Datenschutzbeauftragten an.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -1713,24 +1622,24 @@ Ein Drittland im Sinne der Datenschutz-Grundverordnung (DSGVO) ist ein  Land au�
 
 Diese werden automatisch in die generierte Einwilligungserklärung eingefügt und lauten wie folgt: 
 &lt;ul&gt;
-&lt;li&gt; Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, https://dsgvo-gesetz.de/art-15-dsgvo/
+&lt;li&gt; Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-15-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-15-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt; Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen.
-Artikel 7, DSGVO, https://dsgvo-gesetz.de/art-7-dsgvo/
+Artikel 7, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-7-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-7-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt; Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. 
-Artikel 16, DSGVO, https://dsgvo-gesetz.de/art-16-dsgvo/
+Artikel 16, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-16-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-16-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt; Sie können jederzeit die Löschung Ihrer Daten verlangen.
-Artikel 17, DSGVO, https://dsgvo-gesetz.de/art-17-dsgvo/
+Artikel 17, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-17-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-17-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+&lt;li&gt; Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-18-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-18-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, DSGVO, https://dsgvo-gesetz.de/art-20-dsgvo/
+&lt;li&gt; Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-20-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-20-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerruf mit Wirkung für die Zukunft einlegen. Artikel 21, DSGVO, https://dsgvo-gesetz.de/art-18-dsgvo/
+&lt;li&gt; Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerruf mit Wirkung einlegen. Der Widerruf entfaltet seine Wirkung allerdings nur für die Zukunft.  Bereits erfolgte Verarbeitungen personenbezogener Daten, die auf Basis  einer wirksamen Einwilligung erfolgt sind, werden vom Widerruf nicht  berührt, Artikel 21, DSGVO,  &lt;a href=&quot;https://dsgvo-gesetz.de/art-21-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-21-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, https://dsgvo-gesetz.de/art-77-dsgvo/
+&lt;li&gt; Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind, dann können Sie sich bei an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-77-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-77-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</help>
 		<verbose_name lang="de"/>
@@ -1791,7 +1700,7 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden i
 		<conditions/>
 	</page>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact_data">
-		<uri_prefix>https://fdm.tu-dortmund.de/</uri_prefix>
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/contact_data</uri_path>
 		<dc:comment/>
 		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/contact_data_yes_no"/>
@@ -1820,7 +1729,7 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden i
 		<conditions/>
 	</question>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/contact_future">
-		<uri_prefix>https://fdm.tu-dortmund.de/</uri_prefix>
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/contact_future</uri_path>
 		<dc:comment/>
 		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/contact_future_yes_no"/>
@@ -1870,7 +1779,7 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden i
 		<help lang="en"/>
 		<verbose_name lang="en"/>
 		<title lang="de">Einwilligung</title>
-		<help lang="de">In der eigentlichen, von den ProbandInnen zu unterschreibenden, Einwilligungserklärung werden i.d.R. einige Informationen zusammengefasst und wiederholt. Hier haben Sie die Möglichkeit, hierfür Formulierungen zu übernehmen oder anzupassen. 
+		<help lang="de">In der eigentlichen, von den Teilnehmenden zu unterschreibenden, Einwilligungserklärung werden i.d.R. einige Informationen zusammengefasst und wiederholt. Hier haben Sie die Möglichkeit, hierfür Formulierungen zu übernehmen oder anzupassen. 
 
 Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nicht modifizieren, werden die Default-Texte automatisch übernommen. Wenn Sie die vorgegebenen Textfelder löschen wird auch kein Text in der Ansicht generiert.</help>
 		<verbose_name lang="de"/>
@@ -1975,7 +1884,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="en">Receipt</text>
 		<default_text lang="en">to do</default_text>
 		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich habe eine Kopie des Informationsblatts, der Datenschutzhinweise und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.&quot;</help>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich habe eine Kopie des Informationsblatts, der Datenschutzhinweise  und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.&quot;</help>
 		<text lang="de">Geben Sie den Hinweis für den Erhalt und die Aufbewahrung der Einwilligungserklärung an.</text>
 		<default_text lang="de">Ich habe eine Kopie des Informationsblatts, der Datenschutzhinweise und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.</default_text>
 		<verbose_name lang="de"/>
@@ -1991,7 +1900,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<optionsets/>
 		<conditions/>
 	</question>
-	<optionset dc:uri="https://fdm.tu-dortmund.de/options/legal_basis">
+<optionset dc:uri="https://fdm.tu-dortmund.de/options/legal_basis">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>legal_basis</uri_path>
 		<dc:comment/>
@@ -2224,7 +2133,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Genetische, biometrische Daten</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/ethnic">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2236,7 +2145,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Ethnische Herkunft</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/political">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2248,7 +2157,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Politische Meinung</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/religion">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2260,7 +2169,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Religion</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/philosophical">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2272,7 +2181,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Weltanschauung</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/health_data">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2284,7 +2193,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Gesundheitsdaten</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/trade_union">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2296,7 +2205,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Gewerkschaftszugehörigkeit</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/sex_life">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2308,7 +2217,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Sexualleben</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<option dc:uri="https://fdm.tu-dortmund.de/options/primary_purpose/sexual_orientation">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
@@ -2320,7 +2229,7 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nich
 		<text lang="de">Sexuelle Orientierung</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
-		<additional_input/>
+		<additional_input>text</additional_input>
 	</option>
 	<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_contact_future">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
