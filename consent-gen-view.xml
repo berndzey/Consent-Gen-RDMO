@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-04-01T14:24:35.733650+02:00" version="2.1.3">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2025-04-03T14:51:22.869611+02:00" version="2.1.3">
 	<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen-view">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<uri_path>consent-gen-view</uri_path>
@@ -168,6 +168,19 @@ unterschreiben Sie bitte die nachfolgenden Abschnitte der Einwilligungserklärun
 </p>
 
 
+  
+<b>Kontaktdaten der/des Datenschutzbeauftragten</b>
+<p>
+  Wir haben eine/n Datenschutzbeauftragte/n bestellt. 
+  Diese/n können Sie unter den folgenden Kontaktdaten erreichen:
+  <ul>
+  <li>Name: {% render_value 'project/obligation/obligation_data_protection_officer_name' %}</li>
+  <li>Adresse: {% render_value 'project/obligation/obligation_data_protection_officer_contact' %}</li>
+  </ul> 
+</p>
+
+
+
 <b>Zwecke und Rechtsgrundlagen der Verarbeitung</b>
 <p>
   Wir verarbeiten Ihre Daten für die nachfolgend genannten Zwecke 
@@ -204,9 +217,12 @@ unterschreiben Sie bitte die nachfolgenden Abschnitte der Einwilligungserklärun
 </table>
 
 <br>
+<b>Daten besonderer Kategorien</b>: 
+<br>
+{% get_value 'project/obligation/data_categories_special_yes_no' as special_categories_y_n %}
 
-{% get_values 'project/obligation/primary_purpose_personal_data_special_category' set_index=0 as data %}
-{% if data %}
+{% if special_categories_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_special_category_data_yes" %}
+{% get_values 'project/obligation/data_categories_special' set_index=0 as data %}
 Außerdem verarbeiten wir die nachfolgenden Daten besonderer Kategorien: 
     <ul>
     {% for d in data %}
@@ -215,7 +231,12 @@ Außerdem verarbeiten wir die nachfolgenden Daten besonderer Kategorien:
     </ul>
     <br>
 <br>
+{% else %}
+Daten besonderer Kategorien werden nicht verarbeitet. 
+<br>
+<br>
 {% endif %}
+
 
 
 <b>Speicherung und Verarbeitung Ihrer Daten</b>
@@ -292,17 +313,6 @@ oder internationale Organisationen erfolgt nicht.
 {% endif %}
 </p>
 
-  
-  
-<b>Kontaktdaten der/des Datenschutzbeauftragten</b>
-<p>
-  Wir haben eine/n Datenschutzbeauftragte/n bestellt. 
-  Diese/n können Sie unter den folgenden Kontaktdaten erreichen:
-  <ul>
-  <li>Name: {% render_value 'project/obligation/obligation_data_protection_officer_name' %}</li>
-  <li>Adresse: {% render_value 'project/obligation/obligation_data_protection_officer_contact' %}</li>
-  </ul> 
-</p>
 
 
 <b>Betroffenenrechte</b>
@@ -395,35 +405,28 @@ personenbezogenen Daten
   <ul>
 {% for data_category in data_categories %}
        <li>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' %}</li>
- {% endfor %} 
+{% endfor %} 
   </ul>
-
-
-für die Studie 
-    {% render_value 'project/information/information_project_name' %}
     für die genannten Zwecke 
     verarbeitet werden dürfen.  
   <br>
 </p>   
 <br>
 
-  <p>&#x2610; Ja &#x2610; Nein</p>
-
+<p>&#x2610; Ja &#x2610; Nein</p>
 <br>
 
+
+{% if special_categories_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_special_category_data_yes" %}
 <p>
-{% get_values 'project/obligation/primary_purpose_personal_data_special_category' set_index=0 as data %}
-{% if data %}
-Hiermit willige ich ein, dass meine
+{% get_values 'project/obligation/data_categories_special' set_index=0 as data %}
+Hiermit willige ich ausdrücklich ein, dass meine
 personenbezogenen Daten besonderer Kategorien 
     <ul>
     {% for d in data %}
         <li>{{ d.value }}</li>
     {% endfor %}
     </ul>
-    <br>
-    für die Studie 
-    {% render_value 'project/information/information_project_name' %}
     für die genannten Zwecke 
     verarbeitet werden dürfen.  
   <br>
@@ -445,8 +448,8 @@ personenbezogenen Daten an
   {% render_set_value receiver 'project/obligation/receiver/receiver_name' %}
   {% endfor %} 
   übertragen werden dürfen. 
-  </p>
-  <br>
+</p>
+<br>
 <br>
 
 <p>&#x2610; Ja &#x2610; Nein</p>
@@ -456,16 +459,16 @@ personenbezogenen Daten an
 
 
 {% get_values 'project/obligation/third_country' set_index=0 as thirds %}
-<p>
 {% if thirds %}
-Hiermit willige ich ausdrücklich ein,
-  dass die unten genannten personenbezogenen Daten besonderer Kategorien
+<p>
+Hiermit willige ich ein,
+  dass die genannten personenbezogenen Daten an 
   {% for third in thirds %}
         {{ third.value }}
     {% endfor %}
 übertragen werden dürfen. 
 </p>
-  <br>
+<br>
 <br>
 
 <p>&#x2610; Ja &#x2610; Nein</p>
@@ -497,6 +500,7 @@ Nach Beendigung des Forschungsprojekts werden Ihre Kontaktdaten automatisch gel�
 <p>
 Hiermit willige ich ein, für zukünftige themenverwandte Forschungsprojekte kontaktiert zu werden. 
 Hierzu bleiben meine Kontaktdaten über das Ende des Forschungsprojektes hinaus gespeichert.
+Selbstverständlich haben Sie jederzeit die Möglichkeit, einer längeren Speicherung zu widersprechen.
 </p>
 <br>
 
@@ -517,7 +521,7 @@ Hierzu bleiben meine Kontaktdaten über das Ende des Forschungsprojektes hinaus 
   <p>Ort, Datum, Unterschrift</p>
 <br>
 <br>
-		
-		</template>
+
+</template>
 	</view>
 </rdmo>
