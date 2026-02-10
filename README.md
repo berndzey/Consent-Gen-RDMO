@@ -1,5 +1,5 @@
 ## News 
-**2025-03-17**: New versions are commited. We are ***currently*** working on a new version and a first major release of the consent generator. 
+**2026-02-10**: We are ***currently*** working on new versions. 
 
 ## About
 This project started with the thesis for the "Zertifikatskurs FDM 2023/2024" by Bernd Zey (TU Dortmund). 
