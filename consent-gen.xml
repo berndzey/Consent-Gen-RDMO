@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-01-28T11:43:00.867640+01:00" version="2.2.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-02-10T10:48:07.390140+01:00" version="2.2.2">
 	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen</uri_path>
@@ -43,7 +43,7 @@
 		<title lang="de">Hinweise</title>
 		<short_title lang="de"/>
 		<help lang="de">**Was ist der Fragenkatalog zur Generierung einer Einwilligungserklärung?**  
-Der Einwilligungserklärungs-Generator soll Sie bei der Erstellung einer Einwilligungserklärung für Ihr Forschungsprojekt unterstützen. 
+Der Einwilligungserklärungs-Generator soll Sie bei der Erstellung einer Einwilligungserklärung für Ihre Studie/Ihr Forschungsprojekt unterstützen. 
 Der Fragenkatalog führt sie dabei durch die wichtigsten Aspekte einer informierten Einwilligung. Durch die Beantwortung der Fragen werden in der Ansicht automatisiert Textbausteine generiert, welche als Grundlage für eine Einwilligungserklärung genutzt werden können. 
 
 **Wichtige Hinweise**  
@@ -66,8 +66,9 @@ Bitte beachten Sie, dass Einwilligungserklärungen als Rechtsgrundlage der Forsc
 
 
 **Quellen, Referenzen**  
+Für die Erstellung dieses Fragenkatalogs wurden einige Formulierungsbeispiele  verwendet und adaptiert: 
 &lt;ul&gt;
-&lt;li&gt; Für die Erstellung dieses Fragenkatalogs wurden einige Formulierungsbeispiele des Leibniz-Institut für Bildungsforschung und Bildungsinformation verwendet und adaptiert: 
+&lt;li&gt;
 Verbund Forschungsdaten Bildung: Formulierungsbeispiele für &quot;informierte Einwilligungen&quot;. Version 2.1. Frankfurt am Main: DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation 2018, 8 S. - (fdb info; 4) - URN: urn:nbn:de:0111-pedocs-223018 - &lt;a href=&quot;https://doi.org/10.25656/01:22301&quot;&gt;DOI: 10.25656/01:22301&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -78,11 +79,11 @@ Schaar, K. (2017). Die informierte Einwilligung als Voraussetzung für die (Nach
 &lt;a href=&quot;https://doi.org/10.17620/02671.12&quot;&gt;DOI: https://doi.org/10.17620/02671.12&lt;/a&gt;.
 &lt;/li&gt;
 &lt;li&gt;
-Formulierungsbeispiele wurden ebenso vom Consent Wizard von DARIAH-EU übernommen: 
+Consent Wizard von DARIAH-EU: 
 &lt;a href=&quot;https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard&quot;&gt;https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard &lt;/a&gt; 
 &lt;/li&gt;
-&lt;li&gt; Beachten Sie die entsprechenden Artikel der Datenschutzgrundverordnung: &lt;a href=&quot;https://dsgvo-gesetz.de/&quot;&gt;Link zur DSGVO&lt;/a&gt;  &lt;/li&gt;
-&lt;/ul&gt;</help>
+&lt;/ul&gt;
+Bitte beachten Sie die entsprechenden Artikel der Datenschutzgrundverordnung: &lt;a href=&quot;https://dsgvo-gesetz.de/&quot;&gt;Link zur DSGVO&lt;/a&gt;</help>
 		<verbose_name lang="de">Hinweise</verbose_name>
 		<questionsets/>
 		<questions/>
@@ -103,16 +104,16 @@ Formulierungsbeispiele wurden ebenso vom Consent Wizard von DARIAH-EU übernomme
 		<help lang="de">**Wie ist der Fragenkatalog aufgebaut?**  &lt;br&gt;
 Der Fragenkatalog besteht aus drei wesentlichen Abschnitten: 
 &lt;ul&gt;
-  &lt;li&gt;&lt;b&gt;Studieninformation für Teilnehmende:&lt;/b&gt; hier werden die Informationen eingegeben,  um die Textbausteine des Anschreibens mit den Inhalten der Studie und dem Forschungsanliegen zu füllen. Dieser Teil beinhaltet alle Fragen zur Beschreibung des Forschungsprojekts.
+  &lt;li&gt;&lt;b&gt;Studieninformationen und Anschreiben:&lt;/b&gt; hier werden die Angaben gemacht, die zur Erstellung des Anschreibens mit den Inhalten und Zielen der Studie dienen. Dieser Abschnitt umfasst alle Fragen zur Studienbeschreibung und zu forschungsethischen Aspekten. 
 &lt;/li&gt;
-  &lt;li&gt;&lt;b&gt;Angaben zum Datenschutz:&lt;/b&gt; hier werden Informationen hinsichtlich der Verarbeitung personenbezogener Daten abgefragt, die sich  im Rahmen einer Direkterhebung aus &lt;a href=&quot;https://dsgvo-gesetz.de/art-13-dsgvo/&quot;&gt;Artikel 13&lt;/a&gt; ergeben. &lt;span style=&quot;color:Red;&quot;&gt;Dieser Teil beinhaltet  alle Fragen zur  geplanten Datenverarbeitung.&lt;/span&gt;
+  &lt;li&gt;&lt;b&gt;Informationspflichten zum Datenschutz:&lt;/b&gt; hier werden die Angaben zur Verarbeitung personenbezogener Daten gemacht, die sich  im Rahmen einer Direkterhebung aus &lt;a href=&quot;https://dsgvo-gesetz.de/art-13-dsgvo/&quot;&gt;Artikel 13&lt;/a&gt; ergeben. Dieser Teil beinhaltet  zentrale Anforderungen des Datenschutzes.
 &lt;/li&gt;
- &lt;li&gt;&lt;b&gt;Formulierungen zur Einwilligung:&lt;/b&gt; hier wird die inhaltliche Gestaltung der Einwilligungserklärung angelegt.  Dieser Teil bereitet die Vorlage der Einwilligung aus Teilnehmendenperspektive vor, die unterschrieben werden soll.
+ &lt;li&gt;&lt;b&gt;Einwilligung in die Teilnahme und zur Datenverarbeitung:&lt;/b&gt; hier werden die Angaben zur inhaltlichen Gestaltung der Einwilligungserklärung gemacht. Dieser Abschnitt bereitet die Vorlage aus Teilnehmendenperspektive vor, die unterzeichnet werden soll, und berücksichtigt die datenschutzkonforme Erstellung einer Einwilligung.
 &lt;/li&gt;
 &lt;/ul&gt;
 
 **Welche Fragen müssen beantwortet werden?** &lt;br&gt;
-Bitte achten Sie bei der Benutzung des Generators darauf, dass Sie in jedem Fall alle Pflichtfelder ausfüllen (rot hervorgehoben). Nur wenn Sie diese Pflichtfelder alle ausfüllen, erfüllen Sie die Mindestanforderungen an eine gültige Einwilligungserklärung, die sich aus den Vorgaben der DSGVO ergeben.
+Bitte achten Sie bei der Benutzung des Generators darauf, dass Sie in jedem Fall alle Pflichtfelder ausfüllen (rot hervorgehoben mit &lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;). Nur wenn Sie diese Pflichtfelder alle ausfüllen, erfüllen Sie die Mindestanforderungen an eine gültige Einwilligungserklärung, die sich aus den Vorgaben der DSGVO ergeben.
 
 Bitte bedenken Sie, dass die Beantwortung aller Pflichtfelder nicht zwingend zu einer rechtssicheren Einwilligungserklärung führt. In jedem Fall  kann die zusätzliche Beantwortung  der Fragen, welche hier nicht als Pflichtfelder markiert sind, eine vertrauensbildende Maßnahme für die Teilnehmenden darstellen. 
 
@@ -130,7 +131,7 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<dc:comment/>
 		<title lang="en">Informations</title>
 		<short_title lang="en"/>
-		<title lang="de">Studieninformation für Teilnehmende</title>
+		<title lang="de">Studieninformationen und Anschreiben</title>
 		<short_title lang="de"/>
 		<pages>
 			<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-informations" order="0"/>
@@ -147,7 +148,7 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<short_title lang="en"/>
 		<help lang="en"/>
 		<verbose_name lang="en"/>
-		<title lang="de">Forschungsprojekt</title>
+		<title lang="de">Studien- und Projektformationen</title>
 		<short_title lang="de"/>
 		<help lang="de">Die eingegebenen Informationen auf dieser Seite werden in der Ansicht in das Anschreiben eingefügt.</help>
 		<verbose_name lang="de"/>
@@ -156,11 +157,11 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-name" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-description" order="1"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/expectation" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-homepage" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/ethics-commission" order="3"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-lead" order="4"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/participants" order="5"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/funding" order="6"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/ethics-commission" order="7"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-homepage" order="6"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/funding" order="7"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -175,8 +176,8 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<text lang="en">State the project the personal data is processed.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie eine Projektbezeichnung oder einen Projekttitel an.</help>
-		<text lang="de">Benennen Sie das Projekt, auf das sich diese Einwilligung bezieht und in dem die Daten erhoben und verarbeitet werden.</text>
+		<help lang="de">Geben Sie eine Studien-/Projektbezeichnung oder einen Projekttitel an.</help>
+		<text lang="de">Benennen Sie die Studie bzw. das Projekt, auf das sich diese Einwilligung bezieht und in dem die Daten erhoben und verarbeitet werden.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -223,8 +224,8 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<text lang="en">Describe the research project.</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Beschreiben Sie den Inhalt und die Ziele des Forschungsprojekts/der Studie sowie weitere wichtige Aspekte (z.B. Relevanz, Design, Methodik, Laufzeit)  und gehen Sie kurz auf  die Erhebungsform/Durchführung ein (z.B. &quot;Durchführung einer Interviewstudie&quot;, &quot;Video-Studie&quot;, &quot;Labormessung&quot;, etc.). Darüber hinaus können Sie den Teilnehmenden den geplanten Nutzen bzw. angestrebten Erkenntnisgewinn der Studie mitteilen. Verwenden Sie eine möglichst konkrete und zielgruppengerechte Beschreibung, die für die Teilnehmenden als Laien verständlich ist; vermeiden Sie wissenschaftliche Fachbegriffe sowie Fremdwörter.</help>
-		<text lang="de">Beschreiben Sie Ihr Forschungsprojekt/die Studie für die Teilnehmenden.</text>
+		<help lang="de">Beschreiben Sie den Inhalt und die Forschungsziele der Studie sowie weitere wichtige Aspekte (z.B. Relevanz, Design, Methodik, Laufzeit)  und gehen Sie kurz auf  die Erhebungsform/Durchführung ein (z.B. &quot;Durchführung einer Interviewstudie&quot;, &quot;Video-Studie&quot;, &quot;Labormessung&quot;, etc.). Darüber hinaus können Sie den Teilnehmenden den geplanten Nutzen bzw. angestrebten Erkenntnisgewinn der Studie mitteilen. Verwenden Sie eine möglichst konkrete und zielgruppengerechte Beschreibung, die für die Teilnehmenden als Laien verständlich ist; vermeiden Sie wissenschaftliche Fachbegriffe sowie Fremdwörter.</help>
+		<text lang="de">Beschreiben Sie die Studie für die Teilnehmenden.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -257,8 +258,8 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<text lang="en">Expecation</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Hier können Sie den konkreten Ablauf der Studie für die Teilnehmenden beschreiben (Zeit, Ort, Rahmenbedingungen, Aufwand). Ebenso sollten Informationen über potenzielle Vorteile und Risiken der Teilnahme sowie Kosten bzw. Ausgleichszahlungen etc. genannt werden.</help>
-		<text lang="de">Beschreiben Sie, was die Teilnehmenden erwartet und welcher Aufwand für sie entsteht.</text>
+		<help lang="de">Hier können Sie den konkreten Ablauf der Studie für die Teilnehmenden beschreiben (Zeit, Ort, Rahmenbedingungen, Aufwand, etc.). Ebenso sollten Informationen über potenzielle Vorteile und Risiken sowie Belastungen bei einer Teilnahme sowie Kosten bzw. Ausgleichszahlungen etc. genannt werden.</help>
+		<text lang="de">Beschreiben Sie, was die Teilnehmenden der Studie erwartet und welcher Aufwand entsteht.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -277,142 +278,6 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>information_project_expectation</key>
 		<path>project/information/information_project_expectation</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
-	</attribute>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-homepage">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/project-homepage</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_homepage"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Name the project homepage.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie die Projekt-Homepage oder die Webseite Ihrer Forschungseinrichtung an.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_homepage">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>information_project_homepage</key>
-		<path>project/information/information_project_homepage</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
-	</attribute>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-lead">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/project-lead</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_lead"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Name the project leader</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de">Geben Sie den Namen der Projekt-Leitung an. Bei Bedarf können Sie hier mehrere Personen eintragen, zum Beispiel im Falle eines Kooperationsprojekts.</help>
-		<text lang="de">Nennen Sie die Leitung des Forschungsprojekts.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_lead">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>information_project_lead</key>
-		<path>project/information/information_project_lead</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
-	</attribute>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/participants">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/participants</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_participants"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Name the participants of the project.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de">Nennen Sie die direkt an dem Forschungsprojekt beteiligten Forschenden. Geben Sie hier zusätzlich die beteiligten Hochschule(n) und/oder Institut(e), Abteilung(en), Arbeitsgrupp(en) oder Ähnliches an.</help>
-		<text lang="de">Nennen Sie die Beteiligten in dem Forschungsprojekt.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_participants">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>information_participants</key>
-		<path>project/information/information_participants</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
-	</attribute>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/funding">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/information/funding</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_funding"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Name the funding institution of the project.</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de">Falls es für die Einwilligungserklärung relevant ist, nennen Sie Auftrag- oder Fördergeber/die Fördereinrichtung(en) Ihres Projekts. Beachten Sie bitte den Fördervertrag, da dieser u.a. für die Verantwortlichkeiten  relevant sein könnte.</help>
-		<text lang="de">Nennen Sie, falls vorhanden, Auftrag- oder Fördergeber des Forschungsprojekts.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>text</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_funding">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>information_funding</key>
-		<path>project/information/information_funding</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
 	</attribute>
@@ -450,6 +315,142 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
 	</attribute>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-lead">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/project-lead</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_lead"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name the project leader</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Geben Sie den Namen der Projekt-Leitung an. Bei Bedarf können Sie hier mehrere Personen eintragen, zum Beispiel im Falle eines Kooperationsprojekts.</help>
+		<text lang="de">Nennen Sie die Leitung derStudie/des Forschungsprojekts.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_lead">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_project_lead</key>
+		<path>project/information/information_project_lead</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/participants">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/participants</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_participants"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name the participants of the project.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nennen Sie die direkt an dem Forschungsprojekt beteiligten Forschenden. Geben Sie hier zusätzlich die beteiligten Hochschule(n) und/oder Institut(e), Abteilung(en), Arbeitsgrupp(en) oder Ähnliches an.</help>
+		<text lang="de">Nennen Sie die Beteiligten an der Studie/dem Forschungsprojekt.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_participants">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_participants</key>
+		<path>project/information/information_participants</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/project-homepage">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/project-homepage</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_homepage"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name the project homepage.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Geben Sie die Studien-/Projekt-Homepage oder die Webseite Ihrer Forschungseinrichtung an.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_project_homepage">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_project_homepage</key>
+		<path>project/information/information_project_homepage</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/information/funding">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/information/funding</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_funding"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Name the funding institution of the project.</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Nennen Sie Auftrag- oder Fördergeber/die Fördereinrichtung(en) der Studie. Beachten Sie bitte den Fördervertrag, da dieser u.a. für die Angabe der Verantwortlichkeiten relevant sein könnte.</help>
+		<text lang="de">Nennen Sie, falls vorhanden, Auftrag- oder Fördergeber der Studie.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information/information_funding">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>information_funding</key>
+		<path>project/information/information_funding</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/information"/>
+	</attribute>
 	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/introduction/formulations">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/introduction/formulations</uri_path>
@@ -462,7 +463,7 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<verbose_name lang="en"/>
 		<title lang="de">Anschreiben</title>
 		<short_title lang="de"/>
-		<help lang="de">Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nicht modifizieren, werden die Default-Texte automatisch übernommen.</help>
+		<help lang="de">Bei den folgenden Textfeldern sind Default-Texte vorgegeben. Wenn Sie diese nicht modifizieren, werden die Default-Texte automatisch für das Anschreiben übernommen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
@@ -521,9 +522,9 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet:
-&quot;im Folgenden erhalten Sie Informationen über unser Forschungsprojekt sowie über den datenschutzkonformen Umgang mit Ihren personenbezogenen Daten. „Personenbezogene Daten“ sind alle zu Ihrer Person im Forschungsprojekt erhobenen Daten. Bitte lesen Sie alle Informationen sorgfältig durch. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.&quot;</help>
+&quot;Im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den Umgang mit Ihren personenbezogenen Daten in der dazugehörigen Studie. „Personenbezogene Daten“ sind alle zu Ihrer Person im Forschungsprojekt erhobenen Daten. Bitte lesen Sie alle Informationen sorgfältig durch. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung Ihrer Daten für die angegebenen Zwecke.&quot;</help>
 		<text lang="de">Geben Sie den Text für die Bitte zur Teilnahme an der Studie und zur Zustimmung der Verarbeitung  personenbezogener Daten ein.</text>
-		<default_text lang="de">im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den dazugehörigen Umgang mit Ihren personenbezogenen Daten. „Personenbezogene Daten“ sind alle zu Ihrer Person im Forschungsprojekt erhobenen Daten. Bitte lesen Sie alle Informationen sorgfältig durch. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung  Ihrer Daten für die angegebenen Zwecke.</default_text>
+		<default_text lang="de">Im Folgenden enthalten Sie Informationen über unser Forschungsprojekt sowie über den Umgang mit Ihren personenbezogenen Daten in der dazugehörigen Studie. „Personenbezogene Daten“ sind alle zu Ihrer Person im Forschungsprojekt erhobenen Daten. Bitte lesen Sie alle Informationen sorgfältig durch. Im Anschluss bitten wir Sie um Ihre Zustimmung zur Teilnahme an unserer Studie sowie zur Verarbeitung Ihrer Daten für die angegebenen Zwecke.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -556,9 +557,9 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">Der vorgegebene Default-Text lautet: 
-&quot;Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile. Sie müssen eine Nicht-Teilnahme oder einen Widerruf nicht begründen.&quot;</help>
+&quot;Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Sie können jederzeit und ohne Angabe von Gründen die Teilnahme an dieser Studie beenden, ohne dass Ihnen daraus Nachteile entstehen.&quot;</help>
 		<text lang="de">Geben Sie den Text für die Freiwilligkeit der Teilnahme und Einwilligung ein.</text>
-		<default_text lang="de">Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Lehnen Sie die Teilnahme ab oder widerrufen oder beschränken Sie Ihre Einwilligung, entstehen Ihnen hieraus keine Nachteile. Sie müssen eine Nicht-Teilnahme oder einen Widerruf nicht begründen.</default_text>
+		<default_text lang="de">Ihre Teilnahme an unserer Studie ist in jedem Fall freiwillig. Sie können jederzeit und ohne Angabe von Gründen die Teilnahme an dieser Studie beenden, ohne dass Ihnen daraus Nachteile entstehen.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -716,9 +717,9 @@ Nach der Beantwortung der Fragen kann mit Hilfe der &quot;Ansicht für den Einwi
 		<verbose_name lang="en"/>
 		<title lang="de">Verantwortliche und Datenschutzbeauftragte</title>
 		<short_title lang="de"/>
-		<help lang="de">Die Informationen auf dieser Seite klären die Teilnehmenden über die Verantwortlichen für den Datenschutz im Projekt auf.
+		<help lang="de">Die Informationen auf dieser Seite klären die Teilnehmenden über die Verantwortlichen für den Datenschutz in der Studie auf.
 
-Bei Kooperationsprojekten können gemeinsame Verantwortlichkeiten  (&lt;a href=&quot;https://dsgvo-gesetz.de/art-26-dsgvo/&quot;&gt;Artikel 26 DSGVO&lt;/a&gt;) entstehen; ggf. kann ein Joint Controller Agreement zur  Klärung wichtig sein, dies sollten Sie für Ihre Studie bei Bedarf prüfen.</help>
+Bei Kooperationsprojekten können gemeinsame Verantwortlichkeiten  (&lt;a href=&quot;https://dsgvo-gesetz.de/art-26-dsgvo/&quot;&gt;Artikel 26 DSGVO&lt;/a&gt;) entstehen; ggf. kann ein Joint Controller Agreement zur  Klärung wichtig sein, dies sollten Sie für Ihre Studie bei Bedarf vor Erstellung der Einwilligung prüfen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
@@ -726,6 +727,7 @@ Bei Kooperationsprojekten können gemeinsame Verantwortlichkeiten  (&lt;a href=&
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/revocation_person" order="1"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer-yes-no" order="2"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer_alternative" order="4"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -743,10 +745,10 @@ Bei Kooperationsprojekten können gemeinsame Verantwortlichkeiten  (&lt;a href=&
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
 Sie müssen den Teilnehmenden die Namen und Kontaktdaten der  Datenschutz verantwortlichen Stelle angeben. Im Sinne der DSGVO ist verantwortlich, wer über Zwecke und Mittel der Verarbeitung personenbezogener Daten entscheidet. 
 
-Nennen Sie die  Hochschule, die Einrichtung/das Institut sowie die konkret verantwortliche Person für die Datenverarbeitung mit Namen, Adresszusatz, Telefon und E-Mail. Hinweis: Bei selbstständigen Doktorarbeiten ohne Projektbezug gilt Eigenverantwortlichkeit; in solchen Fällen kann nicht die Hochschule als Verantwortlicher genannt werden.
+Nennen Sie die  Hochschule, die Einrichtung/das Institut sowie die konkret verantwortliche Person für die Datenverarbeitung mit Namen, Adresszusatz, Telefon und E-Mail. Hinweis: Bei selbstständigen Doktorarbeiten ohne Projekt-/Drittmittelbezug gilt Eigenverantwortlichkeit für die Promovierenden; in solchen Fällen kann nicht die Hochschule als Verantwortlicher genannt werden.
 
-Bei mehreren Verantwortlichen in einem Kooperationsprojekt sollten alle Personen mit Kontaktdaten und Adresszusätzen angegeben werden.</help>
-		<text lang="de">Geben Sie Namen und Kontaktmöglichkeiten der für den Datenschutz verantwortlichen Stelle in diesem Projekt an.</text>
+Bei mehreren Verantwortlichen im Sinne der DSGVO für den Datenschutz in einem Kooperationsprojekt sollten alle verantwortlichen Personen mit Kontaktdaten und Adresszusätzen angegeben werden.</help>
+		<text lang="de">Geben Sie Namen und Kontaktmöglichkeiten der für den Datenschutz verantwortlichen Stelle in dieser Studie an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -787,7 +789,7 @@ Bei mehreren Verantwortlichen in einem Kooperationsprojekt sollten alle Personen
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt; 
-Geben Sie für die Teilnehmenden den Namen und die Kontaktmöglichkeiten für den Schriftverkehr zur Ausübung des Widerrufrechts an, z.B. E-Mail-Adresse und Kontaktdaten (&lt;i&gt;Hinweise:&lt;/i&gt; laut DSGVO muss der Widerruf so einfach wie die Zustimmung sein. Es kann sich in Projekten anbieten, eine Funktionsmailadresse anzugeben  um personenunabhängige langfristige Ansprechbarkeit zu gewährleisten).</help>
+Geben Sie für die Teilnehmenden den Namen und die Kontaktmöglichkeiten für den Schriftverkehr zur Ausübung des Widerrufrechts an, z.B. E-Mail-Adresse und Kontaktdaten (&lt;i&gt;Hinweise:&lt;/i&gt; laut DSGVO muss der Widerruf so einfach wie die Zustimmung sein. Es kann sich in Projekten anbieten, eine Funktionsmailadresse anzugeben,  um personenunabhängige langfristige Ansprechbarkeit zu gewährleisten).</help>
 		<text lang="de">Geben Sie die Kontaktmöglichkeiten der Person an, an die sich die Teilnehmenden für einen Widerruf Ihrer Einwilligung wenden können.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -895,10 +897,8 @@ Geben Sie für die Teilnehmenden den Namen und die Kontaktmöglichkeiten für de
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
  Falls Ihrer Institution ein Datenschutzbeauftragter zugeordnet ist, geben Sie eine Möglichkeit zur Kontaktaufnahme an.
 
-Wenn es keine Datenschutzbeauftragten gibt, geben Sie hier die Kontaktdaten der Person an, die den Teilnehmenden Fragen zum Datenschutz  im Projekt beantworten kann.
-
-Bei mehreren Verantwortlichen in einem Kooperationsprojekt können mehrere Datenschutzbeauftragte mit Kontaktdaten und Adresszusätzen angegeben werden.</help>
-		<text lang="de">Geben Sie Kontaktmöglichkeiten des Datenschutzbeauftragten Ihrer Einrichtung  an.</text>
+Bei mehreren Verantwortlichen in einem Kooperationsprojekt können mehrere Datenschutzbeauftragte samt Kontaktmöglichkeiten angegeben werden.</help>
+		<text lang="de">Geben Sie die Kontaktmöglichkeiten des Datenschutzbeauftragten Ihrer Einrichtung  an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -931,6 +931,52 @@ Bei mehreren Verantwortlichen in einem Kooperationsprojekt können mehrere Daten
 		<target_text/>
 		<target_option dc:uri="https://fdm.tu-dortmund.de/options/option_data_protection_officer_yes"/>
 	</condition>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_protection_officer_alternative">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/data_protection_officer_alternative</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_alternative"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Contact questions data protection</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
+Bei mehreren Verantwortlichen in einem Kooperationsprojekt können mehrere Personen mit Kontaktmöglichkeiten angegeben werden.</help>
+		<text lang="de">Geben Sie hier die  Kontaktdaten der Person an, die den Teilnehmenden Fragen zum Datenschutz  in der Studie beantworten kann.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_protection_officer_no"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_alternative">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_data_protection_officer_alternative</key>
+		<path>project/obligation/obligation_data_protection_officer_alternative</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_protection_officer_no">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>condition_data_protection_officer_no</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_protection_officer_yes_no"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://fdm.tu-dortmund.de/options/option_data_protection_officer_no"/>
+	</condition>
 	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/purpose_legal_basis">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/purpose_legal_basis</uri_path>
@@ -945,12 +991,14 @@ Bei mehreren Verantwortlichen in einem Kooperationsprojekt können mehrere Daten
 		<short_title lang="de"/>
 		<help lang="de">Jedwede Verarbeitung von personenbezogenen Daten unterliegt einem Verbot mit Erlaubnisvorbehalt. Die Verarbeitung von personenbezogenen Daten ist nur rechtmäßig, wenn die Verarbeitung  auf einer gültigen Rechtsgrundlage basiert. Die betroffene Person kann entweder ihre Einwilligung zur Verarbeitung  ihrer personenbezogenen Daten geben oder es liegt eine andere Rechtsgrundlage für die Verarbeitung  vor (&lt;a href=&quot;https://dsgvo-gesetz.de/art-6-dsgvo/&quot;&gt;Art. 6 DSGVO&lt;/a&gt;).
 
+Sollten Sie eine andere Rechtsgrundlage als die Einwilligung für die Forschung auswählen, empfehlen wir Ihnen dies dringend mit einem Datenschutzbeauftragten abzuklären.
+
 &lt;b&gt;
 Legen Sie für jeden Zweck, den Sie mit der Datenverarbeitung verfolgen, einen eigenen Eintrag (Tab) an und erstellen Sie für jeden Zweck eine eigene Rechtsgrundlage. &lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
 &lt;/b&gt;
 Der Zweck muss dabei eindeutig und konkret sein. 
 
-Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Forschung&quot;, &quot;Forschungsprojekt&quot; oder &quot;Durchführung der Studie&quot; und die Auswahl einer gültigen Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten kann durch die freiwillige Einwilligung  erfolgen.</help>
+Da es sich hier um eine wissenschaftliche Studie handelt ist der Zweck i.d.R. &quot;Forschung&quot;, &quot;Forschungsprojekt&quot; oder &quot;Durchführung der Studie&quot; und die Auswahl einer gültigen Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten kann durch die freiwillige Einwilligung  erfolgen.</help>
 		<verbose_name lang="de">Zweck</verbose_name>
 		<questionsets/>
 		<questions>
@@ -1079,7 +1127,7 @@ Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Fors
 		<text lang="en">Explicit consent.</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">Vorliegen einer ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO; Art. 9 Abs. 2 lit. a DSGVO)</text>
+		<text lang="de">Ausdrückliche Einwilligung in die Verarbeitung besonderer Kategorien personenbezogener Daten (Art. 6 Abs. 1 lit. a DSGVO; Art. 9 Abs. 2 lit. a DSGVO)</text>
 		<help lang="de">(Gilt bei der Verarbeitung sog. sensibler Daten; siehe Seite „Daten besonderer Kategorien“)</help>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -1140,7 +1188,7 @@ Da es sich hier um ein Forschungsprojekt handelt ist der Zweck i.d.R. &quot;Fors
 		<help lang="en"/>
 		<view_text lang="en"/>
 		<text lang="de">Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten (Art. 6 Abs. 1 lit. f DSGVO)</text>
-		<help lang="de">(Legen Sie das Interesse dar! Dieses kann im Regelfall nicht durch öffentliche Stellen wie Hochschulen benutzt werden. Privatwirtschaftlich organisierte Projektpartner können sich auf diesen Erlaubnistatbestand berufen)</help>
+		<help lang="de">(Dieser Erlaubnistatbestand kann nur von privatwirtschaftlich organisierten Projektpartnern genutzt werden, nicht jedoch von öffentlichen Stellen wie Hochschulen im Rahmen ihrer gesetzlichen Aufgabenwahrnehmung. Bitte legen Sie das berechtigte Interesse dar, sofern Sie sich auf diese Rechtsgrundlage berufen.)</help>
 		<view_text lang="de"/>
 		<additional_input>textarea</additional_input>
 	</option>
@@ -1260,7 +1308,7 @@ Beispiele für mögliche übergeordnete Datenkategorien sind:
 		<text lang="en">Name the data</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de"/>
+		<help lang="de">Für die übergeordnete Datenkategorie haben Sie hier die Möglichkeit, die Daten näher zu beschreiben.</help>
 		<text lang="de">Geben Sie die konkreten Daten dieser Datenkategorie an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1294,7 +1342,7 @@ Beispiele für mögliche übergeordnete Datenkategorien sind:
 		<text lang="en">Describe the process</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Informieren Sie die Teilnehmenden, wie Sie die Daten erheben; zum Beispiel: Interviewdaten, wobei die Audioaufnahmen von den Forschenden mit einem Aufnahmegerät aufgezeichnet und anschließend in eine Schriftform gebracht werden.</help>
+		<help lang="de">Informieren Sie die Teilnehmenden, wie Sie die Daten erheben. Beispiel: Interviewdaten, wobei die Audioaufnahmen von den Forschenden mit einem Aufnahmegerät aufgezeichnet und anschließend in eine Schriftform gebracht werden.</help>
 		<text lang="de">Geben Sie an, wie die konkreten Daten erhoben werden</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1329,7 +1377,7 @@ Beispiele für mögliche übergeordnete Datenkategorien sind:
 		<verbose_name lang="en">Category</verbose_name>
 		<title lang="de">Daten besonderer Kategorien</title>
 		<short_title lang="de"/>
-		<help lang="de">Möchten Sie für Ihr Forschungsprojekt besondere Kategorien personenbezogener Daten (sog. „sensible Daten“) verarbeiten,sind strenge Anonymisierungs- und Separierungsgebote bzw. Sorgfaltspflichten zu befolgen, da diese personenbezogenen Daten als besonders schutzwürdig gelten. Daher ist in diesem Fall  immer die Kontaktaufnahme mit den jeweiligen Datenschutzbeauftragten, die Konsultierung einer Ethikkommission sowie ggf. die Anfertigung einer Datenschutz-Folgeabschätzung zu empfehlen.
+		<help lang="de">Möchten Sie für Ihre Studie besondere Kategorien personenbezogener Daten (sog. „sensible Daten“) verarbeiten,sind strenge Anonymisierungs- und Separierungsgebote bzw. Sorgfaltspflichten zu befolgen, da diese personenbezogenen Daten als besonders schutzwürdig gelten. Daher ist in diesem Fall  immer die Kontaktaufnahme mit den jeweiligen Datenschutzbeauftragten, die Konsultierung einer Ethikkommission sowie ggf. die Anfertigung einer Datenschutz-Folgeabschätzung zu empfehlen.
 
 Zu den personenbezogenen Daten besonderer Kategorien zählen 
 &lt;ul&gt;
@@ -1590,7 +1638,7 @@ Eine Übersicht der Daten besonderer Kategorien mit weiteren Beispielen findet s
 		<text lang="en">Describe the process</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Informieren Sie die Teilnehmenden, wie Sie die Daten erheben.</help>
+		<help lang="de">Informieren Sie die Teilnehmenden, wie Sie die Daten erheben. Beispiel: Videoaufnahme eines Interviews, bei dem die politische Meinung thematisiert wird.</help>
 		<text lang="de">Geben Sie an, wie die konkreten Daten erhoben werden.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1625,12 +1673,13 @@ Eine Übersicht der Daten besonderer Kategorien mit weiteren Beispielen findet s
 		<verbose_name lang="en"/>
 		<title lang="de">Strafrechtliche Verurteilungen und Straftaten</title>
 		<short_title lang="de"/>
-		<help lang="de">Die Verarbeitung personenbezogener Daten über strafrechtliche  Verurteilungen und Straftaten ist nur unter behördlicher Aufsicht oder gemäß rechtlicher Vorgaben mit geeigneten Garantien zulässig. Ein umfassendes Register darf ausschließlich unter behördlicher Aufsicht  geführt werden. (siehe &lt;a href=&quot;https://dsgvo-gesetz.de/art-10-dsgvo/&quot;&gt;Art. 10 DSGVO&lt;/a&gt;)</help>
+		<help lang="de">Die Verarbeitung personenbezogener Daten über strafrechtliche  Verurteilungen und Straftaten ist nur unter behördlicher Aufsicht oder gemäß rechtlicher Vorgaben mit geeigneten Garantien zulässig. Ein umfassendes Register darf ausschließlich unter behördlicher Aufsicht  geführt werden. (siehe &lt;a href=&quot;https://dsgvo-gesetz.de/art-10-dsgvo/&quot;&gt;Art. 10 DSGVO&lt;/a&gt;). Daher ist in diesem Fall  immer die Kontaktaufnahme mit den jeweiligen Datenschutzbeauftragten, die Konsultierung einer Ethikkommission sowie ggf. die Anfertigung einer Datenschutz-Folgeabschätzung zu empfehlen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/obligation/data_categories_criminal_yes_no" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_categories_criminal_details" order="1"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_categories_criminal_process" order="2"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -1751,6 +1800,42 @@ Die Verarbeitung personenbezogener Daten über strafrechtliche Verurteilungen un
 		<target_text/>
 		<target_option dc:uri="https://fdm.tu-dortmund.de/options/option_criminal_category_data_yes"/>
 	</condition>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_categories_criminal_process">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/data_categories_criminal_process</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/data_categories_criminal_process"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">How</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Informieren Sie die Teilnehmenden, wie Sie die Daten erheben.</help>
+		<text lang="de">Geben Sie an, wie die konkreten Daten erhoben werden.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_criminal_categories"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/data_categories_criminal_process">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>data_categories_criminal_process</key>
+		<path>project/obligation/data_categories_criminal_process</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
 	<page dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/storage">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/storage</uri_path>
@@ -1784,9 +1869,9 @@ Die Verarbeitung personenbezogener Daten über strafrechtliche Verurteilungen un
 		<text lang="en">Hwo are the data stored?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Erläutern Sie, was mit den  personenbezogenen Daten in dem Projekt passiert: wo werden die Daten gespeichert, wie werden sie  weiter verarbeitet, wann und wie werden sie pseudonymisiert und anonymisiert -- beachten Sie, dass nach der DSGVO eine Pseudonymisierung/Anonymisierung frühstmöglich erfolgen muss!
+		<help lang="de">Erläutern Sie, was mit den  personenbezogenen Daten in der Studie passiert: wo werden die Daten gespeichert, wie werden sie  weiter verarbeitet, wann und wie werden sie pseudonymisiert und anonymisiert -- beachten Sie, dass nach der DSGVO eine Pseudonymisierung/Anonymisierung frühstmöglich erfolgen muss! 
 
-Hier sollten alle Maßnahmen genannt werden, die die Vertraulichkeit, Anonymität und den Schutz der Daten betreffen, wie beispielsweise  Sicherungsvorkehrungen durch regelmäßige Backups oder Verschlüsselung der Daten.</help>
+Hier sollten alle Maßnahmen genannt werden, die die Vertraulichkeit, Anonymität und den Schutz der Daten betreffen, wie beispielsweise  Sicherungsvorkehrungen durch  Verschlüsselung der Daten oder Zugriffskontrollen.</help>
 		<text lang="de">Wie und wo werden die Daten gespeichert bzw. aufbewahrt?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -1857,9 +1942,7 @@ Hier sollten alle Maßnahmen genannt werden, die die Vertraulichkeit, Anonymitä
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
 Personenbezogene Daten dürfen nur so lange gespeichert werden, wie es  für die Zwecke ihrer Verarbeitung erforderlich ist (Grundsatz der „Speicherbegrenzung“ &lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 e  DSGVO&lt;/a&gt;). Sie sind unverzüglich zu löschen, sobald sie nicht mehr benötigt  werden. Der Verantwortliche sollte daher Löschfristen oder regelmäßige  Überprüfungen der personenbezogenen Daten festlegen (vgl. &lt;a href=&quot;https://dsgvo-gesetz.de/erwaegungsgruende/nr-39/&quot;&gt; Erwägungsgrund 39 DSGVO&lt;/a&gt;).  Ausnahmen  für eine längere Aufbewahrung von Daten können für die Forschung bestehen, wenn  entsprechende Schutzgarantien existieren, z.B. Pseudonymisierung,  Verschlüsselung und sichere Aufbewahrung der Daten (vgl.  &lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 e  DSGVO&lt;/a&gt;). 
 
-Bitte beachten Sie daher, dass personenbezogene Daten  im Sinne der DSGVO frühestmöglich zu löschen sind und nur solange gespeichert werden sollten, solange es für die Forschung unerlässlich ist  (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 lit. e DSGVO, Grundsatz der Speicherbegrenzung&lt;/a&gt;).
-
-Ausnahmen  für eine längere Aufbewahrung von Daten kann für die Forschung in Ausnahmefällen bestehen, wenn  entsprechende Schutzgarantien existieren, z.B. Pseudonymisierung,  Verschlüsselung und sichere Aufbewahrung der Daten (vgl &lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 DSGVO&lt;/a&gt;).</help>
+Bitte beachten Sie daher, dass personenbezogene Daten  im Sinne der DSGVO frühestmöglich zu löschen sind und nur solange gespeichert werden sollten, solange es für die Forschung unerlässlich ist  (&lt;a href=&quot;https://dsgvo-gesetz.de/art-5-dsgvo/&quot;&gt;Art. 5 Abs. 1 lit. e DSGVO, Grundsatz der Speicherbegrenzung&lt;/a&gt;).</help>
 		<text lang="de">Wie lange werden die Daten in nicht-anonymisierter Form gespeichert,  d.h. wann werden die personenbezogenen Daten anonymisiert oder aber endgültig gelöscht?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de">Aufbewahrungsdauer</verbose_name>
@@ -1916,8 +1999,8 @@ Ausnahmen  für eine längere Aufbewahrung von Daten kann für die Forschung in 
 		<text lang="en">end of project</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">spätestens bis zum Ende der vorgesehenen Projektlaufzeit</text>
-		<help lang="de">(Bitte geben Sie das Ende der Projektlaufzeit an, zu dem die Daten gelöscht/bei Papierform vernichtet werden)</help>
+		<text lang="de">spätestens bis zum Ende der vorgesehenen Studienlaufzeit</text>
+		<help lang="de">(Bitte geben Sie das Ende der Studienlaufzeit an, zu dem die Daten gelöscht/bei Papierform vernichtet werden)</help>
 		<view_text lang="de"/>
 		<additional_input>text</additional_input>
 	</option>
@@ -1940,7 +2023,7 @@ Ausnahmen  für eine längere Aufbewahrung von Daten kann für die Forschung in 
 		<text lang="en">Revocation</text>
 		<help lang="en"/>
 		<view_text lang="en"/>
-		<text lang="de">solange die Einwilligung nicht widerrufen wird und eine Notwendigkeit der Aufbewahrung zur Erreichung der Forschungszwecke  besteht,  höchstens jedoch 10 Jahre gemessen am Datum der ersten Aufnahme.</text>
+		<text lang="de">solange die Einwilligung nicht widerrufen wird und eine Notwendigkeit der Aufbewahrung zur Erreichung der Forschungszwecke  besteht,  höchstens jedoch 10 Jahre gemessen am Datum der ersten Verarbeitung.</text>
 		<help lang="de"/>
 		<view_text lang="de"/>
 		<additional_input/>
@@ -1979,7 +2062,7 @@ Ausnahmen  für eine längere Aufbewahrung von Daten kann für die Forschung in 
 		<verbose_name lang="en"/>
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
 &quot;Profiling&quot; umfasst jede Art der automatisierten Verarbeitung personenbezogener Daten (vgl. &lt;a href=&quot;https://dsgvo-gesetz.de/art-4-dsgvo/&quot;&gt;Art. 4 DSGVO&lt;/a&gt;). Eine &quot;automatisierte Einzelentscheidung&quot; bedeutet, dass Entscheidungen vollständig automatisiert ohne menschliches Eingreifen erfolgen (&lt;a href=&quot;https://dsgvo-gesetz.de/erwaegungsgruende/nr-71/&quot;&gt;Erwägungsgrund 71 DSGVO&lt;/a&gt;). Bitte beachten Sie, dass Sie für ein solches Verfahren auch eine Datenschutz-Folgenabschätzung nach &lt;a href=&quot;https://dsgvo-gesetz.de/art-35-dsgvo/&quot;&gt;Art. 35 DSGVO&lt;/a&gt; durchführen müssen.</help>
-		<text lang="de">Nutzen Sie für das Forschungsprojekt eine automatisierte Entscheidungsfindung (Profiling)?</text>
+		<text lang="de">Nutzen Sie für die Studie eine automatisierte Entscheidungsfindung (Profiling)?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option dc:uri="https://fdm.tu-dortmund.de/options/option_profiling_no"/>
@@ -2050,7 +2133,7 @@ Ausnahmen  für eine längere Aufbewahrung von Daten kann für die Forschung in 
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
-Beschreiben Sie welche Logiken (angewendeten Methoden und Kriterien der Datenverarbeitung) oder Algorithmen inklusive Funktionsweise zum Einsatz kommen und wie   sichergestellt wird, dass keine diskriminierenden oder unzulässigen  Entscheidungen getroffen werden. 
+Beschreiben Sie welche Logiken (angewendete Methoden und Kriterien der Datenverarbeitung) oder Algorithmen inklusive Funktionsweise zum Einsatz kommen und wie   sichergestellt wird, dass keine diskriminierenden oder unzulässigen  Entscheidungen getroffen werden. 
 
 Erklären Sie, ob das Profiling/automatisierte Entscheidungsfindung  ausschließlich zu wissenschaftlichen Zwecken erfolgt, oder ob es potenziell rechtliche Auswirkungen bzw. erhebliche Konsequenzen  für die betroffenen Personen hat (&lt;a href=&quot;https://dsgvo-gesetz.de/art-22-dsgvo/&quot;&gt;Art. 22 DSGVO&lt;/a&gt;).  Sie müssen die Teilnehmenden an dieser Stelle über die Tragweite und die angestrebten Auswirkungen einer solchen Verarbeitung aufklären.</help>
 		<text lang="de">Erläutern Sie die Logik der Entscheidungsfindung.</text>
@@ -2098,18 +2181,20 @@ Erklären Sie, ob das Profiling/automatisierte Entscheidungsfindung  ausschließ
 		<verbose_name lang="en"/>
 		<title lang="de">Veröffentlichung, Nachnutzung, Lehre</title>
 		<short_title lang="de"/>
-		<help lang="de">Hier sollen Sie alle Angaben dazu machen, wie, mit wem und in welcher Form (z.B. anonymisiert) Sie die erhobenen Forschungsdaten veröffentlichen und teilen und wie Sie diese in der Lehre nutzen möchten.</help>
+		<help lang="de">Wenn Forschungsdaten erhoben werden, die ursprünglich oder weiterhin einen Personenbezug aufweisen, sollte bereits in der Einwilligungserklärung festgelegt werden, ob und in welchem Umfang diese Daten für verschiedene wissenschaftliche Zwecke genutzt werden dürfen. Dazu gehört insbesondere die Verwendung der Daten für wissenschaftliche Veröffentlichungen, ihre langfristige Bereitstellung zur Nachnutzung durch andere Forschende sowie ihr Einsatz in der Lehre. An dieser Stelle sind daher alle relevanten Informationen zum geplanten Umgang mit den personenbezogenen Daten transparent darzustellen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/publication" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/publication_details" order="1"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_data" order="3"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_description" order="4"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_access" order="5"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/lectures" order="6"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/lectures_data" order="7"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_name" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_access" order="4"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_archiving" order="5"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_archiving_name" order="6"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_archiving_description" order="7"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/lectures" order="8"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/lectures_data" order="9"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -2124,7 +2209,7 @@ Erklären Sie, ob das Profiling/automatisierte Entscheidungsfindung  ausschließ
 		<text lang="en">Do you want to publish the data?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Relevant ist jedwede Art der Ergebnis-Veröffentlichung, z.B. Dissertation, Zeitschriften- oder Konferenz-Publikation.</help>
+		<help lang="de">Relevant ist jedwede Art der Veröffentlichung, z.B. im Rahmen einer Dissertation, Zeitschriften- oder Konferenz-Publikation sowie eigenständigen Datenpublikation in Datenjournalen, Repositorien oder Datenzentren.</help>
 		<text lang="de">Möchten Sie die Daten für wissenschaftliche Veröffentlichungen nutzen?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -2195,11 +2280,11 @@ Erklären Sie, ob das Profiling/automatisierte Entscheidungsfindung  ausschließ
 		<text lang="en">Details publication</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Hier müssen Sie die Teilnehmenden über die genaue Handhabung bei der Veröffentlichung aufklären.  Geben Sie an, in welchem Umfang die Daten veröffentlicht werden und wie Sie dabei vertraulich mit den personenbezogenen Daten umgehen. Empfohlen wird das Teilen und Veröffentlichen ausschließlich anonymisierter Daten. Bei Abweichungen erklären Sie, ob  pseudonymisierte Daten genutzt oder Namensnennungen z. B. bei  Expert*inneninterviews gewünscht sind. Beschreiben Sie konkret und verständlich, wie die Anonymisierung oder Pseudonymisierung umgesetzt wird (z. B. durch Löschung von Namen, Ortsangaben oder Verwendung einzelner anonymer Zitate).
+		<help lang="de">Hier müssen Sie die Teilnehmenden über die genaue Handhabung der personenbezogenen Daten bei der Veröffentlichung aufklären.  Geben Sie an, in welchem Umfang die Daten veröffentlicht werden und wie Sie dabei vertraulich mit den personenbezogenen Daten umgehen. Empfohlen wird das Teilen und Veröffentlichen ausschließlich anonymisierter Daten. Bei Abweichungen  davon erklären Sie, ob pseudonymisierte Daten genutzt oder Namensnennungen, z. B. bei  Expert*inneninterviews, gewünscht sind. Beschreiben Sie konkret und verständlich, wie die Anonymisierung oder Pseudonymisierung umgesetzt wird (z. B. durch Löschung von Namen, Ortsangaben oder Verwendung einzelner anonymer Zitate). 
 
-Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in Publikationen oder auf  Tagungen erfolgt ausschließlich in anonymisierter Form, sodass zu keiner Zeit Rückschlüsse auf Ihre Person möglich sind. Alle Angaben, die eine Identifizierung Ihrer Person ermöglichen könnten, werden entweder verändert oder vollständig entfernt.&quot;</help>
-		<text lang="de">Erläutern Sie den Teilnehmenden die Handhabung der personenbezogenen Daten bei einer späteren wissenschaftlichen Veröffentlichung</text>
-		<default_text lang="de">Die Veröffentlichung von Forschungsergebnissen in Publikationen oder auf  Tagungen erfolgt ausschließlich in anonymisierter Form, sodass zu keiner Zeit Rückschlüsse auf Ihre Person möglich sind. Alle Angaben, die eine Identifizierung Ihrer Person ermöglichen könnten, werden entweder verändert oder vollständig entfernt.</default_text>
+Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in Publikationen oder auf Tagungen erfolgt ausschließlich in anonymisierter Form, sodass zu keiner Zeit Rückschlüsse auf konkrete Personen oder einzelne Studienteilnehmende möglich sind. Alle Angaben, die eine Identifizierung Ihrer Person ermöglichen könnten, werden entweder verändert oder vollständig entfernt.&quot;</help>
+		<text lang="de">Erläutern Sie den Teilnehmenden den konkreten Umgang mit den personenbezogenen Daten bei einer geplanten wissenschaftlichen Veröffentlichung.</text>
+		<default_text lang="de">Die Veröffentlichung von Forschungsergebnissen in Publikationen oder auf Tagungen erfolgt ausschließlich in anonymisierter Form, sodass zu keiner Zeit Rückschlüsse auf konkrete Personen oder einzelne Studienteilnehmende möglich sind. Alle Angaben, die eine Identifizierung Ihrer Person ermöglichen könnten, werden entweder verändert oder vollständig entfernt.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -2243,7 +2328,7 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Sollen die Daten zur wissenschaftlichen Nachnutzung/Archivierung an ein Datenzentrum oder Daten-Repositorium übermittelt werden?</text>
+		<text lang="de">Möchten Sie die Daten in einem Datenrepositorium/Datenzentrum veröffentlichen?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_no"/>
@@ -2302,24 +2387,24 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 		<view_text lang="de"/>
 		<additional_input/>
 	</option>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_data">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_name">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/data_center_repository_data</uri_path>
+		<uri_path>consent-gen/obligation/data_center_repository_name</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_data"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_name"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">Which data? How?</text>
+		<text lang="en">repository</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Falls nur eine Teilmenge der Daten genutzt wird können Sie das hier angeben. Wenn alle genannten Daten genutzt werden, dann lassen Sie das Feld leer.</help>
-		<text lang="de">Welche Daten sollen zur wissenschaftlichen Nachnutzung/Archivierung übermittelt werden? Beschreiben Sie außerdem, in welcher Form die Daten übermittelt werden (pseudonymisiert, anonymisiert).</text>
+		<help lang="de">Geben Sie den konkreten Ort der Veröffentlichung und damit den Namen des Datenrepositoriums oder des Datenzentrums an. Zum Beispiel finden Sie hier zertifizierte Datenzentren, die für die Übermittlung von sensiblen Daten infrage kommen:  &lt;a href=&quot;https://www.konsortswd.de/angebote/forschende/alle-datenzentren&quot;&gt;https://www.konsortswd.de/angebote/forschende/alle-datenzentren&lt;/a&gt;</help>
+		<text lang="de">Falls bereits möglich, nennen Sie das konkrete Datenrepositorium/Datenzentrum für die Veröffentlichung.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
-		<widget_type>textarea</widget_type>
+		<widget_type>text</widget_type>
 		<value_type>text</value_type>
 		<maximum/>
 		<minimum/>
@@ -2331,10 +2416,10 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_center_repository"/>
 		</conditions>
 	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_data">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_name">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_data_center_repository_data</key>
-		<path>project/obligation/obligation_data_center_repository_data</path>
+		<key>obligation_data_center_repository_name</key>
+		<path>project/obligation/obligation_data_center_repository_name</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
@@ -2347,42 +2432,6 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 		<target_text/>
 		<target_option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_yes"/>
 	</condition>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_description">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/data_center_repository_description</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_description"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Which data center?</text>
-		<default_text lang="en"/>
-		<verbose_name lang="en"/>
-		<help lang="de"/>
-		<text lang="de">Geben Sie - falls bereits möglich - das konkrete Archiv/Datenzentrum/Repositorium namentlich an.</text>
-		<default_text lang="de"/>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions>
-			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_center_repository"/>
-		</conditions>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_description">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>obligation_data_center_repository_description</key>
-		<path>project/obligation/obligation_data_center_repository_description</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
-	</attribute>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_access">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/obligation/data_center_repository_access</uri_path>
@@ -2394,9 +2443,11 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 		<text lang="en">Access?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Erklären Sie den Teilnehmenden wie der konkrete Datenzugriff (z.B. Zugriffsklassen oder Nutzungsvereinbarung) durch wen (z.B. Forschende)  möglich ist und ggf. für welche Zwecke (z.B. nur für wissenschaftliche Zwecke in thematisch verwandten Forschungsbereichen) und gehen Sie ggf. auf weitere Bedingungen wie eine geschützte Aufbewahrung ein (z.B. Verpflichtung zur Einhaltung datenschutzrechtlicher Bestimmungen).</help>
-		<text lang="de">Wie wird hierbei der Zugriff auf die Daten und die Nachnutzung für Dritte/andere Forschende konkret möglich sein?</text>
-		<default_text lang="de"/>
+		<help lang="de">Erklären Sie den Teilnehmenden wie der konkrete Datenzugriff (z.B. Zugriffsklassen oder Nutzungsvereinbarung) durch wen (z.B. Forschende) möglich ist und ggf. für welche Zwecke (z.B. nur für wissenschaftliche Zwecke in thematisch verwandten Forschungsbereichen) und gehen Sie ggf. auf weitere Bedingungen wie eine geschützte Aufbewahrung ein (z.B. Verpflichtung zur Einhaltung datenschutzrechtlicher Bestimmungen). 
+
+Der Default-Text lautet: „Nach Abschluss der Studie werden die erhobenen Forschungsdaten in anonymisierter Form über ein geeignetes Datenrepositorium/Datenzentrum [Name eingeben] anderen Forschenden zeitlich unbegrenzt zur Verfügung gestellt. Der anonymisierte, nicht mehr personenbeziehbare Datensatz wird für ausschließlich wissenschaftliche Forschungszwecke weitergenutzt. Rückschlüsse auf Personen sind anhand dieses Datensatzes nicht mehr möglich.“</help>
+		<text lang="de">Erklären Sie hier, wie der Zugriff auf die Daten und die Nachnutzung für Dritte/andere Forschende konkret möglich sein wird.</text>
+		<default_text lang="de">Nach Abschluss der Studie werden die erhobenen Forschungsdaten in anonymisierter Form über ein geeignetes Datenrepositorium/Datenzentrum [Name eingeben] anderen Forschenden zeitlich unbegrenzt zur Verfügung gestellt. Der anonymisierte, nicht mehr personenbeziehbare Datensatz wird für ausschließlich wissenschaftliche Forschungszwecke weitergenutzt. Rückschlüsse auf Personen sind anhand dieses Datensatzes nicht mehr möglich.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -2416,6 +2467,158 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>obligation_data_center_repository_access</key>
 		<path>project/obligation/obligation_data_center_repository_access</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_archiving">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/data_center_repository_archiving</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Archiving</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Im Sinne der guten wissenschaftlichen Praxis sowie entsprechend den Richtlinien der Deutschen Forschungsgemeinschaft (DFG) sollen Forschungsdaten, die Primärpublikationen zugrunde liegen, für einen Zeitraum von zehn Jahren archiviert werden. Beachten Sie, dass die Daten hier nicht veröffentlicht werden.</help>
+		<text lang="de">Sollen die Forschungsdaten in einem Datenzentrum oder einem Datenrepositorium archiviert werden?</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_no"/>
+		<default_external_id/>
+		<widget_type>radio</widget_type>
+		<value_type>option</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets>
+			<optionset dc:uri="https://fdm.tu-dortmund.de/options/options_data_center_repository_archiving_yes_no"/>
+		</optionsets>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_data_center_repository_archiving</key>
+		<path>project/obligation/obligation_data_center_repository_archiving</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<optionset dc:uri="https://fdm.tu-dortmund.de/options/options_data_center_repository_archiving_yes_no">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>options_data_center_repository_archiving_yes_no</uri_path>
+		<dc:comment/>
+		<provider_key/>
+		<options>
+			<option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" order="1"/>
+			<option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_no" order="2"/>
+		</options>
+		<conditions/>
+	</optionset>
+	<option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>option_data_center_repository_archiving_yes</uri_path>
+		<dc:comment/>
+		<text lang="en">Yes</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Ja</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_no">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>option_data_center_repository_archiving_no</uri_path>
+		<dc:comment/>
+		<text lang="en">No</text>
+		<help lang="en"/>
+		<view_text lang="en"/>
+		<text lang="de">Nein</text>
+		<help lang="de"/>
+		<view_text lang="de"/>
+		<additional_input/>
+	</option>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_archiving_name">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/data_center_repository_archiving_name</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving_name"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">which archive</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de"/>
+		<text lang="de">Falls bereits möglich, geben Sie das konkrete Datenzentrum/Datenrepositorium für die Archivierung namentlich an.</text>
+		<default_text lang="de"/>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>text</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_center_repository_archiving"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving_name">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_data_center_repository_archiving_name</key>
+		<path>project/obligation/obligation_data_center_repository_archiving_name</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
+	</attribute>
+	<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_center_repository_archiving">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>condition_data_center_repository_archiving</uri_path>
+		<dc:comment/>
+		<source dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving"/>
+		<relation>eq</relation>
+		<target_text/>
+		<target_option dc:uri="https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes"/>
+	</condition>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/data_center_repository_archiving_description">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/obligation/data_center_repository_archiving_description</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving_description"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Description</text>
+		<default_text lang="en"/>
+		<verbose_name lang="en"/>
+		<help lang="de">Default-Text: „Die Archivierung der Forschungsdaten im Sinne der guten wissenschaftlichen Praxis für mindestens zehn Jahre nach Projektende im Datenrepositorium/Datenzentrum [Name eingeben] erfolgt ausschließlich zu Dokumentations- und Nachvollziehbarkeitszwecken unter Berücksichtigung der geltenden datenschutzrechtlichen Bestimmungen. Die Daten werden dort zugriffsgeschützt archiviert.“</help>
+		<text lang="de">Erläutern Sie den Grund und das datenschutzkonforme Vorgehen bei der Archivierung in einem Datenrepositorium/Datenzentrum.</text>
+		<default_text lang="de">Die Archivierung der Forschungsdaten im Sinne der guten wissenschaftlichen Praxis für mindestens zehn Jahre nach Projektende im Datenrepositorium/Datenzentrum [Name eingeben] erfolgt ausschließlich zu Dokumentations- und Nachvollziehbarkeitszwecken unter Berücksichtigung der geltenden datenschutzrechtlichen Bestimmungen. Die Daten werden dort zugriffsgeschützt archiviert</default_text>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions>
+			<condition dc:uri="https://fdm.tu-dortmund.de/conditions/condition_data_center_repository_archiving"/>
+		</conditions>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_data_center_repository_archiving_description">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>obligation_data_center_repository_archiving_description</key>
+		<path>project/obligation/obligation_data_center_repository_archiving_description</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation"/>
 	</attribute>
@@ -2498,12 +2701,14 @@ Der Default-Text lautet: „Die Veröffentlichung von Forschungsergebnissen in P
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">Which data?</text>
+		<text lang="en">How?</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
-		<help lang="de">Falls nur eine Teilmenge der Daten genutzt wird können Sie das hier angeben. Wenn alle genannten Daten genutzt werden, dann lassen Sie das Feld leer.</help>
-		<text lang="de">Welche Daten sollen in der Lehre eingesetzt werden?  Beschreiben Sie außerdem, in welcher Form die Daten übermittelt (pseudonymisiert, anonymisiert) und eingesetzt werden (z.B. nur einzelne Zitate).</text>
-		<default_text lang="de"/>
+		<help lang="de">Beschreiben Sie in welcher Form die Daten verwendet werden (pseudonymisiert, anonymisiert) und wie Sie konkret eingesetzt werden (z.B. nur einzelne Zitate).
+
+Der Default-Text lautet: „Die Forschungsdaten werden ausschließlich in der wissenschaftlichen Lehre eingesetzt. Die Verwendung erfolgt in anonymisierter Form, sodass zu keiner Zeit Rückschlüsse auf konkrete Personen oder einzelne Studienteilnehmende möglich sind. Alle Angaben, die eine Identifizierung Ihrer Person ermöglichen könnten, werden entweder verändert oder vollständig entfernt.“</help>
+		<text lang="de">In welcher Form werden die Daten in der wissenschaftlichen Lehre eingesetzt?</text>
+		<default_text lang="de">Die Forschungsdaten werden ausschließlich in der wissenschaftlichen Lehre eingesetzt. Die Verwendung erfolgt in anonymisierter Form, sodass zu keiner Zeit Rückschlüsse auf konkrete Personen oder einzelne Studienteilnehmende möglich sind. Alle Angaben, die eine Identifizierung Ihrer Person ermöglichen könnten, werden entweder verändert oder vollständig entfernt.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -2554,7 +2759,7 @@ Nach &lt;a href=&quot;https://dsgvo-gesetz.de/art-4-dsgvo/&quot;&gt;Art. 4 Nr. 9
 
 &lt;b&gt;Legen Sie für jeden Empfänger/jede Kategorie von Empfängern verpflichtend einen Eintrag (Tab) an. &lt;/b&gt;
 
-Werden keine Daten übermittelt, dann können Sie diese Frage überspringen.</help>
+Werden keine Daten an Dritte übermittelt, dann können Sie diese Frage überspringen.</help>
 		<verbose_name lang="de">Empfänger</verbose_name>
 		<questionsets/>
 		<questions>
@@ -2590,7 +2795,7 @@ Werden keine Daten übermittelt, dann können Sie diese Frage überspringen.</he
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;
-Es wird bei den Kategorien von Empfängern folgende grundlegende Unterscheidung bei der Angabe empfohlen. „Interne Empfänger“ sind beispielsweise andere Forschende, die am gleichen Institut, aber in einer anderen Abteilung arbeiten. „Externe Empfänger“ sind zum Beispiel Kooperationspartner in der Forschung/Industrie aber auch Auftragsverarbeiter wie  Transkriptionsbüros, Onlinedienste (z.B. extern gehostete Umfragetools) und externe Dienstleister wie externe Labore (bspw. bei der Übermittlung von Proben) oder auch Repositorien oder Datenzentren, die Daten im Auftrag archivieren. Die Übermittlung an Auftragsverarbeiter für technische Dienstleistungen geschieht im Regelfall auf der Grundlage eines Vertrages gemäß &lt;a href=&quot;https://dsgvo-gesetz.de/art-28-dsgvo/&quot;&gt;Art. 28 DS-GVO&lt;/a&gt;.</help>
+Es wird bei den Kategorien von Empfängern folgende grundlegende Unterscheidung bei der Angabe empfohlen. „Interne Empfänger“ sind beispielsweise andere Forschende, die am gleichen Institut arbeiten. „Externe Empfänger“ sind zum Beispiel Kooperationspartner in der Forschung/Industrie aber auch Auftragsverarbeiter wie  Transkriptionsbüros, Onlinedienste (z.B. extern gehostete Umfragetools) und externe Dienstleister wie externe Labore (bspw. bei der Übermittlung von Proben) oder auch Repositorien oder Datenzentren, die Daten im Auftrag archivieren. Die Übermittlung an Auftragsverarbeiter für technische Dienstleistungen geschieht im Regelfall auf der Grundlage eines Vertrages gemäß &lt;a href=&quot;https://dsgvo-gesetz.de/art-28-dsgvo/&quot;&gt;Art. 28 DS-GVO&lt;/a&gt;.</help>
 		<text lang="de">Nennen Sie den Empfänger bzw. die Kategorie von Empfängern für die Daten.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
@@ -2705,7 +2910,7 @@ Es wird bei den Kategorien von Empfängern folgende grundlegende Unterscheidung 
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_name" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/adequacy_yes_no" order="1"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/guarantee_yes_no" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_description" order="5"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_purpose" order="5"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -2917,19 +3122,19 @@ Gibt es auch keine geeigneten Garantien, kann eine Übermittlung und Verarbeitun
 		<view_text lang="de"/>
 		<additional_input>textarea</additional_input>
 	</option>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_description">
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/obligation/third_country_purpose">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/obligation/third_country_description</uri_path>
+		<uri_path>consent-gen/obligation/third_country_purpose</uri_path>
 		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country_description"/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country_purpose"/>
 		<is_collection>False</is_collection>
 		<is_optional>False</is_optional>
 		<help lang="en"/>
-		<text lang="en">Below, you have the opportunity to explain the necessity for the transfer and, if applicable, the process in more detail for the participants</text>
+		<text lang="en">Purpose</text>
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de">&lt;span style=&quot;color:Red;&quot;&gt;(Pflichtfeld)&lt;/span&gt;</help>
-		<text lang="de">Im Folgenden haben Sie die Möglichkeit, für die Teilnehmenden die  Notwendigkeit oder den Grund für die Übertragung der Daten an ein Drittland oder eine internationale Organisation zu nennen und ggf. den Ablauf  näher zu erläutern.</text>
+		<text lang="de">Geben Sie den Zweck der Datenübermittlung an.</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option/>
@@ -2944,10 +3149,10 @@ Gibt es auch keine geeigneten Garantien, kann eine Übermittlung und Verarbeitun
 		<optionsets/>
 		<conditions/>
 	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country_description">
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country/third_country_purpose">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>third_country_description</key>
-		<path>project/obligation/obligation_third_country/third_country_description</path>
+		<key>third_country_purpose</key>
+		<path>project/obligation/obligation_third_country/third_country_purpose</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/obligation/obligation_third_country"/>
 	</attribute>
@@ -2966,26 +3171,23 @@ Gibt es auch keine geeigneten Garantien, kann eine Übermittlung und Verarbeitun
 		<help lang="de">Sie haben eine Hinweispflicht für die Rechte der Betroffenen. 
 
 Diese werden automatisch in die generierte Einwilligungserklärung eingefügt und lauten wie folgt: 
+
 &lt;ul&gt;
-&lt;li&gt; Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-15-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-15-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Widerrufsrecht:&lt;/b&gt; Sie haben das Recht, Ihre Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen. Artikel 7, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-7-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-7-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie haben das Recht, Ihre Einwilligung jederzeit zu widerrufen.
-Artikel 7, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-7-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-7-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Auskunftsrecht:&lt;/b&gt; Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-15-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-15-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. 
-Artikel 16, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-16-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-16-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Recht auf Berichtigung:&lt;/b&gt; Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. Artikel 16, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-16-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-16-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie können jederzeit die Löschung Ihrer Daten verlangen.
-Artikel 17, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-17-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-17-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Recht auf Löschung:&lt;/b&gt; Sie können jederzeit die Löschung Ihrer Daten verlangen. Artikel 17, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-17-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-17-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-18-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-18-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Recht auf Einschränkung der Verarbeitung:&lt;/b&gt; Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-18-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-18-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-20-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-20-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Recht auf Datenübertragbarkeit:&lt;/b&gt; Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-20-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-20-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;
-Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch mit Widerruf für die Zukunft einlegen, &lt;a href=&quot;https://dsgvo-gesetz.de/art-21-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-21-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Widerspruchsrecht:&lt;/b&gt; Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch einlegen. Artikel 21, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-21-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-21-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt; Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind oder Ihre Betroffennenrechte nicht oder nur unzureichend gewahrt, dann können Sie sich an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-77-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-77-dsgvo/&lt;/a&gt;
+&lt;li&gt; &lt;b&gt;Beschwerderecht bei einer Aufsichtsbehörde:&lt;/b&gt; Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind oder Ihre Betroffennenrechte nicht oder nur unzureichend gewahrt, dann können Sie sich an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, &lt;a href=&quot;https://dsgvo-gesetz.de/art-77-dsgvo/&quot;&gt;https://dsgvo-gesetz.de/art-77-dsgvo/&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</help>
 		<verbose_name lang="de"/>
@@ -3048,7 +3250,7 @@ Siehe &lt;a href=&quot;https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/L
 		<short_title lang="de"/>
 		<help lang="de">Die Kontaktdaten der Teilnehmenden sollten getrennt von den für die Forschungsfrage relevanten personenbezogenen Daten gespeichert werden und sind daher als separater Datensatz zu betrachten  für den die explizite Einwilligung zusätzlich eingeholt werden sollte. 
 
-Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden im Verlauf des Projekts, oder nach Abschluss des Projekts, Kontakt aufzunehmen.</help>
+Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden im Verlauf der Studie oder nach Abschluss Kontakt aufzunehmen.</help>
 		<verbose_name lang="de"/>
 		<questionsets/>
 		<questions>
@@ -3069,7 +3271,7 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden i
 		<default_text lang="en"/>
 		<verbose_name lang="en"/>
 		<help lang="de"/>
-		<text lang="de">Wollen Sie die Kontaktdaten der Teilnehmenden für das hier dargelegte Forschungsprojekt speichern?</text>
+		<text lang="de">Wollen Sie die Kontaktdaten der Teilnehmenden für die hier dargelegte Studie speichern?</text>
 		<default_text lang="de"/>
 		<verbose_name lang="de"/>
 		<default_option dc:uri="https://fdm.tu-dortmund.de/options/option_contact_data_no"/>
@@ -3234,7 +3436,7 @@ Zum Beispiel können Kontaktdaten gespeichert werden, um mit den Teilnehmenden i
 		<verbose_name lang="en"/>
 		<title lang="de">Einwilligungserklärung</title>
 		<short_title lang="de"/>
-		<help lang="de">In der eigentlichen, von den Teilnehmenden zu unterschreibenden, Einwilligungserklärung werden i.d.R. obligatorische  Informationen zusammengefasst und wiederholt. Auf dieser Seite haben Sie die Möglichkeit, hierfür Formulierungen zu übernehmen oder anzupassen. 
+		<help lang="de">In der eigentlichen, von den Teilnehmenden zu unterschreibenden, Einwilligungserklärung werden i.d.R. obligatorische  Informationen zur Studie und zur Datenverarbeitung zusammengefasst . Auf dieser Seite haben Sie die Möglichkeit, hierfür Formulierungen zu übernehmen oder anzupassen. 
 
 Bei den folgenden Textfeldern sind Default-Texte vorgegeben, welche aus der Perspektive der Teilnehmenden der Studie geschrieben sind, weil diese mit ihrer Unterschrift in die Datenverarbeitung einwilligen sollen. Wenn Sie Default-Texte nicht modifizieren, werden diese automatisch übernommen. Wenn Sie die vorgegebenen Inhalte löschen wird auch kein Text in der Ansicht generiert.</help>
 		<verbose_name lang="de"/>
@@ -3242,8 +3444,8 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben, welche aus der Pers
 		<questions>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/perusal" order="0"/>
 			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/questions" order="1"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/confirmation_rights" order="2"/>
-			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/receipt" order="3"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/receipt" order="2"/>
+			<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/confirmation_rights" order="3"/>
 		</questions>
 		<conditions/>
 	</page>
@@ -3258,9 +3460,9 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben, welche aus der Pers
 		<text lang="en">Perusal</text>
 		<default_text lang="en">to do</default_text>
 		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich bestätige, dass mir ein Informationsblatt zum genannten Projekt ausgehändigt wurde und dass ich  ausreichend Gelegenheit hatte, die Informationen zur Kenntnis zu nehmen.  Über Forschungsziele, Datenverarbeitung und Datenschutz wurde ich  informiert.&quot;</help>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich bestätige, dass mir die Studieninformationen zum genannten Projekt ausgehändigt wurden und dass ich ausreichend Gelegenheit hatte, die Informationen zur Kenntnis zu nehmen. Über Forschungsziele und -zwecke, Datenverarbeitung und Datenschutz wurde ich informiert.&quot;</help>
 		<text lang="de">Geben Sie den Text für die Zustimmung zur Kenntnisnahme und Informiertheit an.</text>
-		<default_text lang="de">Ich bestätige, dass mir ein Informationsblatt zum genannten Projekt ausgehändigt wurde und dass ich  ausreichend Gelegenheit hatte, die Informationen zur Kenntnis zu nehmen.  Über Forschungsziele, Datenverarbeitung und Datenschutz wurde ich  informiert.</default_text>
+		<default_text lang="de">Ich bestätige, dass mir die Studieninformationen zum genannten Projekt ausgehändigt wurden und dass ich ausreichend Gelegenheit hatte, die Informationen zur Kenntnis zu nehmen. Über Forschungsziele und -zwecke, Datenverarbeitung und Datenschutz wurde ich informiert.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -3322,40 +3524,6 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben, welche aus der Pers
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent"/>
 	</attribute>
-	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/confirmation_rights">
-		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
-		<uri_path>consent-gen/consent/confirmation_rights</uri_path>
-		<dc:comment/>
-		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent/declaration_consent_confirmation_rights"/>
-		<is_collection>False</is_collection>
-		<is_optional>False</is_optional>
-		<help lang="en"/>
-		<text lang="en">Confirm rights</text>
-		<default_text lang="en">to do</default_text>
-		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung  meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann  ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und es  entstehen daraus keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar gelöscht oder anonymisiert. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund  der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.&quot;</help>
-		<text lang="de">Geben Sie den Text  für die Bestätigung der Rechte und zum Widerruf an.</text>
-		<default_text lang="de">Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung  meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann  ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und es  entstehen daraus keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund  der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.</default_text>
-		<verbose_name lang="de"/>
-		<default_option/>
-		<default_external_id/>
-		<widget_type>textarea</widget_type>
-		<value_type>text</value_type>
-		<maximum/>
-		<minimum/>
-		<step/>
-		<unit/>
-		<width/>
-		<optionsets/>
-		<conditions/>
-	</question>
-	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent/declaration_consent_confirmation_rights">
-		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
-		<key>declaration_consent_confirmation_rights</key>
-		<path>project/declaration_consent/declaration_consent_confirmation_rights</path>
-		<dc:comment/>
-		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent"/>
-	</attribute>
 	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/receipt">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen/consent/receipt</uri_path>
@@ -3367,9 +3535,9 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben, welche aus der Pers
 		<text lang="en">Receipt</text>
 		<default_text lang="en">to do</default_text>
 		<verbose_name lang="en"/>
-		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich habe eine Kopie der Projektinformationen inklusive Anschreiben, der Informationspflichten zum Datenschutz und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.&quot;</help>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Ich habe eine Kopie der Studieninformationen, der Informationspflichten zum Datenschutz und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.&quot;</help>
 		<text lang="de">Geben Sie den Text für den Erhalt und die Aufbewahrung der Einwilligungserklärung an.</text>
-		<default_text lang="de">Ich habe eine Kopie des Informationsblatts, der Informationspflichten zum Datenschutz und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.</default_text>
+		<default_text lang="de">Ich habe eine Kopie der Studieninformationen, der Informationspflichten zum Datenschutz und dieser Einwilligungserklärung erhalten. Das Original verbleibt bei den Verantwortlichen.</default_text>
 		<verbose_name lang="de"/>
 		<default_option/>
 		<default_external_id/>
@@ -3387,6 +3555,40 @@ Bei den folgenden Textfeldern sind Default-Texte vorgegeben, welche aus der Pers
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<key>declaration_consent_receipt</key>
 		<path>project/declaration_consent/declaration_consent_receipt</path>
+		<dc:comment/>
+		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent"/>
+	</attribute>
+	<question dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen/consent/confirmation_rights">
+		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
+		<uri_path>consent-gen/consent/confirmation_rights</uri_path>
+		<dc:comment/>
+		<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent/declaration_consent_confirmation_rights"/>
+		<is_collection>False</is_collection>
+		<is_optional>False</is_optional>
+		<help lang="en"/>
+		<text lang="en">Confirm rights</text>
+		<default_text lang="en">to do</default_text>
+		<verbose_name lang="en"/>
+		<help lang="de">Der vorgegebene Default-Text lautet: &quot;Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und es entstehen daraus keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.&quot;</help>
+		<text lang="de">Geben Sie den Text  für die Bestätigung der Rechte und zum Widerruf an.</text>
+		<default_text lang="de">Mir ist bewusst, dass meine Teilnahme an der Studie freiwillig ist und ich bei einer Verweigerung meiner Einwilligung keinerlei Nachteile erleide. Meine Einwilligung kann ich jederzeit mit Wirkung für die Zukunft widerrufen. Für einen Widerruf der Einwilligung bedarf es keiner Begründung und es entstehen daraus keinerlei Nachteile. Im Fall eines Widerrufs werden meine personenbezogenen Daten unmittelbar gelöscht. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt.</default_text>
+		<verbose_name lang="de"/>
+		<default_option/>
+		<default_external_id/>
+		<widget_type>textarea</widget_type>
+		<value_type>text</value_type>
+		<maximum/>
+		<minimum/>
+		<step/>
+		<unit/>
+		<width/>
+		<optionsets/>
+		<conditions/>
+	</question>
+	<attribute dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent/declaration_consent_confirmation_rights">
+		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
+		<key>declaration_consent_confirmation_rights</key>
+		<path>project/declaration_consent/declaration_consent_confirmation_rights</path>
 		<dc:comment/>
 		<parent dc:uri="https://fdm.tu-dortmund.de/terms/domain/project/declaration_consent"/>
 	</attribute>
@@ -3432,6 +3634,7 @@ In der Ansicht haben Sie mehrere Möglichkeiten für den Export:
   &lt;li&gt;Export nach Open Office, Microsoft Office oder LaTeX. Dadurch haben Sie die Möglichkeit, das Dokument lokal zu speichern und weiter zu bearbeiten.&lt;/li&gt;
    &lt;ul&gt;
      &lt;li&gt; Bitte nutzen Sie diese Möglichkeit und passen Sie das Dokument individuell an Ihre Anforderungen an!&lt;/li&gt;
+     &lt;li&gt; Leider kann bei dem Export von RDMO in ein Office-Format die Formatierung an einigen Stellen verloren gehen, daher sollten Sie diese im Nachhinein korrigieren. &lt;/li&gt;
    &lt;/ul&gt;
   &lt;li&gt; Bitte nehmen Sie bei Bedarf Anpassungen an der Formatierung entsprechend Ihrer eigenen Standards vor und fügen Sie z.B. Ihren individuellen Briefkopf  ein.&lt;/li&gt;
   &lt;ul&gt;
@@ -3441,14 +3644,15 @@ In der Ansicht haben Sie mehrere Möglichkeiten für den Export:
 
 **Anforderungen an eine Einwilligungserklärung** &lt;br&gt;
 &lt;ul&gt;
-  &lt;li&gt;Der Abschnitt zu der eigentlichen Einwilligung („Einwilligung in die Datenverarbeitung“)  muss deutlich von dem Rest des Dokuments abgehoben sein. Leider kann bei dem Export von RDMO in ein Office-Format die Formatierung an einigen Stellen verloren gehen, daher sollten Sie diese im Nachhinein korrigieren. 
+  &lt;li&gt;Der Abschnitt zu der eigentlichen Einwilligung („Einwilligung in die Teilnahme und Datenverarbeitung“)  muss deutlich von dem Rest des Dokuments abgehoben sein.
 &lt;/li&gt;
 &lt;ul&gt;
   &lt;li&gt;Sie können beispielsweise eine besonders große oder farbige Überschrift wählen, um die Einwilligungserklärung auch optisch von den Projektinformationen und den Informationspflichten zum Datenschutz abzusetzen.
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;li&gt; Die Einwilligung sollte auf einer neuen Seite beginnen. Fügen Sie hierfür bitte manuell einen Seitenumbruch ein.&lt;/li&gt;
-&lt;li&gt;Die „Einwilligung in die Datenverarbeitung“ sollte von den Teilnehmenden der Studie im besten Fall unterschrieben werden. Die „Projektinformationen und Anschreiben“ und die „Informationspflichten zum Datenschutz“ müssen den Teilnehmenden als begleitendes Material für eine transparente und faire Aufklärung gezeigt/ausgehändigt werden.
+&lt;li&gt; Die Einwilligung sollte aus Transparenzgründen auf einer neuen Seite beginnen. Fügen Sie hierfür bitte manuell einen Seitenumbruch ein. Erklärung: Wird die Einwilligung in schriftlicher oder elektronischer Form eingeholt, ist sie der betroffenen Person in einer von anderen Sachverhalten klar unterscheidbaren Form zur Verfügung zu stellen (&lt;a href=&quot;https://dsgvo-gesetz.de/art-7-dsgvo/&quot;&gt;Art. 7 Abs. 2 S. 1 DSGVO&lt;/a&gt;).
+&lt;/li&gt;
+&lt;li&gt;Die „Einwilligung in die Teilnahme und Datenverarbeitung“  sollte von den Teilnehmenden der Studie im besten Fall unterschrieben werden. Die „Projektinformationen und Anschreiben“ und die „Informationspflichten zum Datenschutz“ müssen den Teilnehmenden als begleitendes Material für eine transparente und faire Aufklärung gezeigt/ausgehändigt werden.
 &lt;/li&gt;
 &lt;/ul&gt;
 
