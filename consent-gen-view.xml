@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-02-10T10:48:56.608437+01:00" version="2.2.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-02-11T09:12:11.774482+01:00" version="2.2.2">
 	<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen-view">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<uri_path>consent-gen-view</uri_path>
@@ -13,6 +13,7 @@
 			<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen"/>
 		</catalogs>
 		<template>
+		
 {% load view_tags %}
 
 {% get_set 'project/obligation/obligation_purpose_legal_basis/obligation_purpose_legal_basis_id' as duties_purposes %}
@@ -906,17 +907,52 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
    
     {% get_set_value third 'project/obligation/obligation_third_country/third_country_name' as third_country_name %}
     {% get_set_value third 'project/obligation/obligation_third_country/third_country_adequacy_yes_no' as third_adequacy %}
-      
+    {% get_set_value third 'project/obligation/obligation_third_country/third_country_guarantee_yes_no' as third_guarantee %}
+	{% get_set_value third 'project/obligation/obligation_third_country/third_country_purpose' as third_guarantee_purpose %}
+	
+	  
     {% if third_adequacy.option_uri == "https://fdm.tu-dortmund.de/options/option_adequacy_yes"%}
-      {# pass: Angemessenheitsbeschluss existiert #}
+	  {# Angemessenheitsbeschluss vorhanden #}
+	    <p>
+        Ich willige ein, dass meine personenbezogenen Daten zu dem Zweck           
+	    {{ third_guarantee_purpose.text }}
+		an 
+		{{ third_country_name.text }}
+		außerhalb der EU/des europäischen Wirtschaftsraums übermittelt werden. 
+		Für das Land besteht ein Angemessenheitsbeschluss der Europäischen Kommission gemäß Art. 45 DSGVO, 
+		sodass ein der EU gleichwertiges Datenschutzniveau gewährleistet ist.
+		</p>
     {% else %}
-      {% get_set_value third 'project/obligation/obligation_third_country/third_country_guarantee_yes_no' as third_guarantee %}
+      
       {% if third_guarantee.option_uri == "https://fdm.tu-dortmund.de/options/option_guarantee_yes" %}
-        {# pass: Garantien existieren #}
+	    <p>
+        {# kein Angemessenheitsbeschluss, Garantien vorhanden #}
+		
+		Ich willige ein, dass meine personenbezogenen Daten zum Zweck 
+	    {{ third_guarantee_purpose.text }}
+		an 
+		{{ third_country_name.text }}		
+		außerhalb der EU/des europäischen Wirtschaftsraums übermittelt werden.
+		Für dieses Land besteht kein Angemessenheitsbeschluss der Europäischen Kommission. 
+		Die Übermittlung erfolgt auf Grundlage geeigneter Garantien gemäß Art. 46 DSGVO: 
+		<br>
+        {% if third_guarantee.text %}
+          {{ third_guarantee.text }}
+        {% else %}
+        <br>
+          <b><span style="color:Red;">!!!</span></b>Die Garantien wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
+        <br>
+        {% endif %} 
+		<br> 
+		
+		Mir ist bekannt, dass trotz dieser Garantien kein mit der EU vergleichbares Datenschutzniveau 
+		vollständig gewährleistet werden kann und staatliche Zugriffe auf meine Daten nicht ausgeschlossen sind. 
+		
+		</p>  
       {% else %}
+	    {# kein Angemessenheitsbeschluss, keine Garantien #}
         <p>
 		
-		{% get_set_value third 'project/obligation/obligation_third_country/third_country_purpose' as third_guarantee_purpose %}
         {% if third_guarantee_purpose.text %}
 		  Ich willige ausdrücklich ein, dass meine personenbezogenen Daten zu dem Zweck 
           {{ third_guarantee_purpose.text }}
@@ -930,13 +966,14 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 		  Ich habe verstanden, dass dort möglicherweise kein mit der EU vergleichbares Datenschutzniveau besteht, 
 		  staatliche Stellen auf meine Daten zugreifen können und mir gegebenenfalls keine wirksamen Rechtsbehelfe 
 		  zur Verfügung stehen. 
-		  Ich bin mir dabei der folgenden Risiken bewusst:
 		  
+		  Ich bin mir dabei der folgenden Risiken bewusst:
+		  <br>
           {% if third_guarantee.text %}
             {{ third_guarantee.text }}
           {% else %}
           <br>
-            <b><span style="color:Red;">!!!</span></b>Die Garantien oder Risiken wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
+            <b><span style="color:Red;">!!!</span></b>Die Risiken wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
           <br>
           {% endif %}           
         {% else %}
@@ -948,13 +985,13 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
         </p>
       {% endif %}
     {% endif %}
-  {% endfor %}
-</p>
-<br>
+	</p>
+    <br>
 
-<p>
-&#x2610; Ja &#x2610; Nein
-</p>
+    <p>
+    &#x2610; Ja &#x2610; Nein
+    </p>
+  {% endfor %}
 {% endif %}
 
 
@@ -1017,8 +1054,8 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 <br>
 <p> Vor- und Nachname in Druckschrift </p>
 <br>
-<p>Ort, Datum, Unterschrift</p>
-<br>
-	  </template>
+<p>Ort, Datum, Unterschrift</p>	
+		
+		</template>
 	</view>
 </rdmo>
