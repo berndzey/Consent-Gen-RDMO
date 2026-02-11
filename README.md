@@ -22,3 +22,13 @@ go to your RDMO folder and call
 #### Via RDMO-Management-Page: 
 just import xml files
 
+#### Issues with view
+
+The xml import of the view can cause problems due to the combination of Django Template syntax and HTML. 
+
+In this case, I suggest creating a new view by yourself on the managment page.
+Add a URI prefix, URI path, and titles. 
+Then, copy-paste the content from consent-gen-view.xml into the template-field. 
+Here, you need the content from between the <template>-</template>-tags, 
+i.e., starting with the line "{% load view_tags %}" and ending with the line "<p>Ort, Datum, Unterschrift</p>"
+Finally, click on create...
