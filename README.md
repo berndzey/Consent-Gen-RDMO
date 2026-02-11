@@ -1,4 +1,4 @@
-## News 
+## Neuigkeiten 
 **2026-02-11**: Kleineres Update zu den verwendeten Quellen und die Ansicht wurde in Bezug auf "Drittland" erweitert
 **2026-02-10**: Die erste Version des ConsentGen. Bitte beachten Sie, dass dies eine "Work-in-Progress"-Version ist und wir aktuell am Generator arbeiten. 
 
