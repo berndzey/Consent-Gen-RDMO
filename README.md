@@ -4,7 +4,7 @@
 
 ## Allgemeine Informationen
 Das Projekt startete mit der Abschlussarbeit zum "Zertifikatskurs FDM 2023/2024" von Bernd Zey (TU Dortmund). 
-Seit Ende 2024 arbeiten Wibke Kleina und Bernd Zey an diesem Projekt. 
+Seit Ende 2024 arbeiten Wibke Kleina und Bernd Zey an diesem Projekt (beide Abteilung Forschungsdatenmanagement, TU Dortmund).
 
 ## Consent-Gen-RDMO
 Ein Einwilligungserklärungsgenerator für [RDMO](https://github.com/rdmorganiser/rdmo). 
