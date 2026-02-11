@@ -1,34 +1,36 @@
 ## News 
-**2026-02-10**: The first Version v0.1 is released. Notice that we are currently working on the Consent Generator. 
+**2026-02-11**: Kleineres Update zu den verwendeten Quellen und die Ansicht wurde in Bezug auf "Drittland" erweitert
+**2026-02-10**: Die erste Version des ConsentGen. Bitte beachten Sie, dass dies eine "Work-in-Progress"-Version ist und wir aktuell am Generator arbeiten. 
 
-## About
-This project started with the thesis for the "Zertifikatskurs FDM 2023/2024" by Bernd Zey (TU Dortmund). 
-Since end of 2024, Wibke Kleina and Bernd Zey are working on this project. 
+## Allgemeine Informationen
+Das Projekt startete mit der Abschlussarbeit zum "Zertifikatskurs FDM 2023/2024" von Bernd Zey (TU Dortmund). 
+Seit Ende 2024 arbeiten Wibke Kleina und Bernd Zey an diesem Projekt. 
 
 ## Consent-Gen-RDMO
-An informed consent generator for [RDMO](https://github.com/rdmorganiser/rdmo). 
-The catalog is contained in the xml file consent-gen.xml, the view can be found in consent-gen-view.xml.
+Ein Einwilligungserklärungsgenerator für [RDMO](https://github.com/rdmorganiser/rdmo). 
+Der Katalog ist in der xml-Datei consent-gen.xml enthalten, die zugehörige Ansicht in consent-gen-view.xml.
 
-All attributes are defined in an own URI namespace/prefix https://fdm.tu-dortmund.de.  
+Alle Attribute sind in einem eigenen URI Namensraum/Prefix definiert: https://fdm.tu-dortmund.de.  
 
 ## Installation
-#### Via python call: 
-go to your RDMO folder and call
+#### Via Python Call: 
+im RDMO-Ordner aufrufen: 
 ```
 ./manage.py import /path-to-consent-gen-xml-file/consent-gen.xml
 ./manage.py import /path-to-consent-gen-xml-file/consent-gen-view.xml
 ```
 
-#### Via RDMO-Management-Page: 
-just import xml files
+#### Via RDMO-Management-Seite: 
+einfach die xml-Dateien importieren
 
-#### Issues with view
+#### Probleme mit dem Import der Ansicht
 
-The xml import of the view can cause problems due to the combination of Django Template syntax and HTML. 
+Der Import der xml-Dateien kann zu Problemem führen (aufgrund der Django Template Syntax und HTML). 
 
-In this case, I suggest creating a new view by yourself on the managment page.
-Add a URI prefix, URI path, and titles. 
-Then, copy-paste the content from consent-gen-view.xml into the template-field. 
-Here, you need the content from between the <template>-</template>-tags, 
-i.e., starting with the line {% load view_tags %} and ending with the line \<p\>Ort, Datum, Unterschrift\</p\>. 
-Finally, click on create...
+In diesem Fall schlagen wir den Workaround vor, die Ansicht direkt in RDMO selber zu erstellen. 
+Dafür gehen Sie auf die Management-Seite Ihrer RDMO-Instanz. 
+Dort erstellen Sie eine neue Ansicht, vergeben einen URI Prefix, URI Pfad und die Titel. 
+Dann kopieren Sie den Inhalt der consent-gen-view.xml in den Vorlage-Bereich. 
+Hierbei muss nur der Inhalt zwischen den <template>-</template>-tags koppiert werden, 
+d.h. der relevante Teil beginnt mit der Zeile {% load view_tags %} und endet mit der Zeile \<p\>Ort, Datum, Unterschrift\</p\>. 
+Dann nur noch auf "Erstellen" klicken...
