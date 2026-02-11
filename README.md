@@ -1,6 +1,6 @@
 ## Neuigkeiten 
-**2026-02-11**: Kleineres Update zu den verwendeten Quellen und die Ansicht wurde in Bezug auf "Drittland" erweitert
-**2026-02-10**: Die erste Version des ConsentGen. Bitte beachten Sie, dass dies eine "Work-in-Progress"-Version ist und wir aktuell am Generator arbeiten. 
+- **2026-02-11**: Kleineres Update zu den verwendeten Quellen und die Ansicht wurde in Bezug auf "Drittland" erweitert
+- **2026-02-10**: Die erste Version des ConsentGen. Bitte beachten Sie, dass dies eine "Work-in-Progress"-Version ist und wir aktuell am Generator arbeiten. 
 
 ## Allgemeine Informationen
 Das Projekt startete mit der Abschlussarbeit zum "Zertifikatskurs FDM 2023/2024" von Bernd Zey (TU Dortmund). 
