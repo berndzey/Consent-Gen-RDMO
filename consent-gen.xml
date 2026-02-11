@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-02-10T10:48:07.390140+01:00" version="2.2.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-02-11T09:13:39.872741+01:00" version="2.2.2">
 	<catalog dc:uri="https://fdm.tu-dortmund.de/questions/consent-gen">
 		<uri_prefix>https://fdm.tu-dortmund.de</uri_prefix>
 		<uri_path>consent-gen</uri_path>
@@ -66,7 +66,7 @@ Bitte beachten Sie, dass Einwilligungserklärungen als Rechtsgrundlage der Forsc
 
 
 **Quellen, Referenzen**  
-Für die Erstellung dieses Fragenkatalogs wurden einige Formulierungsbeispiele  verwendet und adaptiert: 
+Für die Erstellung dieses Fragenkatalogs wurden folgende Quellen genutzt: 
 &lt;ul&gt;
 &lt;li&gt;
 Verbund Forschungsdaten Bildung: Formulierungsbeispiele für &quot;informierte Einwilligungen&quot;. Version 2.1. Frankfurt am Main: DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation 2018, 8 S. - (fdb info; 4) - URN: urn:nbn:de:0111-pedocs-223018 - &lt;a href=&quot;https://doi.org/10.25656/01:22301&quot;&gt;DOI: 10.25656/01:22301&lt;/a&gt;
@@ -81,6 +81,20 @@ Schaar, K. (2017). Die informierte Einwilligung als Voraussetzung für die (Nach
 &lt;li&gt;
 Consent Wizard von DARIAH-EU: 
 &lt;a href=&quot;https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard&quot;&gt;https://consent.dariah.eu/form/dariah-eldah-consent-form-wizard &lt;/a&gt; 
+&lt;/li&gt;
+&lt;li&gt;
+Annette Strauch. (2020). FDM Hildesheim (Muster), rechtl. Themen im Forschungsdatenmanagement. Einwilligungserklärung Interview. Personenbezogene Interviewdaten. Zenodo. &lt;a href=&quot;https://doi.org/10.5281/zenodo.3893642&quot;&gt;https://doi.org/10.5281/zenodo.3893642&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Der Bundesbeauftragte für den Datenschutz
+und die Informationsfreiheit: &lt;a href=&quot;https://www.bfdi.bund.de/SharedDocs/Downloads/DE/Broschueren/INFO1.html&quot;&gt;Datenschutz-Grundverordnung - Bundesdatenschutzgesetz - Texte und Erläuterungen&lt;/a&gt;, Mai 2022, 2. Auflage
+&lt;/li&gt;
+&lt;li&gt;
+European Data Protection Board (EDPB): 
+&lt;a href=&quot;https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_de&quot;&gt; Leitlinien 05/2020 zur Einwilligung gemäß Verordnung 2016/679&lt;/a&gt;, Version 1.1, angenommen am 4. Mai 2020 
+&lt;/li&gt;
+&lt;li&gt;
+Konferenz der unabhängigen Datenschutzbehörden des Bundes und der Länder (DSK): &lt;a href=&quot;https://www.datenschutzkonferenz-online.de/media/kp/dsk_kpnr_10.pdf&quot;&gt;Kurzpapier Nr. 10 Informationspflichten bei Dritt- und Direkterhebung&lt;/a&gt;, 2018
 &lt;/li&gt;
 &lt;/ul&gt;
 Bitte beachten Sie die entsprechenden Artikel der Datenschutzgrundverordnung: &lt;a href=&quot;https://dsgvo-gesetz.de/&quot;&gt;Link zur DSGVO&lt;/a&gt;</help>
