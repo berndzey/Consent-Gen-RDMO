@@ -3,6 +3,7 @@ Bitte beachten Sie, dass dies eine "Work-in-Progress"-Version ist und wir aktuel
 Beachten Sie außerdem, dass Sie u.U. den Fragenkatalog auf die rechtlichen Gegebenheiten in Ihrem Bundesland/ihrer Institution anpassen müssen!
 
 ## Neuigkeiten 
+- **2026-03-23**: Seite "Nachnutzung" aufgeteilt in 4 Seiten (wiss. Publikation, Lehre, Datenpublikation, Archivierung). Aufklappbare Elemente hinzugefügt für Beispiel-Ansichten (u.a. bei Empfängern) und für Hilfetexte (z.B. bei den Rechtsgrundlagen). Diverse Umformulierungen und Fehler-Korrekturen
 - **2026-02-11**: Kleineres Update zu den verwendeten Quellen und die Ansicht wurde in Bezug auf "Drittland" erweitert
 - **2026-02-10**: Die erste Version des ConsentGen. 
 
