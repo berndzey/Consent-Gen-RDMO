@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-02-11T09:12:11.774482+01:00" version="2.2.2">
+<rdmo xmlns:dc="http://purl.org/dc/elements/1.1/" created="2026-03-23T14:52:55.949189+01:00" required="2.1.0" version="2.4.3">
 	<view dc:uri="https://fdm.tu-dortmund.de/terms/views/consent-gen-view">
 		<uri_prefix>https://fdm.tu-dortmund.de/terms</uri_prefix>
 		<uri_path>consent-gen-view</uri_path>
@@ -191,6 +191,7 @@
   auf Basis der genannten Rechtsgrundlagen:
 
   {% if duties_purposes|length == 0 %}
+    <br>
     <b><span style="color:Red;">!!!</span></b> Sie haben keinen Zweck, den Sie mit der Datenverarbeitung verfolgen, angegeben. 
 	Überprüfen Sie bitte Ihre Eingabe. 
 	<b><span style="color:Red;">!!!</span></b>
@@ -203,10 +204,19 @@
       <tr>
         <td> 
 		  {% get_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_purpose' as ob_purpose %}
-		  {{ ob_purpose.text }}
+		  {% if ob_purpose.is_true %}
+		    {{ ob_purpose.value }}
+		  {% else %}
+		    <b><span style="color:Red;">!!!</span></b> Sie haben keinen Zweck angegeben! Überprüfen Sie bitte Ihre Eingabe auf der Seite "Zwecke und Rechtsgrundlagen".             
+			<b><span style="color:Red;">!!!</span></b>
+		  {% endif %}
         </td> 
         <td>
 		  {% get_set_values obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' as ob_purposes %}
+		  {% if ob_purposes|length == 0 %}
+            <b><span style="color:Red;">!!!</span></b> Sie haben keine Rechtsgrundlage angegeben! Überprüfen Sie bitte Ihre Eingabe auf der Seite "Zwecke und Rechtsgrundlagen".             
+			<b><span style="color:Red;">!!!</span></b>
+		  {% endif %}
 		  {% if ob_purposes|length > 1 %}
 		    <ul>
 		    {% for obp in ob_purposes %}
@@ -222,33 +232,35 @@
       </tr>
       {% endfor %} 
 	  
-      {# Seite Nachnutzung #} 
-	  {% get_value 'project/obligation/obligation_publication' as publication_y_n %}
-      {% get_value 'project/obligation/obligation_publication' as publication_y_n %}
-	  {% get_value 'project/obligation/obligation_data_center_repository_archiving' as data_center_repository_archiving_y_n %}
-	  {% get_value 'project/obligation/lectures' as lectures_y_n %}
+      {# Seite Nachnutzung -> Veröffentlichung, Nachnutzung, Lehre #} 
 	  
+	  {% get_value 'project/obligation/obligation_publication_y_n' as publication_y_n %}
+	  {% get_values 'project/obligation/obligation_publication_legal_basis' as publication_legal_basis %}
+	  
+
+	    
+	  {% get_value 'project/obligation/obligation_lectures_y_n' as lectures_y_n %}
+	  {% get_values 'project/obligation/obligation_lectures_legal_basis' as lectures_legal_basis %}
+	    
       {% if publication_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_publication_yes" %}
       <tr>
         <td>Wissenschaftliche Veröffentlichung</td>
-        <td>Einwilligung in die Datenverarbeitung (Art. 6 Abs. 1 lit. a DSGVO, Art. 9 Abs. 2 lit. a DSGVO)
-        </td>
-      </tr>
-	  {% endif %}
-	  
-	  {% if publication_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_publication_yes" %}
-      <tr>
-        <td>Daten-Publikation</td>
-        <td>Einwilligung in die Datenverarbeitung (Art. 6 Abs. 1 lit. a DSGVO, Art. 9 Abs. 2 lit. a DSGVO)
-        </td>
-      </tr>
-	  {% endif %}
-	  
-	  
-      {% if data_center_repository_archiving_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" %}
-	  <tr>
-        <td>Archivierung</td>
-        <td>Einwilligung in die Datenverarbeitung (Art. 6 Abs. 1 lit. a DSGVO, Art. 9 Abs. 2 lit. a DSGVO)
+        <td>
+		{% if publication_legal_basis|length == 0 %}
+            <b><span style="color:Red;">!!!</span></b> Sie haben keine Rechtsgrundlage angegeben! Überprüfen Sie bitte Ihre Eingabe.             
+			<b><span style="color:Red;">!!!</span></b>
+		{% endif %}
+		{% if publication_legal_basis|length > 1 %}
+		    <ul>
+		    {% for plb in publication_legal_basis %}
+              <li>{{ plb.value }}</li>
+		    {% endfor %}
+		    </ul>
+		  {% else %}
+		    {% for plb in publication_legal_basis %}
+              {{ plb.value }}
+		    {% endfor %}
+		  {% endif %}
         </td>
       </tr>
 	  {% endif %}
@@ -256,27 +268,54 @@
 	  {% if lectures_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_lectures_yes" %}
 	  <tr>
 	    <td>Nachnutzung in der wissenschaftlichen Lehre</td>
-        <td>Einwilligung in die Datenverarbeitung (Art. 6 Abs. 1 lit. a DSGVO, Art. 9 Abs. 2 lit. a DSGVO)
+        <td>
+		{% if lectures_legal_basis|length == 0 %}
+            <b><span style="color:Red;">!!!</span></b> Sie haben keine Rechtsgrundlage angegeben! Überprüfen Sie bitte Ihre Eingabe.             
+			<b><span style="color:Red;">!!!</span></b>
+		{% endif %}
+		{% if lectures_legal_basis|length > 1 %}
+		    <ul>
+		    {% for llb in lectures_legal_basis %}
+              <li>{{ llb.value }}</li>
+		    {% endfor %}
+		    </ul>
+		  {% else %}
+		    {% for llb in lectures_legal_basis %}
+              {{ llb.value }}
+		    {% endfor %}
+		  {% endif %}
         </td>
       </tr>
 	  {% endif %}
 	  
     </table>
-  
 </p>
-
 
 <br>
 <b>Datenkategorien</b>
 <p>
+{% if data_categories|length > 0 %}
   Wir verarbeiten die nachfolgenden Daten der genannten Datenkategorien von Ihnen: 
-  {% if data_categories|length > 0 %}
     <table border="1">
       <tr><th>Datenkategorie </th> <th>Daten </th></tr> 
       {% for data_category in data_categories %}
         <tr>
-          <td>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_category' %} </td> 
-          <td>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' %} </td>
+          <td>
+  		    {% get_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_category' as datacat %}
+  		    {% if datacat.is_true %}
+		      {{ datacat.value }}
+		    {% else %}
+		      <b><span style="color:Red;">!!!</span></b> Sie haben keine Datenkategorie angeben<b><span style="color:Red;">!!!</span></b>
+		    {% endif %}
+		  </td> 
+          <td>
+		    {% get_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type' as datatype %}
+		    {% if datatype.is_true %}
+		      {{ datatype.value }}
+		    {% else %}
+		      <b><span style="color:Red;">!!!</span></b> Sie haben keine konkreten Daten angeben<b><span style="color:Red;">!!!</span></b>
+		    {% endif %}
+		  </td>
         </tr>
       {% endfor %} 
     </table>
@@ -286,18 +325,27 @@
 	  Informationen zur Datenerhebung:
       <ul>
         {% for data_category in data_categories %}
-        <li> {% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type_process' %} </li>
+		  <li> 
+		    {% get_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_type_process' as odtp %}
+		    {% if odtp.is_true %}
+		      {{ odtp.value }}
+		    {% else %}
+			  
+			{% endif %}
+		  </li>
 	    {% endfor %} 
       </ul>
-    </p>
-	
-  {% else %}
-    <b><span style="color:Red;">!!!</span></b> Sie müssen eine Datenkategorie angeben. <b><span style="color:Red;">!!!</span></b>
+    </p>	
+{% else %}
+  {% if data_categories_s|length == 0 %}
+    <b><span style="color:Red;">!!!</span></b> Sie haben keine Datenkategorien angeben. <b><span style="color:Red;">!!!</span></b>
   {% endif %}
+{% endif %}
 </p>
 
 
-{% if data_categories_s %}
+
+{% if data_categories_s|length > 0 %}
 <br>
   <b>Daten besonderer Kategorien</b>
 <p>
@@ -306,8 +354,22 @@
       <tr><th>Datenkategorie </th> <th>Daten  </th></tr> 
       {% for data_category_s in data_categories_s %}
         <tr>
-          <td>{% render_set_value data_category_s 'project/obligation/obligation_special_category/data_categories_special' %} </td> 
-          <td>{% render_set_value data_category_s 'project/obligation/obligation_special_category/obligation_data_type_special_category' %} </td>
+          <td>
+		    {% get_set_value data_category_s 'project/obligation/obligation_special_category/data_categories_special' as datacat_s %}
+  		    {% if datacat_s.is_true %}
+		      {{ datacat_s.value }}
+		    {% else %}
+		      <b><span style="color:Red;">!!!</span></b> Sie haben keine Datenkategorie angeben <b><span style="color:Red;">!!!</span></b>
+		    {% endif %}
+		  </td> 
+          <td>
+            {% get_set_value data_category_s 'project/obligation/obligation_special_category/obligation_data_type_special_category' as datatype_s %}
+  		    {% if datatype_s.is_true %}
+		      {{ datatype_s.value }}
+		    {% else %}
+		      <b><span style="color:Red;">!!!</span></b> Sie haben keine konkreten Daten angeben <b><span style="color:Red;">!!!</span></b>
+		    {% endif %}
+		  </td>
         </tr>
       {% endfor %}
     </table>
@@ -323,7 +385,7 @@
     </p>
 	
 {% else %}
-  {# Negativsatz #}
+  {# Negativsatz -> wird nicht generiert #}
   {# <p> Wir verarbeiten keine Daten besonderer Kategorien von Ihnen.</p> #}
 {% endif %}
 
@@ -348,9 +410,9 @@
   {% endif %}
   
   {% get_value 'project/obligation/data_categories_criminal_process' as data_categories_criminal_process %}
-  {% if data_categories_criminal_process %}
+  {% if data_categories_criminal_process.is_true %}
   Informationen zur Datenerhebung: 
-  {{ data_categories_criminal_process.text }}
+  {{ data_categories_criminal_process.value }}
   {% endif %}
 </p>
 {% endif %}
@@ -377,7 +439,7 @@
 {% if storage_duration.is_true %}
 <p>
   Wir speichern Ihre personenbezogenen Daten 
-    {{ storage_duration.value }}
+    {{ storage_duration.value }}.
   <br>
   Anschließend werden Ihre personenbezogenen Daten gelöscht bzw. es werden nur noch anonymisierte Daten vorgehalten. 
 </p>
@@ -391,14 +453,14 @@
 
 
 
-{% get_value 'project/obligation/obligation_publication' as publication_y_n %}
+{% get_value 'project/obligation/obligation_publication_y_n' as publication_y_n %}
 {% if publication_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_publication_yes" %}
   {% get_value 'project/obligation/obligation_publication_details' as publication_details %}
     <br>
     <p>
       <b>Wissenschaftliche Veröffentlichung</b>
 	  <br>
-	  {% if publication_details.text|length > 0 %}
+	  {% if publication_details.is_true %}
   	    {{ publication_details.value }}
 	  {% else %}
 	    <b><span style="color:Red;">!!!</span></b>
@@ -411,60 +473,14 @@
 
 
 
-{% get_value 'project/obligation/data_center_repository' as data_center_repository_y_n %}
-{% if data_center_repository_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_yes" %}
-  {% get_value 'project/obligation/obligation_data_center_repository_name' as data_center_repository_name %}
-  {% get_value 'project/obligation/obligation_data_center_repository_access' as data_center_repository_access %}
-  
-  <br>
-  <p>
-     <b>Veröffentlichung in Datenrepositorium/Datenzentrum</b>
-	  <br>
-	  Wir planen die Veröffentlichung der Daten in 
-	  {% if data_center_repository_name.text|length > 0 %}
-  	    {{ data_center_repository_name.value }}.
-	  {% else %}
-	    einem Datenrepositorium/Datenzentrum. 
-      {% endif %}  
-	  
-      {% if data_center_repository_access.text|length > 0 %}
-	    <br>
-  	    {{ data_center_repository_access.value }}.
-      {% endif %}  
-  </p>
-{% endif %}
-
-{% get_value 'project/obligation/obligation_data_center_repository_archiving' as data_center_repository_archiving_y_n %}
-{% if data_center_repository_archiving_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" %}
-  {% get_value 'project/obligation/obligation_data_center_repository_archiving_name' as data_center_repository_archiving_name %}
-  {% get_value 'project/obligation/obligation_data_center_repository_archiving_description' as data_center_repository_archiving_description %}
-  
-  <br>
-  <p>
-     <b>Archivierung in Datenrepositorium/Datenzentrum</b>
-	  <br>
-	  Wir planen die Archivierung der Daten in 
-	  {% if data_center_repository_archiving_name.text|length > 0 %}
-  	    {{ data_center_repository_archiving_name.value }}.
-	  {% else %}
-	    einem Datenrepositorium/Datenzentrum. 
-      {% endif %} 	  
-	  
-      {% if data_center_repository_archiving_description.text|length > 0 %}
-	    <br>
-  	    {{ data_center_repository_archiving_description.value }}.
-      {% endif %}  
-  </p>
-{% endif %}
-
-{% get_value 'project/obligation/lectures' as lectures_y_n %}
+{% get_value 'project/obligation/obligation_lectures_y_n' as lectures_y_n %}
 {% if lectures_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_lectures_yes" %}
   {% get_value 'project/obligation/obligation_lectures_data' as lectures_data %}
   <br>
   <p>
     <b>Wissenschaftliche Lehre</b>
     <br>
-	{% if lectures_data.text|length > 0 %}
+	{% if lectures_data.is_true %}
       {{ lectures_data.value }}
 	{% else %}
       <b><span style="color:Red;">!!!</span></b>
@@ -488,7 +504,7 @@
   <br>
   {% get_value 'project/obligation/obligation_profiling_details' as profiling_details %}
   {% if profiling_details.is_true %}
-    {{ profiling_details.text }}
+    {{ profiling_details.value }}
   {% else %}
     <b><span style="color:Red;">!!!</span></b>
     Sie müssen Angaben zu der Logik automatisierter Entscheidungsfindungen und Profiling machen. 
@@ -498,25 +514,42 @@
 {% endif %}  
 
 
-{% if receivers %}
+{% get_value 'project/obligation/obligation_data_center_repository_y_n' as data_center_repository_y_n %}
+{% get_value 'project/obligation/obligation_data_center_repository_category' as data_center_repository_category %}
+{% get_value 'project/obligation/obligation_data_center_repository_name' as data_center_repository_name %}
+  {% get_values 'project/obligation/obligation_data_center_repository_legal_basis' as data_center_repository_legal_basis %}
+
+{% get_value 'project/obligation/obligation_data_center_repository_archiving_y_n' as data_center_repository_archiving_y_n %}
+{% get_value 'project/obligation/obligation_data_center_repository_archiving_category' as data_center_repository_archiving_category %}
+{% get_value 'project/obligation/obligation_data_center_repository_archiving_name' as data_center_repository_archiving_name %}
+{% get_values 'project/obligation/obligation_data_center_repository_archiving_legal_basis' as data_center_repository_archiving_legal_basis %}
+
+{% if receivers|length > 0 or data_center_repository_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_yes" or data_center_repository_archiving_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" %}
 <br>
 <b>Empfänger oder Empfängerkategorien personenbezogener Daten</b>
 <p>
   Ihre personenbezogenen Daten werden an folgende Empfänger
   bzw. Kategorien von Empfängern weitergegeben:
   <table border="1">
-  <tr><th>Empfänger</th> <th>Zweck</th> <th>Rechtsgrundlage</th></tr> 
+  <tr><th>Empfängerkategorie</th> <th>Konkrete Empfänger</th> <th>Zweck</th> <th>Rechtsgrundlage/Übermittlungsbasis</th></tr> 
   {% for receiver in receivers %}  
     <tr>
+	  <td> {% get_set_value receiver 'project/obligation/receiver/receiver_category' as receiver_category %}
+        {% if receiver_category.is_true %}
+          {{ receiver_category.value }}
+        {% else %}
+          <b><span style="color:Red;">!!!</span></b>Empfängerkategorie fehlt<b><span style="color:Red;">!!!</span></b>
+        {% endif %}
+	  </td>
       <td>{% get_set_value receiver 'project/obligation/receiver/receiver_name' as receiver_name %} 
-        {% if receiver_name %}
+        {% if receiver_name.is_true %}
           {{ receiver_name.value }}
         {% else %}
           <b><span style="color:Red;">!!!</span></b>Empfängername fehlt<b><span style="color:Red;">!!!</span></b>
         {% endif %}
       </td> 
       <td>{% get_set_value receiver 'project/obligation/receiver/receiver_purpose' as receiver_purpose %} 
-        {% if receiver_purpose %}
+        {% if receiver_purpose.is_true %}
           {{ receiver_purpose.value }}
         {% else %}
           <b><span style="color:Red;">!!!</span></b>Zweck fehlt<b><span style="color:Red;">!!!</span></b>
@@ -539,8 +572,59 @@
           {% endfor %}
         {% endif %}
       </td>
-    </tr>
+	</tr> 
   {% endfor %}
+	
+	  {% if data_center_repository_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_yes" %}
+      <tr>
+        <td> {{ data_center_repository_category.value }} </td>
+		<td> {{ data_center_repository_name.value }} </td>
+		<td>Daten-Publikation</td>
+		<td>
+		{% if data_center_repository_legal_basis|length == 0 %}
+            <b><span style="color:Red;">!!!</span></b> Sie haben keine Rechtsgrundlage angegeben! Überprüfen Sie bitte Ihre Eingabe.             
+			<b><span style="color:Red;">!!!</span></b>
+		{% endif %}
+		{% if data_center_repository_legal_basis|length > 1 %}
+		    <ul>
+		    {% for dclb in data_center_repository_legal_basis %}
+              <li>{{ dclb.value }}</li>
+		    {% endfor %}
+		    </ul>
+		  {% else %}
+		    {% for dclb in data_center_repository_legal_basis %}
+              {{ dclb.value }}
+		    {% endfor %}
+		  {% endif %}
+        </td>
+      </tr>
+	  {% endif %}	  
+	  
+      {% if data_center_repository_archiving_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" %}
+	  <tr>
+	    <td> {{ data_center_repository_archiving_category.value }} </td>
+		<td> {{ data_center_repository_archiving_name.value }} </td>
+        <td> Archivierung </td>
+        <td>
+		{% if data_center_repository_archiving_legal_basis|length == 0 %}
+            <b><span style="color:Red;">!!!</span></b> Sie haben keine Rechtsgrundlage angegeben! Überprüfen Sie bitte Ihre Eingabe.             
+			<b><span style="color:Red;">!!!</span></b>
+		{% endif %}
+		{% if data_center_repository_archiving_legal_basis|length > 1 %}
+		    <ul>
+		    {% for dcalb in data_center_repository_archiving_legal_basis %}
+              <li>{{ dcalb.value }}</li>
+		    {% endfor %}
+		    </ul>
+		  {% else %}
+		    {% for dcalb in data_center_repository_archiving_legal_basis %}
+              {{ dcalb.value }}
+		    {% endfor %}
+		  {% endif %}
+        </td>
+      </tr>
+	  {% endif %}
+
   </table>  
 </p>
 {% else %}
@@ -550,7 +634,53 @@
 
 
 
-{% if third_countries %}
+
+{% get_value 'project/obligation/obligation_data_center_repository_y_n' as data_center_repository_y_n %}
+{% if data_center_repository_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_yes" %}
+  {% get_value 'project/obligation/obligation_data_center_repository_access' as data_center_repository_access %}
+  
+  <br>
+  <p>
+     <b>Veröffentlichung in Datenrepositorium/Datenzentrum</b>
+	  <br>
+	  Wir planen die Veröffentlichung der Daten in 
+	  {% if data_center_repository_name.is_true %}
+  	    {{ data_center_repository_name.value }}.
+	  {% else %}
+	    einem Datenrepositorium/Datenzentrum. 
+      {% endif %}  
+	  
+      {% if data_center_repository_access.is_true %}
+	    <br>
+  	    {{ data_center_repository_access.value }}.
+      {% endif %}  
+  </p>
+{% endif %}
+
+{% get_value 'project/obligation/obligation_data_center_repository_archiving_y_n' as data_center_repository_archiving_y_n %}
+{% if data_center_repository_archiving_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" %}
+  {% get_value 'project/obligation/obligation_data_center_repository_archiving_description' as data_center_repository_archiving_description %}
+  
+  <br>
+  <p>
+     <b>Archivierung in Datenrepositorium/Datenzentrum</b>
+	  <br>
+	  Wir planen die Archivierung der Daten in 
+	  {% if data_center_repository_archiving_name.is_true %}
+  	    {{ data_center_repository_archiving_name.value }}.
+	  {% else %}
+	    einem Datenrepositorium/Datenzentrum. 
+      {% endif %} 	  
+	  
+      {% if data_center_repository_archiving_description.is_true %}
+	    <br>
+  	    {{ data_center_repository_archiving_description.value }}.
+      {% endif %}  
+  </p>
+{% endif %}
+
+
+{% if third_countries|length > 0 %}
 <br>
 <b>Datenübermittlung an Drittland oder internationale Organisation</b>
 <p>
@@ -561,17 +691,23 @@
   <tr><th>Drittland/int. Organisation</th> <th>Angemessenheitsbeschluss vorhanden?</th> <th>Art der Garantien</th> <th> Zweck</th> </tr> 
   
   {% for third in third_countries %}
-    <tr>
+    {% get_set_value third 'project/obligation/obligation_third_country/third_country_name' as third_country_name %}
+	{% get_set_value third 'project/obligation/obligation_third_country/third_country_purpose' as third_purpose %}
+	{% get_set_value third 'project/obligation/obligation_third_country/third_country_adequacy_yes_no' as third_adequacy %}
+	{% get_set_value third 'project/obligation/obligation_third_country/third_country_guarantee_yes_no' as third_guarantee %}
+		
+	{% if third_adequacy.option_uri == "https://fdm.tu-dortmund.de/options/option_adequacy_no" and third_guarantee.option_uri == "https://fdm.tu-dortmund.de/options/option_guarantee_no" %}
+		{# kein Angemessenheitsbeschluss und keine Garantien! Der Fall wird nicht abgedeckt #} 
+	{% else %}
+      <tr>
       <td>
-        {% get_set_value third 'project/obligation/obligation_third_country/third_country_name' as third_country_name %}
         {% if third_country_name.is_true %}
-          {{ third_country_name.text }}
+          {{ third_country_name.value }}
         {% else %}
           <b><span style="color:Red;">!!!</span></b>Name des Drittlands oder der Organisation fehlt<b><span style="color:Red;">!!!</span></b>
         {% endif %}
       </td>
       <td>
-        {% get_set_value third 'project/obligation/obligation_third_country/third_country_adequacy_yes_no' as third_adequacy %}
         {% if third_adequacy.option_uri == "https://fdm.tu-dortmund.de/options/option_adequacy_yes"%}
           ja
         {% else %}
@@ -579,26 +715,32 @@
         {% endif %}
       </td>
       <td>
-        {% get_set_value third 'project/obligation/obligation_third_country/third_country_guarantee_yes_no' as third_guarantee %}
-		{% if third_adequacy.option_uri == "https://fdm.tu-dortmund.de/options/option_adequacy_yes"%}
+		{% if third_adequacy.option_uri == "https://fdm.tu-dortmund.de/options/option_adequacy_yes" %}
 		  - 
 		{% else %}
-          {% if third_guarantee.text %}
-            {{ third_guarantee.text }}
-          {% else %}
-            <b><span style="color:Red;">!!!</span></b>Die Garantien oder Risiken wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
-          {% endif %}
+		  
+		  {% if third_guarantee.option_uri == "https://fdm.tu-dortmund.de/options/option_guarantee_yes" %}
+            {% if third_guarantee.text|length > 0 %}
+              {{ third_guarantee.text }}
+            {% else %}
+              <b><span style="color:Red;">!!!</span></b>Die Garantien oder Risiken wurden nicht beschrieben<b><span   style="color:Red;">!!!</span></b>
+            {% endif %}		   
+		  {% endif %}
+		  {% if third_guarantee.option_uri == "https://fdm.tu-dortmund.de/options/option_guarantee_no" %}
+		   	{# kein Angemessenheitsbeschluss und keine Garantien! Der Fall wird nicht abgedeckt #} 
+		  {% endif %}
+		  
 		{% endif %}
       </td>
 	  <td>
-	  {% get_set_value third 'project/obligation/obligation_third_country/third_country_purpose' as third_purpose %}
-	  {% if third_purpose.text %}
-        {{ third_purpose.text }}
+	  {% if third_purpose.is_true %}
+        {{ third_purpose.value }}
       {% else %}
-          <b><span style="color:Red;">!!!</span></b>Der Zweck der Datenübermittlung wurde nicht angegeben!<b><span style="color:Red;">!!!</span></b>
-        {% endif %} 
+        <b><span style="color:Red;">!!!</span></b>Der Zweck der Datenübermittlung wurde nicht angegeben!<b><span style="color:Red;">!!!</span></b>
+      {% endif %} 
 	  </td>
-   </tr>
+      </tr>
+     {% endif %}
    {% endfor %}
    </table>
 </p>
@@ -621,15 +763,17 @@
         {% if third_guarantee.option_uri == "https://fdm.tu-dortmund.de/options/option_guarantee_yes" %}
           <li>
           Für das Land/die int. Organisation {{ third_country_name.value }} existiert kein Angemessenheitsbeschluss, aber es existieren geeignete Garantien, die wir Ihnen wie folgt zusammenfassen:
+		  {% if third_guarantee.is_true %}
+            {{ third_guarantee.text }}
+          {% else %}
+            <b><span style="color:Red;">!!!</span></b>Die Garantien oder Risiken wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
+          {% endif %}
         {% else %}
-          <li>Für das Land/die int. Organisation {{ third_country_name.value }} existiert kein Angemessenheitsbeschluss und es existieren keine geeigneten Garantien. 
-          Daher weisen wir Sie hier auf die möglichen Risiken hin:
-        {% endif %}
-        
-        {% if third_guarantee.text %}
-          {{ third_guarantee.text }}
-        {% else %}
-          <b><span style="color:Red;">!!!</span></b>Die Garantien oder Risiken wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
+          {% comment %}
+		  {# kein Angemessenheitsbeschluss und keine Garantien! Der Fall wird nicht abgedeckt #} 
+		  <li>Für das Land/die int. Organisation {{ third_country_name.value }} existiert kein Angemessenheitsbeschluss und es existieren keine geeigneten Garantien. 
+          <b><span style="color:Red;">!!!</span></b>Keine Garantien: Bitte wenden Sie sich in diesem Ausnahmefall an einen Datenschutzbeauftragten! <b><span   style="color:Red;">!!!</span></b>
+		  {% endcomment %}
         {% endif %}
         </li>  
       {% endif %}
@@ -649,21 +793,21 @@
 <p>
   Ihnen stehen folgende Betroffenenrechte zu:
   <ul>
-  <li> <b>Widerrufsrecht:</b> Sie haben das Recht, Ihre Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen. Artikel 7, DSGVO, <a href="https://dsgvo-gesetz.de/art-7-dsgvo/">https://dsgvo-gesetz.de/art-7-dsgvo/</a>
+  <li> <b>Widerrufsrecht:</b> Sie haben das Recht, Ihre Einwilligung jederzeit mit Wirkung für die Zukunft zu widerrufen. 
   </li>
-  <li> <b>Auskunftsrecht:</b> Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. Artikel 15, DSGVO, <a href="https://dsgvo-gesetz.de/art-15-dsgvo/">https://dsgvo-gesetz.de/art-15-dsgvo/</a>
+  <li> <b>Auskunftsrecht:</b> Sie haben das Recht zu erfahren, welche personenbezogenen Daten von Ihnen verarbeitet werden. 
   </li>
-  <li> <b>Recht auf Berichtigung:</b> Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. Artikel 16, DSGVO, <a href="https://dsgvo-gesetz.de/art-16-dsgvo/">https://dsgvo-gesetz.de/art-16-dsgvo/</a>
+  <li> <b>Recht auf Berichtigung:</b> Sie haben das Recht, falsche personenbezogene Daten berichtigen zu lassen. 
   </li>
-  <li> <b>Recht auf Löschung:</b> Sie können jederzeit die Löschung Ihrer Daten verlangen. Artikel 17, DSGVO, <a href="https://dsgvo-gesetz.de/art-17-dsgvo/">https://dsgvo-gesetz.de/art-17-dsgvo/</a>
+  <li> <b>Recht auf Löschung:</b> Sie können jederzeit die Löschung Ihrer Daten verlangen. 
   </li>
-  <li> <b>Recht auf Einschränkung der Verarbeitung:</b> Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. Artikel 18, DSGVO, <a href="https://dsgvo-gesetz.de/art-18-dsgvo/">https://dsgvo-gesetz.de/art-18-dsgvo/</a>
+  <li> <b>Recht auf Einschränkung der Verarbeitung:</b> Sie können die Einschränkung der Verarbeitung, die Übertragung von personenbezogenen Daten verlangen. 
   </li>
-  <li> <b>Recht auf Datenübertragbarkeit:</b> Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Artikel 20, DSGVO, <a href="https://dsgvo-gesetz.de/art-20-dsgvo/">https://dsgvo-gesetz.de/art-20-dsgvo/</a>
+  <li> <b>Recht auf Datenübertragbarkeit:</b> Sie haben das Recht, die sie betreffenden personenbezogenen Daten, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. 
   </li>
-  <li> <b>Widerspruchsrecht:</b> Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch einlegen. Artikel 21, DSGVO, <a href="https://dsgvo-gesetz.de/art-21-dsgvo/">https://dsgvo-gesetz.de/art-21-dsgvo/</a>
+  <li> <b>Widerspruchsrecht:</b> Sie können jederzeit gegen die Verarbeitung der Sie betreffenden Daten Widerspruch einlegen. 
   </li>
-  <li> <b>Beschwerderecht bei einer Aufsichtsbehörde:</b> Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind oder Ihre Betroffennenrechte nicht oder nur unzureichend gewahrt, dann können Sie sich an die zuständige Aufsichtsbehörde wenden. Artikel 77, DSGVO, <a href="https://dsgvo-gesetz.de/art-77-dsgvo/">https://dsgvo-gesetz.de/art-77-dsgvo/</a>
+  <li> <b>Beschwerderecht bei einer Aufsichtsbehörde:</b> Wenn Sie der Auffassung sind, dass bei der Verarbeitung Ihrer Daten datenschutzrechtliche Vorschriften nicht beachtet worden sind oder Ihre Betroffennenrechte nicht oder nur unzureichend gewahrt, dann können Sie sich an die zuständige Aufsichtsbehörde wenden. 
   </li>
   </ul>
   Für die Geltendmachung Ihrer Rechte wenden Sie sich bitte an {{ responsible_body.value }}.
@@ -709,7 +853,7 @@
 
 <p>
   Hiermit willige ich ein, an der Studie  
-  {% if info_project_name %}
+  {% if info_project_name.is_true %}
     zum Projekt {{ info_project_name.value }} 
   {% endif %}
   teilzunehmen.  
@@ -748,13 +892,19 @@
 </p>
 
 <p>
-  Ich willige freiwillig in die Erhebung und Verarbeitung  meiner personenbezogenen Daten  für die folgenden Zwecke nach den Vorgaben  der obigen Informationspflichten zum Datenschutz ein: 
+  Ich willige freiwillig in die Erhebung und Verarbeitung  meiner personenbezogenen Daten  
+  für die folgenden Zwecke nach den Vorgaben  der obigen Informationspflichten zum Datenschutz ein: 
   {% if duties_purposes|length > 0 %}
   <ul>
     {% for obligation_purpose in duties_purposes %}
       {% get_set_value obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_purpose' as ob_purpose %}
       <li>
-	  {{ ob_purpose.text }}
+	    {% if ob_purpose.is_true %}
+		  {{ ob_purpose.value }}
+		{% else %}
+		 <b><span style="color:Red;">!!!</span></b> Sie haben keinen Zweck angegeben! Überprüfen Sie bitte Ihre Eingabe auf der Seite "Zwecke und Rechtsgrundlagen".             
+		  <b><span style="color:Red;">!!!</span></b>
+		{% endif %}
 	  
 	  {% get_set_values obligation_purpose 'project/obligation/obligation_purpose_legal_basis/obligation_legal_basis' as ob_purposes %}
 	    {% if ob_purposes|length > 0 %} 
@@ -777,11 +927,16 @@
 
 
 <p>
-  Ich willige ein, dass die im Folgenden aufgeführten Daten verarbeitet werden dürfen:
+  Ich willige ein, dass die im Folgenden aufgeführten Daten verarbeitet werden dürfen. 
 </p>
+{% if data_categories|length == 0 and data_categories_s|length == 0 %}
+    <b><span style="color:Red;">!!!</span></b> 
+	Sie müssen eine Datenkategorie angeben. 
+	<b><span style="color:Red;">!!!</span></b>
+{% endif %}
+
+{% if data_categories|length > 0 %}
 <p>
-  Personenbezogene Daten:
-  {% if data_categories|length > 0 %}
     <ul>
     {% for data_category in data_categories %}
       <li>{% render_set_value data_category 'project/obligation/obligation_data_categories/obligation_data_category' %}:
@@ -789,15 +944,10 @@
       </li>
     {% endfor %} 
     </ul>
-  {% else %}
-    <b><span style="color:Red;">!!!</span></b> 
-    Sie müssen eine Datenkategorie angeben. 
-    <b><span style="color:Red;">!!!</span></b>
-  {% endif %}
 </p>
+{% endif %}
 
-
-{% if data_categories_s %}
+{% if data_categories_s|length > 0 %}
 <p>
   Personenbezogene Daten besonderer Kategorien:
     <ul>
@@ -830,43 +980,53 @@
 </p>
 {% endif %}
 
-
 <br>
 <p>
 &#x2610; Ja &#x2610; Nein
 </p>
+
 
 
 {% if publication_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_publication_yes" %}
 <br>
 <p>
 Ich willige ein, dass die Daten in wissenschaftlichen Veröffentlichungen auf die oben beschriebene Art und Weise (siehe Informationspflichten zum Datenschutz) genutzt werden dürfen. 
-{% if data_center_repository_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_yes" %}
-  Ich willige ein, dass die Daten in 
-  	  {% if data_center_repository_name.text|length > 0 %}
-  	    {{ data_center_repository_name.value }} 
-	  {% else %}
-	    einem Datenrepositorium/Datenzentrum 
-      {% endif %}  
-  veröffentlicht werden. 
-{% endif %}
+</p>
 <br>
 <p>
 &#x2610; Ja &#x2610; Nein
 </p>
 {% endif %}
 
+{% if data_center_repository_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_yes" %}
+<br>
+<p>
+Ich willige ein, dass die Daten in 
+  {% if data_center_repository_name.is_true %}
+    {{ data_center_repository_name.value }} 
+  {% else %}
+	einem Datenrepositorium/Datenzentrum 
+  {% endif %}  
+auf die oben beschriebene Art und Weise (siehe Informationspflichten zum Datenschutz) 
+veröffentlicht werden dürfen. 
+</p>
+<br>
+<p>
+&#x2610; Ja &#x2610; Nein
+</p>
+{% endif %}
 
 {% if data_center_repository_archiving_y_n.option_uri == "https://fdm.tu-dortmund.de/options/option_data_center_repository_archiving_yes" %}
 <br>
 <p>
 Ich willige ein, dass die Daten in 
-  {% if data_center_repository_archiving_name.text|length > 0 %}
+  {% if data_center_repository_archiving_name.is_true %}
     {{ data_center_repository_archiving_name.value }} 
   {% else %}
     einem Datenrepositorium/Datenzentrum 
   {% endif %} 
 auf die oben beschriebene Art und Weise (siehe Informationspflichten zum Datenschutz) archiviert werden dürfen. 
+</p>
 <br>
 <p>
 &#x2610; Ja &#x2610; Nein
@@ -900,7 +1060,7 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 {% endif %}
 
 
-{% if third_countries %}
+{% if third_countries|length > 0 %}
 <br>
 <p>
   {% for third in third_countries %}
@@ -915,13 +1075,18 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 	  {# Angemessenheitsbeschluss vorhanden #}
 	    <p>
         Ich willige ein, dass meine personenbezogenen Daten zu dem Zweck           
-	    {{ third_guarantee_purpose.text }}
+	    {{ third_guarantee_purpose.value }}
 		an 
-		{{ third_country_name.text }}
+		{{ third_country_name.value }}
 		außerhalb der EU/des europäischen Wirtschaftsraums übermittelt werden. 
 		Für das Land besteht ein Angemessenheitsbeschluss der Europäischen Kommission gemäß Art. 45 DSGVO, 
 		sodass ein der EU gleichwertiges Datenschutzniveau gewährleistet ist.
 		</p>
+        <br>
+
+        <p>
+        &#x2610; Ja &#x2610; Nein
+        </p> 
     {% else %}
       
       {% if third_guarantee.option_uri == "https://fdm.tu-dortmund.de/options/option_guarantee_yes" %}
@@ -929,14 +1094,14 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
         {# kein Angemessenheitsbeschluss, Garantien vorhanden #}
 		
 		Ich willige ein, dass meine personenbezogenen Daten zum Zweck 
-	    {{ third_guarantee_purpose.text }}
+	    {{ third_guarantee_purpose.value }}
 		an 
-		{{ third_country_name.text }}		
+		{{ third_country_name.value }}		
 		außerhalb der EU/des europäischen Wirtschaftsraums übermittelt werden.
 		Für dieses Land besteht kein Angemessenheitsbeschluss der Europäischen Kommission. 
 		Die Übermittlung erfolgt auf Grundlage geeigneter Garantien gemäß Art. 46 DSGVO: 
 		<br>
-        {% if third_guarantee.text %}
+        {% if third_guarantee.is_true %}
           {{ third_guarantee.text }}
         {% else %}
         <br>
@@ -947,17 +1112,23 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 		
 		Mir ist bekannt, dass trotz dieser Garantien kein mit der EU vergleichbares Datenschutzniveau 
 		vollständig gewährleistet werden kann und staatliche Zugriffe auf meine Daten nicht ausgeschlossen sind. 
-		
-		</p>  
+		</p>
+        <br>
+
+        <p>
+        &#x2610; Ja &#x2610; Nein
+        </p> 
       {% else %}
 	    {# kein Angemessenheitsbeschluss, keine Garantien #}
-        <p>
+        
+		{% comment %}
+		<p>
 		
-        {% if third_guarantee_purpose.text %}
+        {% if third_guarantee_purpose.is_true %}
 		  Ich willige ausdrücklich ein, dass meine personenbezogenen Daten zu dem Zweck 
-          {{ third_guarantee_purpose.text }}
+          {{ third_guarantee_purpose.value }}
 		  an 
-		  {{ third_country_name.text }}
+		  {{ third_country_name.value }}
 		  außerhalb der EU/des europäischen Wirtschaftsraums übermittelt werden.
           
 		  Mir ist bekannt, dass für dieses Land kein Angemessenheitsbeschluss der EU-Kommission besteht 
@@ -969,8 +1140,8 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 		  
 		  Ich bin mir dabei der folgenden Risiken bewusst:
 		  <br>
-          {% if third_guarantee.text %}
-            {{ third_guarantee.text }}
+          {% if third_guarantee.is_true %}
+            {{ third_guarantee.value }}
           {% else %}
           <br>
             <b><span style="color:Red;">!!!</span></b>Die Risiken wurden nicht beschrieben<b><span style="color:Red;">!!!</span></b>
@@ -978,19 +1149,15 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
           {% endif %}           
         {% else %}
         <br>
-          <b><span style="color:Red;">!!!</span></b>Der Zweck der Datenübermittlung an das Drittland/die int. Organisation {{ third_country_name.text }} wurde nicht angegeben!<b><span style="color:Red;">!!!</span></b>
+          <b><span style="color:Red;">!!!</span></b>Der Zweck der Datenübermittlung an das Drittland/die int. Organisation {{ third_country_name.value }} wurde nicht angegeben!<b><span style="color:Red;">!!!</span></b>
         <br>
         {% endif %} 
+		
+		{% endcomment %}
 
         </p>
       {% endif %}
     {% endif %}
-	</p>
-    <br>
-
-    <p>
-    &#x2610; Ja &#x2610; Nein
-    </p>
   {% endfor %}
 {% endif %}
 
@@ -1054,7 +1221,8 @@ Ich willige ein, dass die Daten in der wissenschaftlichen Lehre auf die oben bes
 <br>
 <p> Vor- und Nachname in Druckschrift </p>
 <br>
-<p>Ort, Datum, Unterschrift</p>	
+<p>Ort, Datum, Unterschrift</p>
+<br>	
 		
 		</template>
 	</view>
