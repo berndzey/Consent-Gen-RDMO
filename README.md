@@ -36,6 +36,6 @@ In diesem Fall schlagen wir den Workaround vor, die Ansicht direkt in RDMO selbe
 Dafür gehen Sie auf die Management-Seite Ihrer RDMO-Instanz. 
 Dort erstellen Sie eine neue Ansicht, vergeben einen URI Prefix, URI Pfad und die Titel. 
 Dann kopieren Sie den Inhalt der consent-gen-view.xml in den Vorlage-Bereich. 
-Hierbei muss nur der Inhalt zwischen den <template>-</template>-tags koppiert werden, 
+Hierbei muss nur der Inhalt zwischen den \<template\>-\</template\>-tags koppiert werden, 
 d.h. der relevante Teil beginnt mit der Zeile {% load view_tags %} und endet mit der Zeile \<p\>Ort, Datum, Unterschrift\</p\>. 
-Bei Kataloge den consent-gen hinzufügen und dann nur noch auf "Erstellen" klicken...
+Zum Schluss bei "Kataloge" den consent-gen hinzufügen und dann nur noch auf "Erstellen" klicken...
